@@ -1,0 +1,151 @@
+/* Site Header
+ * ============================================== */
+    .site-header {
+        height: 55px;
+        background-color: #F5F5F5;
+        position: relative;
+        width: 100%;
+    }
+
+    .site-header a {color: $brand-color};
+
+    .site-nav {
+        padding-top: 16px;
+        float: right;
+        margin-right: 25px;
+        text-transform: uppercase;
+
+        .menu-icon {
+            display: none;
+        }
+
+        @include media-query($on-palm) {
+            position: absolute;
+            top: 3px;
+            right: 3px;
+            background-color: $background-color;
+            border: 1px solid $grey-color-light;
+            border-radius: 5px;
+            text-align: right;
+
+            .menu-icon {
+                display: block;
+                float: right;
+                width: 50px;
+                height: 30px;
+                line-height: 0;
+                text-align: center;
+            }
+
+            .trigger {
+                clear: both;
+                display: none;
+            }
+
+            &:hover .trigger {
+                display: block;
+                padding-bottom: 5px;
+            }
+
+            .page-link {
+                display: block;
+                padding: 5px 10px;
+            }
+        }
+
+        .page-link {
+            font-family: 'Open Sans';
+            font-weight: 700 !important;
+            line-height: $base-line-height;
+            letter-spacing: 0.05em;
+
+
+            &:not(:first-child) {
+                    margin-left: 20px;
+            }
+
+            &:hover {
+                opacity: 0.8
+            };
+        }
+}
+
+/* Site Footer
+ * ============================================== */
+    .footer {
+        padding-bottom: 3em;
+        margin: auto;
+        font-size: 12px;
+        font-family: Open Sans;
+        color: #959595;
+    }
+
+    .footer img {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        margin-bottom: 3px;
+  }
+
+/* Individual Posts
+ * ============================================== */
+    .page-content {
+        padding: $spacing-unit 0;
+        text-align: justify;
+    }
+
+    .page-heading {
+        font-size: 20px;
+        padding-top: 2px;
+    }
+
+/* Archive
+ * ============================================== */
+    .post-list {
+        margin-left: 0;
+        list-style: none;
+
+        > li {
+            display: block;
+            padding: 0.1em 1.5em;
+        }
+
+    }
+
+    .post-link {
+        font-family: 'Open Sans';
+        font-weight: 300;
+        font-size: 1.5em;
+        letter-spacing: -1px;
+        color: #454545;
+        display: block;
+        width: 100%;
+
+        @include media-query($on-palm) {
+            font-size: 1.33em;
+        }
+    }
+
+    .post-meta {
+        font-size: $small-font-size;
+        color: $grey-color-light;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+/* Post Format
+ * ============================================== */
+    .post-header {
+        margin-bottom: $spacing-unit;
+    }
+
+    .post-title {
+        font-size: 42px;
+        letter-spacing: -1px;
+        line-height: 1;
+    }
+
+    .post-content {
+        margin-bottom: $spacing-unit;
+    }

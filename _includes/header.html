@@ -1,0 +1,19 @@
+<div class="site-header">
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <i class="fa fa-navicon fa-lg"></i>
+      </a>
+
+      <div class="trigger">
+          <a class="page-link" href="{{ site.baseurl }}/">Home</a>
+        {% for page in site.pages %}
+          {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+
+
+</div>
