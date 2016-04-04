@@ -80,6 +80,14 @@
         color: #959595;
     }
 
+    .footer.center {
+      text-align: center;
+    }
+
+    .footer.center > * {
+      margin: 0 auto;
+    }
+
     .footer img {
         display: block;
         width: 40px;
