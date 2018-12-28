@@ -4,13 +4,23 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">{{ site.title }}</h1>
+  <a href="{{site.url}}/about"><span class="page-heading">{{ site.title }}</span></a>
+  <br>
+  <span id='spotify'>{{ site.description }}</span>
 
+  <br><br>
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"> <strong>››</strong>
+          {% if post.favorite == "true" %}
+					<!-- <i style="color:orange;font-size:12px;margin-bottom:2px" class="fas fa-star"></i> -->
+          <strong>{{ post.title }} </strong>
+          	{% else %}
+            {{ post.title }}
+					{% endif %}
+        </a>
       </li>
     {% endfor %}
   </ul>

@@ -1,16 +1,54 @@
 # Site settings
-title: Arctic Fox
-email: 
+title: Josh Spicer
+email: hello@joshspicer.com
 description: > # this means to ignore newlines until "baseurl:"
-  Jekyll Theme Demo
-baseurl: "/arctic-fox-theme" # the subpath of your site, e.g. /blog/
-url: "http://diezcami.github.io" # the base hostname & protocol for your site
-twitter_username: username
-github_username: username
+  ...is a computer science student at northeastern university
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: https://joshspicer.com # Site url. Place your path here, or leave blank to work local.
+twitter_username: joshspicer_
+github_username: joshspicer
+
+site-links:
+  - name: Home
+    url: https://joshspicer.com
+    icon: fas fa-home
+    color: "#000"
+
+social-links:
+  - name: Instagram
+    url: http://instagram.com/joshspicer_
+    icon: fab fa-instagram
+    color: "#F7C277"
+    external: true
+  - name: GitHub
+    url: http://github.com/joshspicer
+    icon: fab fa-github
+    color: "#25292E"
+    external: true
+  - name: Linkedin
+    url: http://linkedin.com/in/joshspicer
+    icon: fab fa-linkedin
+    color: "#6AABE9"
+    external: true
+  - name: Facebook
+    url: https://facebook.com/spicer.josh
+    icon: fab fa-facebook
+    color: "#3B5998"
+    external: true
+  - name: Spotify
+    url: https://open.spotify.com/user/joshspicer37
+    icon: fab fa-spotify
+    color: "#1db954"
+    external: true
+
+include: [".well-known"]
 
 # Build settings
-markdown: redcarpet
-markdown_ext:  markdown,mkdown,mkdn,mkd,md
-
-redcarpet:
-  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]
+#markdown: redcarpet
+highlighter: rouge
+markdown_ext: markdown,mkdown,mkdn,mkd,md
+#redcarpet:
+#  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]
+permalink: pretty
+plugins:
+  - jekyll-redirect-from

@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/joshspicer
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://joshspicer.com
+  * I am joshspicer (https://keybase.io/joshspicer) on keybase.
+  * I have a public key with fingerprint 415A 4243 34C5 C83A BE00  04CA D5C4 AC84 C321 1123
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010197d2ba726ac785b1ed779e1b11bad659b8b97a485610a7e2d16b936d95fd1e4f0a",
+      "fingerprint": "415a424334c5c83abe0004cad5c4ac84c3211123",
+      "host": "keybase.io",
+      "key_id": "d5c4ac84c3211123",
+      "kid": "010197d2ba726ac785b1ed779e1b11bad659b8b97a485610a7e2d16b936d95fd1e4f0a",
+      "uid": "90e11db340558db4baacd97b28292119",
+      "username": "joshspicer"
+    },
+    "service": {
+      "hostname": "joshspicer.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1525637477,
+  "expire_in": 157680000,
+  "prev": "67ab5982f8d14f9222e1f4ad408aab94b4dc3ea1f3089dc6558fec5f6b5bb8ad",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUm1QVFUY3lVgEFCWMiITwksC0g7c748doRQnE4cZnMIJtJZz7z13WYHdZe+y
+gLRAajCphIg4YQPkNEMMEMFiSMqHCRJBZEpgYiEF9MEgODZMUYDdZfJX/ezXOec5
+z/O8z/vOe2r9WpWneqS38VjPFr8Q9eCvvCp5HljzEN4s5iK6PCQNrh4wXYSyTZ9m
+FBEdgmIoxjEizgMGp4HAsBSPQZFhOIjxGMYDkaY4nuU5BpAsRWMoYCAuYjTPEbTI
+UZKIQVJCAaJFJKPJAK0Wq9FkU2xJjAIkThIEKVACSwAeoihKCkCkBBIILCkQOIZh
+OKEIU82yS6GE44EMI41mBVMe+tV4/8H/n3NnrdpxKMQwkSdIlKJYkSd5AASRY3ic
+xTmlMuciytBqAhlQYR8yy6myxShAK+LQIgpuV+6u0bp6+RcnUjBnKHqL1WwzC+Z0
+5S/VZrPIOpfWlmtxkbMhr//HRs8bTaIyS0Vhh1bZaDYhOkxhCjajyxejcIomGJJh
+tAjMsRitUG90MSiGZpURo6460K5Y0gw4yFMci0usiJESh+M4xCQSiCTKAsBzJE+K
+AgEBJhEoy4kCrTQuQYGSaJ7ieRaIiKuzTJMZ0VFKTmBQPGWjwQRsWVaIOLzeXkO4
+qdSeqkD/LW47knfGktf6dV0qt4FH++e+xrV8Kq91mkeIx23f5SczD6B9zb4Ed/ak
+qujhi97OuenCF+zv1GiQ1pveUXs8HJWS01pXNlBWO5OPdj2RMqdu6tQEPDw7sa4+
+u69fe34uWx0dq2u51t01lDv+8pJ7wzffLs6ipp79/QXSpLZktnOBGLlcvXK/9+ff
+h/YNDWx+n5puWQr7RewVaxoNVBFIfmvjBxnVKR8FHglwH11rL4rUP5jafrxt8sTr
+WeNBX3THO2ZS8w0/XUpaaPYNejVJ41cSeDp/RXV0j3Nv8bu3DszXjhTU79R+9Vqn
+Zo66UlmRsfhZ8ivaT5+OsTX4VoXeeWniqKHuTaa4dANzMdvDy6cgwudu2anLdyp+
++3D9TPKmOL/vnrpxr3lR4zgSMhWzubkq1HkroiEnflkurtY/mKd3xH78OAgraGuk
+rU43/ckfn3F4bov/41l5LLo7gMRL90ZXjddO3I1KLlzyP7Er4cK+bZq0zoRD/RdC
+fnjv4oL75/c3EKmbzh8GwYliRd52yAYPb6zp/avcJzjH0N4+njJ69aDzz8im612f
+1Jf3TG6dFgr9I9LSw4bbRzOHB1Oklsfi2p4vt+9vlUfqrnSFTxy/HdGBzu7+/us1
+p8MPo+eWF1PUbEVNR9RKxxmywkMOOjavKpnKaRU0Xw7s2h0Zd+9mWU5T6PWtY1zV
+c5UjiW8kxnknJAXqrhZ6aNhLpTfOxIQXnXMb6xv8Gw==
+=78Z/
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/joshspicer
+
+==================================================================

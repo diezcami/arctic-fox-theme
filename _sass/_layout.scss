@@ -1,159 +1,176 @@
 /* Site Header
  * ============================================== */
-    .site-header {
-        height: 55px;
-        background-color: #F5F5F5;
-        position: relative;
-        width: 100%;
+.site-header {
+  height: 55px;
+  // background-color: #f5f5f5;
+  position: relative;
+  width: 100%;
+}
+
+.site-header a {
+  color: $brand-color;
+}
+
+.spotifySong {
+  color: $spotify-green;
+  font-weight: 800;
+}
+
+.site-nav {
+  padding-top: 16px;
+  float: right;
+  margin-right: 25px;
+  text-transform: uppercase;
+
+  .menu-icon {
+    display: none;
+  }
+
+  // @include media-query($on-palm) {
+  //   position: absolute;
+  //   top: 3px;
+  //   right: 3px;
+  //   background-color: $background-color;
+  //   border: 1px solid $grey-color-light;
+  //   border-radius: 5px;
+  //   text-align: right;
+  //
+  //   .menu-icon {
+  //     display: block;
+  //     float: right;
+  //     width: 50px;
+  //     height: 30px;
+  //     line-height: 0;
+  //     text-align: center;
+  //   }
+  //
+  //   .trigger {
+  //     clear: both;
+  //     display: none;
+  //   }
+  //
+  //   &:hover .trigger {
+  //     display: block;
+  //     padding-bottom: 5px;
+  //   }
+  //
+  //   .page-link {
+  //     display: block;
+  //     padding: 5px 10px;
+  //   }
+  // }
+
+  .page-link {
+    font-family: "Open Sans";
+    font-weight: 700 !important;
+    line-height: $base-line-height;
+    letter-spacing: 0.05em;
+
+    &:not(:first-child) {
+      margin-left: 20px;
     }
 
-    .site-header a {color: $brand-color};
-
-    .site-nav {
-        padding-top: 16px;
-        float: right;
-        margin-right: 25px;
-        text-transform: uppercase;
-
-        .menu-icon {
-            display: none;
-        }
-
-        @include media-query($on-palm) {
-            position: absolute;
-            top: 3px;
-            right: 3px;
-            background-color: $background-color;
-            border: 1px solid $grey-color-light;
-            border-radius: 5px;
-            text-align: right;
-
-            .menu-icon {
-                display: block;
-                float: right;
-                width: 50px;
-                height: 30px;
-                line-height: 0;
-                text-align: center;
-            }
-
-            .trigger {
-                clear: both;
-                display: none;
-            }
-
-            &:hover .trigger {
-                display: block;
-                padding-bottom: 5px;
-            }
-
-            .page-link {
-                display: block;
-                padding: 5px 10px;
-            }
-        }
-
-        .page-link {
-            font-family: 'Open Sans';
-            font-weight: 700 !important;
-            line-height: $base-line-height;
-            letter-spacing: 0.05em;
-
-
-            &:not(:first-child) {
-                    margin-left: 20px;
-            }
-
-            &:hover {
-                opacity: 0.8
-            };
-        }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }
 
 /* Site Footer
  * ============================================== */
-    .footer {
-        padding-bottom: 3em;
-        margin: auto;
-        font-size: 12px;
-        font-family: Open Sans;
-        color: #959595;
-    }
+.footer {
+  padding-bottom: 3em;
+  margin: auto;
+  font-size: 12px;
+  font-family: Open Sans;
+  color: #959595;
+}
 
-    .footer.center {
-      text-align: center;
-    }
+.footer.center {
+  text-align: center;
+}
 
-    .footer.center > * {
-      margin: 0 auto;
-    }
+.footer.center > * {
+  margin: 0 auto;
+}
 
-    .footer img {
-        display: block;
-        width: 40px;
-        height: 40px;
-        border-radius: 100%;
-        margin-bottom: 3px;
-  }
+.footer a.pgp {
+  color: $text-color;
+}
+
+.footer img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-bottom: 3px;
+}
 
 /* Individual Posts
  * ============================================== */
-    .page-content {
-        padding: $spacing-unit 0;
-        text-align: justify;
-    }
+.page-content {
+  padding: $spacing-unit 0;
+  text-align: justify;
+}
 
-    .page-heading {
-        font-size: 20px;
-        padding-top: 2px;
-    }
+.page-heading {
+  padding-top: 2px;
+  color: #454545;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
 
 /* Archive
  * ============================================== */
-    .post-list {
-        margin-left: 0;
-        list-style: none;
+.post-list {
+  margin-left: 0;
+  list-style: none;
 
-        > li {
-            display: block;
-            padding: 0.1em 1.5em;
-        }
+  > li {
+    display: block;
+    padding: 0.1em 1.5em;
+  }
+}
 
-    }
+.post-link {
+  // font-family: "Open Sans";
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+  // letter-spacing: -1px;
+  color: #454545;
+  display: block;
+  width: 100%;
 
-    .post-link {
-        font-family: 'Open Sans';
-        font-weight: 300;
-        font-size: 1.5em;
-        letter-spacing: -1px;
-        color: #454545;
-        display: block;
-        width: 100%;
+  @include media-query($on-palm) {
+    font-size: 0.8em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
 
-        @include media-query($on-palm) {
-            font-size: 1.33em;
-        }
-    }
-
-    .post-meta {
-        font-size: $small-font-size;
-        color: $grey-color-light;
-        text-transform: uppercase;
-        display: inline-block;
-    }
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color-light;
+  text-transform: uppercase;
+  display: inline-block;
+}
 
 /* Post Format
  * ============================================== */
-    .post-header {
-        margin-bottom: $spacing-unit;
-    }
+.post-header {
+  margin-bottom: $spacing-unit;
+}
 
-    .post-title {
-        font-size: 42px;
-        letter-spacing: -1px;
-        line-height: 1;
-    }
+.post-title {
+  font-size: 42px;
+  // letter-spacing: -1px;
+  line-height: 1;
+}
 
-    .post-content {
-        margin-bottom: $spacing-unit;
-    }
+.post-content {
+  margin-bottom: $spacing-unit;
+}

@@ -1,0 +1,52 @@
+---
+layout: default
+title: Add to my Queue (beta)
+permalink: queue
+---
+<script>
+// Client Code to interface with Josh's Public Queue API
+function initSearch() {
+  var xhttp = new XMLHttpRequest();
+  let searchQuery = document.getElementById("searchQuery").value;
+  document.getElementById("result").innerHTML = "";
+
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      res = JSON.parse(this.response);
+      let searchData = _.get(res, "data");
+      if (searchData && _.size(searchData) < 1) {
+        document.getElementById("result").innerHTML = "<p>Please Try Again!!</p>"
+        return;
+      }
+      _.forEach(searchData, function(value, index) {
+        document.getElementById("result").innerHTML += "<a id=\"song-" + index + "\" onclick='submitSong(" + index +", \"" + value[2] + "\")' >" + value[0] + " by " + value[1] + "</a><br>" ;
+      });
+    }
+
+    if (this.status == 400) {
+      document.getElementById("result").innerHTML = "<p>Please Try Again!</p>"
+    }
+
+  }
+  xhttp.open("GET", "https://api.joshspicer.com/spotify/search?query=" + searchQuery, true);
+  xhttp.send();
+}
+// Helper
+function submitSong(index, song) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "https://api.joshspicer.com/spotify/add-song?id=" + song, true);
+  xhttp.send();
+  document.getElementById("song-" + index).style.color = "#8ACB8F"
+}
+
+</script>
+
+<p style="text-align:left">
+  Check out the blog post <a href="{{site.url}}/spotify-public-queue">here</a>!
+</p>
+<!-- Spotify -->
+<input class="round" id="searchQuery" type="text">
+<br>
+<button class="myButton" onclick="initSearch()">Search Spotify</button>
+
+<p id="result"></p>
