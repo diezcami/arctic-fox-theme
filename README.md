@@ -1,12 +1,15 @@
-# Arctic Fox
-An open source minimal theme for Jekyll, ideal for blogging.
+Iteration 4 (5, 6, 20?) of my website!  
 
-View the demo at http://diezcami.github.io/arctic-fox-theme
+Check out the last iteration here if you're curious ==> https://github.com/joshspicer/josh_personal_site_old
 
-## Contribute
-Please submit **open issues** for bugs or TBA features that haven't been documented yet! Feel free to submit pull requests for any existing issues.
 
 ## License
+
+All content (items in `_post`,`js`, or elsewhere that contain original work), are property of Josh Spicer and owned solely by him.  Theme originally provided by Camille Diez via the MIT License.  
+
+
+Original License:
+
 The MIT License (MIT)
 
 Copyright (c) 2015 Camille Diez
