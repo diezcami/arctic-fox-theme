@@ -7,22 +7,51 @@ layout: default
   <a href="{{site.url}}/about"><span class="page-heading">{{ site.title }}</span></a>
   <br>
   <!-- Needs lambda api javascript file -->
-  <span id='spotify'>{{ site.description }}</span>
+  <span id='spotify'></span>
+  <br>
+  <!-- Social -->
+  {% for link in site.social-links %}
+  <!-- <i style="font-size:12px;"> -->
+    <!-- <a style="color:{{link.color}}"href="{{link.url}}">{{link.name}}</a> -->
+  <!-- </i> -->
+  {% endfor %}
 
-  <br><br>
+  <br>
+
+  <!-- Bio -->
+  <strong>››</strong> computer science major @ northeastern university<br>
+  <strong>››</strong> enjoys <a href="#">travel</a> and <a href="#">cheap concerts</a><br>
+  <strong>››</strong> interested in cyber security<br>
+  <strong>››</strong> working on <a href="https://parade.events">parade</a>
+
+
+  <!-- End Bio -->
+
+  <br>
   <ul class="post-list">
     {% for post in site.posts %}
+    {% assign currentdate = post.date | date: "%Y" %}
+    {% if currentdate != date %}
+      <br><li class="year" id="y{{currentdate}}">{{ currentdate }}</li>
+      {% assign date = currentdate %}
+    {% endif %}
       <li>
         <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"> <strong>››</strong>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          <strong>››</strong>
           {% if post.favorite == "true" %}
-					<!-- <i style="color:orange;font-size:12px;margin-bottom:2px" class="fas fa-star"></i> -->
-          <strong>{{ post.title }} </strong>
+          <!-- <span style="font-weight:500;text-decoration:underline"> -->
+            {{ post.title }}
+            <i style="color:orange;font-size:12px;margin-bottom:2px" class="fas fa-star"></i>
+          <!-- </span> -->
           	{% else %}
+             <!-- <i style="color:black;font-size:6px;margin-bottom:2px" class="fas fa-circle"></i> -->
             {{ post.title }}
 					{% endif %}
         </a>
       </li>
     {% endfor %}
+
+
   </ul>
 </div>

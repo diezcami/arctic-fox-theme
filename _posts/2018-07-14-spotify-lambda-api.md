@@ -30,9 +30,10 @@ Client ID and Client Secret. You'll need to base64 encode these two values with 
 <br><br>
 Encoding the token can be done by this simple shell command.
 
-```
+{% highlight bash %}
+
 echo -n <clientId>:<clientSecret> | base64
-```
+{% endhighlight  %}
 
 You'll also need to add a callback URI. For this tutorial it doesn't matter _what_ the URI is,
 as long as you set one and it's consistent in all the following steps. I used `http://localhost/callback`.
@@ -55,16 +56,23 @@ Make sure to provide the correct scopes `user-read-currently-playing`, `user-rea
 Visit this URL with your information filled in. This is where Spotify will ask you to login.
 After successfully authenticating, you'll see an access code in the URL. Save that for the next step.
 <br><br>
-`https://accounts.spotify.com/authorize?client_id=<YOUR CLIENT ID>&redirect_uri=<YOUR REDIRECT URI>&response_type=code&scope=<YOUR SCOPES>`
+{% highlight bash %}
+https://accounts.spotify.com/authorize?client_id=<YOUR CLIENT ID>&redirect_uri=<YOUR REDIRECT URI>&response_type=code&scope=<YOUR SCOPES>
+{% endhighlight %}
+
 <br><br>
 Issue this curl command in terminal with the access code you just generated.
 <br><br>
-`curl -H "Authorization: Basic <YOUR BASE-64'd APP TOKEN>" -d grant_type=authorization_code -d code=<YOUR ACCESS CODE> -d redirect_uri=<YOUR CALLBACK URL> https://accounts.spotify.com/api/token`
+{% highlight bash %}
+curl -H "Authorization: Basic <YOUR BASE-64'd APP TOKEN>" -d grant_type=authorization_code -d code=<YOUR ACCESS CODE> -d redirect_uri=<YOUR CALLBACK URL> https://accounts.spotify.com/api/token`
+{% endhighlight %}
 
 You should now have a refresh token. We can use this python function to then receive a new access token, given a refresh token and client information. This function places the newly fetched access token, as well as some metadata, into a database (more on that later).
 
-```
+{% highlight python %}
+
 # Only called if the current accessToken is expired (on first visit after ~1hr)
+
 def refreshTheToken(refreshToken):
 
     clientIdClientSecret = 'Basic <YOUR BASE-64d APP TOKEN>'
@@ -78,7 +86,8 @@ def refreshTheToken(refreshToken):
     # Place the expiration time (current time + almost an hour), and access token into the DB
     table.put_item(Item={'spotify': 'prod', 'expiresAt': int(time.time()) + 3200,
                                         'accessToken': spotifyToken['access_token']})
-```
+
+{% endhighlight %}
 
 <h2>Start a new Lambda Project</h2>
 
@@ -97,14 +106,16 @@ dependency not pre-packaged in the lambda environment is an HTTP requests packag
 <br><br>
 I chose to use [requests](http://docs.python-requests.org/en/master/). You'll need to first download the package and _its_ dependencies with pip. Save these files into a temporary directory.
 
-`pip install requests -t /path/to/a-tmp-dir`
+{% highlight bash %}
+pip install requests -t /path/to/a-tmp-dir
+{% endhighlight %}
 
 If you're using a Mac and have installed pip with Homebrew (like me), you'll need to create a file in your temporary directory titled `setup.cfg` with the following contents. For more info, check out this post on [Creating a Deployment Package for Lambda (Python)](https://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployment-package.html).
 
-```
+{% highlight bash %}
 [install]
 prefix=
-```
+{% endhighlight %}
 
 Create a zip file, and upload this to your lambda function's dashboard. Now we can swap to `Edit Code inline` mode. Create a `.py` file to match your function' `handler` field. Your environment should now look like this:
 
@@ -161,33 +172,36 @@ We're now ready to fill out our lambda_function file!
 First, lets import all the packages we need. We'll import the `requests` package we already imported, as well as
 the Amazon Web Services (AWS) SDK `boto3` . Lets also import a couple other default packages we'll need.
 
-```
+{% highlight python %}
 import requests
 import time
 import boto3
 import json
-```
+{% endhighlight %}
 
 Lets then connect our database with code.
 
-```
+{% highlight python %}
+
 # Connect the DynamoDB database
+
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('SpotifyState')
-```
+
+{% endhighlight  %}
 
 I also hardcode the refresh token at the top of the file
 
-```
+{% highlight python %}
 refreshToken = '<YOUR REFRESH TOKEN>'
-```
+{% endhighlight %}
 
 We will place the rest of our code into a function called `lambda_handler(event, context)`. This function is the main
 function that will be executed by Lambda. I place default values up at the top, and retrieve information
 from our dynamoDB. I then check if the `expiresAt` value indicates the access token is expired.
 If expired, I call `refreshThetoken` (see above).
 
-```
+{% highlight python %}
 def lambda_handler(event, context):
 
     # Defaults
@@ -207,74 +221,80 @@ def lambda_handler(event, context):
 
     dbResponse = table.get_item(Key={'spotify': 'prod'})
     accessToken = dbResponse['Item']['accessToken']
-```
+
+{% endhighlight %}
 
 Now we have a valid access token. I form the headers necessary to submit the request to
 Spotify.
 
-```
+{% highlight python %}
+
     headers = {'Authorization': 'Bearer ' + accessToken,
                    'Content-Type': 'application/json', 'Accept': 'application/json'}
 
     r = requests.get('https://api.spotify.com/v1/me/player/currently-playing', headers=headers)
-```
+
+{% endhighlight %}
 
 The response from Spotify has waaaay too much information.
 
-```
-  "context": {
-    "external_urls" : {
-      "spotify" : "http://open.spotify.com/user/spotify/playlist/49znshcYJROspEqBoHg3Sv"
-    },
-    "href" : "https://api.spotify.com/v1/users/spotify/playlists/49znshcYJROspEqBoHg3Sv",
-    "type" : "playlist",
-    "uri" : "spotify:user:spotify:playlist:49znshcYJROspEqBoHg3Sv"
-  },
-  "timestamp": 1490252122574,
-  "progress_ms": 44272,
-  "is_playing": true,
-  "item": {
-    "album": {
-      "album_type": "album",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/album/6TJmQnO44YE5BtTxH8pop1"
-      },
-      "href": "https://api.spotify.com/v1/albums/6TJmQnO44YE5BtTxH8pop1",
-      "id": "6TJmQnO44YE5BtTxH8pop1",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/8e13218039f81b000553e25522a7f0d7a0600f2e",
-          "width": 629
-        },
-        {
-          "height": 300,
-          "url": "https://i.scdn.co/image/8c1e066b5d1045038437d92815d49987f519e44f",
-          "width": 295
-        },
-        {
-          "height": 64,
-          "url": "https://i.scdn.co/image/d49268a8fc0768084f4750cf1647709e89a27172",
-          "width": 63
-        }
-      ],
-      "name": "Hot Fuss",
-      "type": "album",
-      "uri": "spotify:album:6TJmQnO44YE5BtTxH8pop1"
-    },
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0C0XlULifJtAgn6ZNCW2eu"
-        },
+{% highlight json %}
+
+"context": {
+"external_urls" : {
+"spotify" : "http://open.spotify.com/user/spotify/playlist/49znshcYJROspEqBoHg3Sv"
+},
+"href" : "https://api.spotify.com/v1/users/spotify/playlists/49znshcYJROspEqBoHg3Sv",
+"type" : "playlist",
+"uri" : "spotify:user:spotify:playlist:49znshcYJROspEqBoHg3Sv"
+},
+"timestamp": 1490252122574,
+"progress_ms": 44272,
+"is_playing": true,
+"item": {
+"album": {
+"album_type": "album",
+"external_urls": {
+"spotify": "https://open.spotify.com/album/6TJmQnO44YE5BtTxH8pop1"
+},
+"href": "https://api.spotify.com/v1/albums/6TJmQnO44YE5BtTxH8pop1",
+"id": "6TJmQnO44YE5BtTxH8pop1",
+"images": [
+{
+"height": 640,
+"url": "https://i.scdn.co/image/8e13218039f81b000553e25522a7f0d7a0600f2e",
+"width": 629
+},
+{
+"height": 300,
+"url": "https://i.scdn.co/image/8c1e066b5d1045038437d92815d49987f519e44f",
+"width": 295
+},
+{
+"height": 64,
+"url": "https://i.scdn.co/image/d49268a8fc0768084f4750cf1647709e89a27172",
+"width": 63
+}
+],
+"name": "Hot Fuss",
+"type": "album",
+"uri": "spotify:album:6TJmQnO44YE5BtTxH8pop1"
+},
+"artists": [
+{
+"external_urls": {
+"spotify": "https://open.spotify.com/artist/0C0XlULifJtAgn6ZNCW2eu"
+},
 
         {....truncated....}
-```
+
+{% endhighlight  %}
 
 I then try to unwrap the JSON response from Spotify. Sometimes I can't get my currently playing song (podcasts aren't reported correct).
 If that's the case, i'll settle for my last played song.
 
-```
+{% highlight python %}
+
     # Try currently playing
     try:
         songName = r.json()['item']['name']
@@ -297,25 +317,30 @@ If that's the case, i'll settle for my last played song.
                                         " by " + artistName + " on spotify."
         except:
             pass
-```
+
+{% endhighlight  %}
 
 Lastly, I return this data and structure it into a simple JSON object.
 
-```
+{% highlight python %}
+
     return {'statusCode': 200, 'headers': {'Access-Control-Allow-Origin' : "*", 'content-type': 'application/json'},
     'body': json.dumps({'songName': songName, 'isPlaying': isPlaying, 'artistName': artistName, 'response': response})}
-```
+
+{% endhighlight %}
 
 My endpoint is `https://api.joshspicer.com/spotify/current`. If you GET that uri, you'll see a JSON response.
 
-```
+{% highlight json %}
+
 {
 artistName: "Jukebox The Ghost",
 isPlaying: false,
 response: "Josh last listened to Everybody's Lonely by Jukebox The Ghost on spotify.",
 songName: "Everybody's Lonely"
 }
-```
+
+{% endhighlight %}
 
 <h2>Client-side Javascript</h2>
 
@@ -324,11 +349,12 @@ content onto my static webpage hosted on Github Pages.
 
 Here is some javascript to hit our API.
 
-```
+{% highlight javascript %}
+
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {
-    res = JSON.parse(this.response);
+if (this.readyState == 4 && this.status == 200) {
+res = JSON.parse(this.response);
 
     // Hide our shame when it all goes wrong.
     if (!res.response) {
@@ -336,19 +362,22 @@ xhttp.onreadystatechange = function() {
     }
 
     document.getElementById("spotify").innerHTML = res.response
-  }
+
+}
 };
 xhttp.open("GET", "https://api.joshspicer.com/spotify/current", true);
 xhttp.send();
-```
+
+{% endhighlight %}
 
 Place the following onto the page you'd like to display your "now playing" line.
 
-```
+{% highlight javascript %}
+
 <p>
   <span id='spotify'>{default value}</span>
 </p>
-```
+{% endhighlight  %}
 
 <h2>All done!</h2>
 
