@@ -14,14 +14,20 @@ layout: default
     </a>
      <h1 class="post-title">{{ page.title }}</h1>
      <p class="post-meta">Posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+     <br>
+  {% for tag in page.tags %}
+    <a href="/tags/{{ tag }}/">{{ tag }}  &nbsp;</a>
+    {% endfor %}
+
+</header>
+
 
   <article class="post-content">
     {{ content }}
   </article>
 
-  <div align="center">
-      <!--  put something here?-->
+  <div class='center'>
+
   </div>
 
 </div>

@@ -4,6 +4,7 @@ title: "Hitchhiking from Scotland to Paris in 32 Hours"
 date: 2018-11-05
 permalink: hitch-to-paris
 favorite: "true"
+tags: travel
 ---
 
 > The race began at Potterrow on Edinburgh uni’s campus. Nearly 70 other teams, Alek, and I eagerly awaited the 9am start. We had no money and 48 hours to get ourselves (and a raw egg) all the way from Scotland to Paris, all through the generosity of complete strangers.

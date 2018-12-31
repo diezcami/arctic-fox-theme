@@ -1,0 +1,5 @@
+hacking
+travel
+music
+mobile-dev
+aws
