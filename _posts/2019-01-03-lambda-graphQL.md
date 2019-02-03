@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hosting a GraphQL API on AWS Lambda"
-date: 2019-01-01
+date: 2019-01-03
 permalink: lambda-graphql
 tags: aws mobile-dev
 ---
