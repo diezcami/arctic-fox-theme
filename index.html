@@ -6,8 +6,9 @@ layout: default
 
   <a href="{{site.url}}/about"><span class="page-heading">{{ site.title }}</span></a>
   <br>
+  <strong> <a href="{{site.url}}/about">  about </a> •  <a href="{{site.url}}/contact">  contact </a></strong>
+  <br>
   <!-- Needs lambda api javascript file -->
-  <span id='spotify'></span>
   <br>
   <!-- Social -->
   {% for link in site.social-links %}
@@ -16,14 +17,21 @@ layout: default
   <!-- </i> -->
   {% endfor %}
 
-  <br>
 
   <!-- Bio -->
-  <strong>››</strong> computer science major @ northeastern university<br>
-  <strong>››</strong> enjoys <a href="#">travel</a> and <a href="#">cheap concerts</a><br>
+  <!-- <strong>››</strong> computer science major @ northeastern university<br>
+  <strong>››</strong> enjoys <a href="{{site.url}}/about">travel</a> and <a href="{{site.url}}/about">cheap concerts</a><br>
   <strong>››</strong> interested in cyber security<br>
-  <strong>››</strong> working on <a href="https://parade.events">parade</a>
+  <strong>››</strong> working on <a href="https://parade.events">parade</a><br> -->
+  <span id='spotify'></span>
 
+  <!-- Josh<div class="slidingHorizontal">
+  <span>is working on Parade.</span>
+  <span>loves cheap concerts</span>
+  <span>likes breaking things</span>
+  <span>4.</span>
+  <span>5.</span> -->
+<!-- </div> -->
 
   <!-- End Bio -->
 
@@ -40,10 +48,10 @@ layout: default
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
           <strong>››</strong>
           {% if post.favorite == "true" %}
-          <!-- <span style="font-weight:500;text-decoration:underline"> -->
+          <span style="font-weight:400;text-decoration:none">
             {{ post.title }}
             <i style="color:orange;font-size:12px;margin-bottom:2px" class="fas fa-star"></i>
-          <!-- </span> -->
+          </span>
           	{% else %}
              <!-- <i style="color:black;font-size:6px;margin-bottom:2px" class="fas fa-circle"></i> -->
             {{ post.title }}
