@@ -56,7 +56,7 @@ The fix for this problem is pretty simple, but took me a tad too long to figure 
 
 ## Steps
 
-1. I decided to just install openSSL again by pulling down the newest version of the source code.
+I decided to just install openSSL again by pulling down the newest version of the source code.
 
 ```bash
 sudo apt-get install -y wget
@@ -72,9 +72,7 @@ sudo make install
 
 The key here (and the reason i’m writing this post) is to show how to tell Python where this new installation of openSSL is. By default your manual install of openSSL will be in `/usr/local/ssl`. You can confirm this by checking the modify time of the ssl directory with `ls -la /usr/local/ssl` .
 
-By default, Python isn’t going to look here. We need to fix that.
-
-2. To begin, run the _first part_ of the Python install script (as seen below).
+By default, Python isn’t going to look here. We need to fix that. To begin, run the _first part_ of the Python install script (as seen below).
 
 ```bash
 # Install requirements
@@ -115,9 +113,7 @@ You should see the following lines COMMENTED.
     -L$(SSL)/lib -lssl -lcrypto
 ```
 
-What you need to do is UNCOMMENT these lines so that they are seen during our Python compile.
-
-3. Now you can finish up by running that last few lines of our python script
+What you need to do is UNCOMMENT these lines so that they are seen during our Python compile. Now you can finish up by running that last few lines of our python script.
 
 ```bash
 cd /tmp/Python37/Python-3.7.0
