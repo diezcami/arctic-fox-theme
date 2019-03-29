@@ -1,6 +1,17 @@
-Iteration 4 (5, 6, 20?) of my website!  
+# joshspicer.com
 
-Check out the last iteration here if you're curious ==> https://github.com/joshspicer/josh_personal_site_old
+Current* iteration of my website! This repo hold all the code that serves as my front page on the internet!  I recently started from scratch with this site - check out my [previous homepage here](https://github.com/joshspicer/josh_personal_site_old).
+
+This is a Jekyll site based off of diezcami's [arctic fox theme](https://github.com/diezcami/arctic-fox-theme).
+
+
+## Notable Additions 
+
+Blog posts are stored in [_posts](/_posts).
+
+Various scripts, including client-side Spotify polling code, can be found in [js](/js).
+
+Client-side code interfacing with my "Spotify Public Queue" can be found in [/spotify.html](/spotify.html)
 
 
 ## License
