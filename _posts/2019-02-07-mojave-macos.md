@@ -4,7 +4,10 @@ title: "AppleScript + Swift + Mojave"
 date: 2019-02-07
 redirect_from:
   - /SpotStatus/
+  - /spotstatus/
 permalink: applescript-mojave
+favorite: "true"
+
 ---
 
 I recently discovered AppleScript and I _love_ it. Unfortunately i'm **several** years late, and with Mojave's latest security additions, AppleScript is more restricted then ever.
