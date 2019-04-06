@@ -24,7 +24,7 @@ I’m **Josh** - a Boston-based college student studying computer science at [**
 
 🌋 Help produce [**Survivor Northeastern**](http://survivornortheastern.com). I played season 3 - check it out on YouTube _soon_!
 
-🖥 Co-founded Northeastern clubs like the Computer Science Mentoring Organization [(CoSMO)](https://www.facebook.com/nuCoSMO), and help run clubs like [nuACM](https://acm.org). CoSMO runs interactive technical workshops and runs student-driven panels throughout the semester - let me know if you'd like to run one!
+🖥 Co-founded Northeastern clubs like the Computer Science Mentoring Organization [(CoSMO)](https://nuCoSMO.club/), and help run clubs like [nuACM](https://acm.org). CoSMO runs interactive technical workshops and runs student-driven panels throughout the semester - let me know if you'd like to run one!
 
 <!--
 -- Coffee / Tennis
