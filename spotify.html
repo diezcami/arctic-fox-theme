@@ -36,17 +36,27 @@ function submitSong(index, song) {
   var xhttp = new XMLHttpRequest();
   xhttp.open("GET", "https://api.joshspicer.com/spotify/add-song?id=" + song, true);
   xhttp.send();
+  alert("Added song to Josh's Queue.")
   document.getElementById("song-" + index).style.color = "#8ACB8F"
 }
 
 </script>
 
-<p style="text-align:left">
-  Check out the blog post <a href="{{site.url}}/spotify-public-queue">here</a>!
+<h1 style="text-align:center">Add a song to Josh's Queue!</h1>
+<p style="text-align:center">
+  Check out the blog post <a href="{{site.url}}/spotify-public-queue">here</a>, 
+  and listen <a href="https://open.spotify.com/playlist/0OBq0h6EjCmaPXjeCB4IlM?si=6ZeWyAiRR0u51UJK-7Hb_g">here</a>.
+
+
 </p>
 <!-- Spotify -->
-<input class="round" id="searchQuery" type="text">
+<input class="searchBox" id="searchQuery" type="text">
 <br>
-<button class="myButton" onclick="initSearch()">Search Spotify</button>
+
+<button style=align:"center" type="button" onclick="initSearch()" class="btn btn-secondary">
+Search Spotify
+</button>
+<br><br>
 
 <p id="result"></p>
+<br><br><br><br><br><br>
