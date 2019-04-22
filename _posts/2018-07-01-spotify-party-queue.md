@@ -4,11 +4,6 @@ title: Spotify Public Queue - for Parties, Car Rides, and Strangers
 date: 2018-07-01
 permalink: spotify-public-queue
 ---
-
-> Spotify public queue is what you'll find LIVE over **[here]({{site.url}}/queue)** - add a song or two!
->
-> Have you checked out **[Part 1]({{site.url}}/spotify-now-playing)** of this write-up yet? Do that first!
-
 <h2>Intro</h2>
 
 I love discovering new music.
@@ -20,13 +15,12 @@ I've had this idea for a while - how can I make it dead-simple to add songs to a
 step further, letting *anyone* add to my queue.
 <br><br>
 Well ok...not *exactly* my queue. Song get added instead to a [playlist called "Josh's Public Queue"](https://open.spotify.com/user/joshspicer37/playlist/0OBq0h6EjCmaPXjeCB4IlM?si=6ZeWyAiRR0u51UJK-7Hb_g). You can follow and listen to that
-playlist, and of course add song recommendations through this site.  (Be sure to also [follow my spotify account](https://open.spotify.com/user/joshspicer37)).
+playlist, and of course add song recommendations through this site. 
 
 <h2>How does it work!?</h2>
-
 The backend service runs as an AWS Lambda function, just like my **[Spotify "now playing" post]({{site.url}}/spotify-now-playing)**. That post will give you the background necessary in getting a Spotify client ID, as well as setting up AWS DynamoDB, API Gateway, and Lambda.
 
-<br><br><
+<br>
 The code for this specific project is written in Python below.
 ```python
 import requests
