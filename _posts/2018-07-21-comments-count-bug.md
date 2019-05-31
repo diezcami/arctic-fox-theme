@@ -34,7 +34,7 @@ return (
 ```
 I discounted the commented out code, because it was commented out!
 React Native (on Android), however, still saw this as valid JSX, causing the crash.
-```es6
+```javascript
 return (
   <ApolloProvider client={client}>
     <Provider store={store}>
