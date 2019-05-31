@@ -4,12 +4,11 @@ title: Cinnamon Photo of the Day
 date: 2017-08-17
 permalink: cinnamon
 ---
-> I have a cat named Cinnamon. She's the best. Here's code that displays a new
-> photo of her daily.
+> I have a cat named Cinnamon. She's the best. Here's a daily photo of her.
+> (I'd recommend bookmarking this page...)
 
-```
-// Pick a photo of the day
-// mod how many pictures I currently have on this server.
+```javascript
+  // Pick a photo of the day
   var date = new Date()
   var num = (date.getDay() * date.getYear() * date.getMonth()) % 119
   var photo = "../assets/cinnamon/" + num + ".jpg"

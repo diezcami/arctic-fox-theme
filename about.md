@@ -4,16 +4,23 @@ title: About
 permalink: /about/
 ---
 
-I’m **Josh** - a Boston-based college student studying computer science at [**Northeastern University**](http://ccs.neu.edu/home/joshua). I’m currently on co-op at [**Akamai Technologies**](https://akamai.com/) on the **Network Engineering team**.
+I’m **Josh** - a Boston-based college student studying Computer Science at [**Northeastern University**](http://ccs.neu.edu/home/joshua).  I abide by the three C's: <b>concerts, coffee, and [cats](../cinnamon)</b>.
 
-#### What i've done.
+📍 I'm currently an intern at [**Microsoft**](https://microsoft.com/) working on Scalable Cloud API services for Office 365 Products.
 
 <br>
-🔏 Previously worked as a **Security Consultant / Pentester** for [**Virtual Security Research**](http://vsecurity.com) (a part of **NCC Group**). I performed application, network, and mobile penetration testing for client companies. I also executed multiple social engineering campaigns and conducted “red team” assessments against various companies.
+### What i've done.
+
+<br>
+🔏 My first co-op I worked as a **Security Consultant / Pentester** for [**Virtual Security Research**](http://vsecurity.com) (a part of **NCC Group**). I performed application, network, and mobile penetration testing for client companies. I also executed multiple social engineering campaigns and conducted “red team” assessments against various companies.
+
+🌐 My second co-op was at [**Akamai Technologies**](https://akamai.com/) on their **Enterprise Network Engineering team**.
+
 
 🏡 Lived (briefly) in [**Florence, Italy**](https://joshspicer.com/geo-fellowship) and more recently in [**Edinburgh, UK**](https://joshspicer.com/hitch-to-paris), where I studied abroad at the University of Edinburgh. I grew up just south of Boston.
 
-#### What I do now.
+<br>
+### What else do I do?
 
 <br>
 🐘 Develop [**Parade**](https://parade.events/) - an event discovery platform for Northeastern clubs. Find us on the [iOS App Store](https://parade.events/ios) and [Google Play Store](https://parade.events/android)!
@@ -33,5 +40,5 @@ I’m **Josh** - a Boston-based college student studying computer science at [**
 
 “ReactNative | Django | ….”
 -->
-
-**You can find my email and PGP key [here]({{ site.url }}/contact).**
+<br>
+**You can find my email, PGP key, and contact info [here]({{ site.url }}/contact).**
