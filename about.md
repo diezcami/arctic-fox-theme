@@ -6,20 +6,21 @@ permalink: /about/
 
 I’m **Josh** - a Boston-based college student studying Computer Science at [**Northeastern University**](http://ccs.neu.edu/home/joshua). 
 
- I abide by the three C's: <b>concerts, coffee, and [cats](../cinnamon)</b>.
-
 📍 I'm currently an intern at [**Microsoft**](https://microsoft.com/) working on Scalable Cloud API services for Office 365 Products.
+
+☕️ I abide by the three C's: <b>concerts, coffee</b>, and <b>[cats](../cinnamon)</b>.
+
 
 <br>
 ### What i've done.
 
 <br>
-🔏 My first co-op I worked as a **Security Consultant / Pentester** for [**Virtual Security Research**](http://vsecurity.com) (a part of **NCC Group**). I performed application, network, and mobile penetration testing for client companies. I also executed multiple social engineering campaigns and conducted “red team” assessments against various companies.
+🔏 Co-op'ed for seven months as a **Security Consultant** for [**Virtual Security Research**](http://vsecurity.com). I performed application, network, and mobile **penetration testing** for client companies.
 
-🌐 My second co-op was at [**Akamai Technologies**](https://akamai.com/) on their **Enterprise Network Engineering team**.
+🌐 Co-op'ed (again) - this time at [**Akamai Technologies**](https://akamai.com/) on their **Enterprise Network Engineering team**.
 
 
-🏡 Lived (briefly) in [**Florence, Italy**](https://joshspicer.com/geo-fellowship) and more recently in [**Edinburgh, UK**](https://joshspicer.com/hitch-to-paris), where I studied abroad at the University of Edinburgh. I grew up just south of Boston.
+🏡 Lived (briefly) in [**Florence, Italy**](https://joshspicer.com/geo-fellowship) and more recently in [**Edinburgh, UK**](https://joshspicer.com/hitch-to-paris), where I studied abroad at the University of Edinburgh. 
 
 <br>
 ### What else do I do?
@@ -27,7 +28,7 @@ I’m **Josh** - a Boston-based college student studying Computer Science at [**
 <br>
 🐘 Develop [**Parade**](https://parade.events/) - an event discovery platform for Northeastern clubs. Find us on the [iOS App Store](https://parade.events/ios) and [Google Play Store](https://parade.events/android)!
 
-🎧 Spend (too much) time and money constructing elaborate [spotify playlists]({{site.url}}/monthly-playlist-2018) and buying concert tickets. I <3 cheap shows and discovering new music - help me out by adding something to my [public queue](https://joshspicer.com/queue)!
+🎧 Spend (too much) time (and money) constructing elaborate [spotify playlists]({{site.url}}/monthly-playlist-2018) and buying concert tickets. I <3 cheap shows and discovering new music - help me out by adding something to my [public queue](https://joshspicer.com/queue)!
 
 🎛 Participate on the [**Collegiate Cyber Defense Team**](https://nuccdc.club/). This year we have advanced on to regionals!
 
