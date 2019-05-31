@@ -44,7 +44,7 @@ specify wildcard.
 Within my React Native app, I import `Linking`, and then listen for URLs. I parse
 these urls and dispatch actions based on the structure of the URL.
 
-```es6
+```javascript
 componentDidMount() {
   Linking.addEventListener('url', this._handleOpenURL);
   Linking.getInitialURL().then(url => {

@@ -40,7 +40,7 @@ but that didn't seem to be the case. Perhaps it's because we're utilizing 'modal
 I used [BackHandler](https://facebook.github.io/react-native/docs/backhandler) to detect the press with a lifecycle method
 listener and redux to communicate with react-navigation.
 
-```es6
+```javascript
 componentDidMount() {
   BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
 }

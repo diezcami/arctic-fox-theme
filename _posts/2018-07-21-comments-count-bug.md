@@ -20,7 +20,7 @@ This bug caused a hard crash on Android (with no logged details), but just a war
 07-21 15:59:10.254 29721 29739 D ReactNative: CatalystInstanceImpl.destroy() end
 ```
 Here was the trouble code. I saw that indeed, only one ReactElement should be doing anything.
-```es6
+```javascript
 return (
   <ApolloProvider client={client}>
     <Provider store={store}>
