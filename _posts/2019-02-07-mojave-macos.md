@@ -68,7 +68,7 @@ The next error seemed more useful, but was actually harder to debug.
 
 The simple (in hindsight) fix is to add the follow key to your Info.plist.
 
-```
+```xml
     <key>NSAppleEventsUsageDescription</key>
     <string>...this is why I need permission...</string>
 ```

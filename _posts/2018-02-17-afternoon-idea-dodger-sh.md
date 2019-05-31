@@ -9,7 +9,8 @@ permalink: dodger-sh
 >
 > You can download and play [here](https://github.com/joshspicer/dodger.sh)
 
-```#!/bin/bash
+```bash
+#!/bin/bash
 
 # dodger.sh
 # Written by Josh Spicer (hello@joshspicer.com)

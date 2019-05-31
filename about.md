@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-I’m **Josh** - a Boston-based college student studying Computer Science at [**Northeastern University**](http://ccs.neu.edu/home/joshua).  I abide by the three C's: <b>concerts, coffee, and [cats](../cinnamon)</b>.
+I’m **Josh** - a Boston-based college student studying Computer Science at [**Northeastern University**](http://ccs.neu.edu/home/joshua). 
+
+ I abide by the three C's: <b>concerts, coffee, and [cats](../cinnamon)</b>.
 
 📍 I'm currently an intern at [**Microsoft**](https://microsoft.com/) working on Scalable Cloud API services for Office 365 Products.
 

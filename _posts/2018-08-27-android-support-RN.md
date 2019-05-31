@@ -40,7 +40,7 @@ but that didn't seem to be the case. Perhaps it's because we're utilizing 'modal
 I used [BackHandler](https://facebook.github.io/react-native/docs/backhandler) to detect the press with a lifecycle method
 listener and redux to communicate with react-navigation.
 
-```
+```es6
 componentDidMount() {
   BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
 }
@@ -76,7 +76,7 @@ I configured a lot of things in Xcode that I needed to re-do on Android.
 <h3>App Icons</h3>
 I used [this site](https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html) to create both
 rectangular and circular app icons. I then declared both in the manifest.
-```
+```xml
 <application
   android:name=".MainApplication"
   android:label="@string/app_name"
@@ -87,7 +87,7 @@ rectangular and circular app icons. I then declared both in the manifest.
 ```
 <h3>Device orientation</h3>
 Simple one. In my main MainActivity...
-```
+```xml
 <activity
   android:name=".MainActivity"
   android:label="@string/app_name"
@@ -106,7 +106,7 @@ Simple one. In my main MainActivity...
 
 In `<RN project>/android/app/build.gradle`.
 
-```
+```java
 ...
 android {
     compileSdkVersion 26  <----- Bump me
@@ -137,7 +137,7 @@ I wasn't fond of keeping my app's cert password in plaintext, and neither was [V
 
 <h3>App Versioning</h3>
 In your app's `build.gradle` you need to specify two parameters before uploading to Google Play.
-```
+```java
 ...
 android {
     compileSdkVersion 26
