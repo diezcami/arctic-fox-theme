@@ -3,6 +3,13 @@ layout: default
 title: Add a Song to my Spotify Queue!
 permalink: queue
 ---
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" in
+          tegrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+  </head>
 <script>
 // Client Code to interface with Josh's Public Queue API
 function initSearch() {
@@ -41,13 +48,14 @@ function submitSong(index, song) {
 }
 
 </script>
-
-<h1 style="text-align:center">Add a song to <a href="https://open.spotify.com/playlist/0OBq0h6EjCmaPXjeCB4IlM?si=6ZeWyAiRR0u51UJK-7Hb_g">Josh's Spotify Queue!</a></h1>
+    <!-- Nav -->
+    <a style="text-decoration: none;" href="{{site.url}}">
+    <i style="color:#000" class="fas fa-home"></i></a>
+    <br>
+    
+<h1 style="text-align:center">Add a song to <br><a href="https://open.spotify.com/playlist/0OBq0h6EjCmaPXjeCB4IlM?si=6ZeWyAiRR0u51UJK-7Hb_g">Josh's Spotify Queue!</a></h1><br>
 <p style="text-align:center">
   Got a song on your mind - <strong>add it to my queue.</strong>  Submissions are anonymous! <br>(but letting me know is encouraged 😊)<br><br>
-  <i>What is this?!</i> Check out my write-up <a href="{{site.url}}/spotify-public-queue">here</a>,
-  and listen <a href="https://open.spotify.com/playlist/0OBq0h6EjCmaPXjeCB4IlM?si=6ZeWyAiRR0u51UJK-7Hb_g">here</a>.
-
 
 </p>
 <!-- Spotify -->
@@ -60,4 +68,13 @@ Search Spotify
 <br><br>
 
 <p id="result"></p>
+<br><br><br>
+<div style="text-align:center;font-size:14px">
+{% comment %} <span id='spotify'></span> {% endcomment %}
+<br><br>
+  <i><b>What is this?!</i></b><br> Check out my  <a href="{{site.url}}/spotify-public-queue">write-up</a>,
+  and listen to the <a href="https://open.spotify.com/playlist/0OBq0h6EjCmaPXjeCB4IlM?si=6ZeWyAiRR0u51UJK-7Hb_g">playlist</a>.
+  <br>
+  I have other spotify tools <a href="/top-songs">here</a> and <a href="/spotify-now-playing">here</a>.
+  </div>
 <br><br><br><br><br><br>

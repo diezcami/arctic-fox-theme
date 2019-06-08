@@ -8,13 +8,39 @@ permalink: contact
 
 <b>Email</b>
 <br>
-<code>hello@&lt;&lt;this-domain.com&gt;&gt;</code>
+<code>hello@&lt;&lt;this-domain&gt;&gt;</code>
 <br><br>
-<b>bitcoin address</b>
+<b>Messenger</b>
+<br>
+<a href="http://m.me/spicer.josh/"><code>http://m.me/spicer.josh/</code></a>
+<br><br>
+<b>Bitcoin Address</b>
 <br>
 <code>1F5EAnZXJEYcvesamd28V4hv8J2Ve63DVh</code>
 <br><br>
-<b><a href="./PGP.txt"><strong>PGP</strong></a> Fingerprint</b>
+<b><a href="./PGP.txt"><strong>PGP</strong></a> 64-Bit</b>
 <br>
-<code>415A 4243 34C5 C83A BE00 &nbsp; 04CA D5C4 AC84 C321 1123</code>
+<code>04CA D5C4 AC84 C321 1123</code>
+<br><br>
+<b>Social Mediaz</b>
+<br><hr style="height:5px; visibility:hidden;" />
+
+{% for link in site.social-links %}
+        <span style="padding:0;margin:0;">
+          <a style="padding:0;margin:0"href="{{link.url}}">
+              <i
+                  style="color:black;font-size:28px;"
+                   class="{{ link.icon }}"></i>
+          </a>
+        </span>
+{% endfor %}
+<br><br>
+<b>Trusted Domains</b><br>
+<a href="http://joshspicer.com"><code>joshspicer.com</code></a>
+<a href="http://spicer.dev"><code>spicer.dev</code></a>
+<br>
+<a href="http://spicerjo.sh"><code>spicerjo.sh</code></a>
+<a href="http://spcr.me"><code>spcr.me</code></a>
+<br>
+{% comment %} <a href="http://parade.events"><code>parade.events</code></a> {% endcomment %}
 <br>

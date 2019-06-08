@@ -20,7 +20,7 @@ This bug caused a hard crash on Android (with no logged details), but just a war
 07-21 15:59:10.254 29721 29739 D ReactNative: CatalystInstanceImpl.destroy() end
 ```
 Here was the trouble code. I saw that indeed, only one ReactElement should be doing anything.
-```
+```javascript
 return (
   <ApolloProvider client={client}>
     <Provider store={store}>
@@ -34,7 +34,7 @@ return (
 ```
 I discounted the commented out code, because it was commented out!
 React Native (on Android), however, still saw this as valid JSX, causing the crash.
-```
+```javascript
 return (
   <ApolloProvider client={client}>
     <Provider store={store}>

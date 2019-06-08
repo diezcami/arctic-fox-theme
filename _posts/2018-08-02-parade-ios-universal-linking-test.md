@@ -27,7 +27,7 @@ domain with `applinks:`
 In the webroot of the `parade.events` website, I then added this json object in a file
 called `apple-app-site-association`. This is to prove to actually own the domain, I guess. You can use an asterisk to
 specify wildcard.
-```
+```json
 {
     "applinks": {
         "apps": [],
@@ -44,7 +44,7 @@ specify wildcard.
 Within my React Native app, I import `Linking`, and then listen for URLs. I parse
 these urls and dispatch actions based on the structure of the URL.
 
-```
+```javascript
 componentDidMount() {
   Linking.addEventListener('url', this._handleOpenURL);
   Linking.getInitialURL().then(url => {

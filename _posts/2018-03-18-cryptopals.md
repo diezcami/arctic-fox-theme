@@ -8,7 +8,7 @@ permalink: cryptopals
 > I recently discovered the [cryptopals](http://cryptopals.com) crypto challenges by nccgroup. I'll be recording my solutions here.
 
 <h3>set1</h3>
-```
+```python
 import sys
 from Crypto.Cipher import AES
 

@@ -18,9 +18,9 @@ xhttp.onreadystatechange = function() {
 
     // Detect if i'm actively listening to music.
     if (res.isPlaying) {
-      songStatus = "...is currently listening to ";
+      songStatus = "Josh is currently listening to ";
     } else {
-      songStatus = "...last listened to ";
+      songStatus = "Josh last listened to ";
     }
 
     let writeup = "https://joshspicer.com/spotify-now-playing";
