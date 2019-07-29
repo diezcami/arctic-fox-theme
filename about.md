@@ -26,7 +26,7 @@ I’m **Josh** - a Boston-based college student studying Computer Science at [**
 ### What else do I do?
 
 <br>
-🐘 Develop [**Parade**](https://parade.events/) - an event discovery platform for Northeastern clubs. Find us on the [iOS App Store](https://parade.events/ios) and [Google Play Store](https://parade.events/android)!
+🐘 Develop [**Parade**](https://parade.events/) - an event discovery platform for Northeastern clubs. Find us on the [iOS App Store](https://parade.events/ios) and [Google Play Store](https://parade.events/android), and learn about us from our [News@Northeastern article](https://news.northeastern.edu/2019/07/23/want-to-know-whats-happening-on-northeasterns-boston-campus-theres-an-app-for-that/)
 
 🎧 Spend (too much) time (and money) constructing elaborate [spotify playlists]({{site.url}}/monthly-playlist-2018) and buying concert tickets. I <3 cheap shows and discovering new music - help me out by adding something to my [public queue](https://joshspicer.com/queue)!
 
