@@ -6,7 +6,7 @@ permalink: /about/
 
 I’m **Josh** - a Boston-based college student studying Computer Science at [**Northeastern University**](http://ccs.neu.edu/home/joshua). 
 
-📍 I'm currently an intern at [**Microsoft**](https://microsoft.com/) working on Scalable Cloud API services for Office 365 Products.
+📍 I last interned at [**Microsoft**](https://microsoft.com/) working under M365's Intelligent Conversation and Communication Cloud (IC3) team.
 
 ☕️ I abide by the three C's: <b>concerts, coffee</b>, and <b>[cats](../cinnamon)</b>.
 
@@ -30,11 +30,11 @@ I’m **Josh** - a Boston-based college student studying Computer Science at [**
 
 🎧 Spend (too much) time (and money) constructing elaborate [spotify playlists]({{site.url}}/monthly-playlist-2018) and buying concert tickets. I <3 cheap shows and discovering new music - help me out by adding something to my [public queue](https://joshspicer.com/queue)!
 
-🎛 Participate on the [**Collegiate Cyber Defense Team**](https://nuccdc.club/). This year we have advanced on to regionals!
+🎛 Participated on the [**Collegiate Cyber Defense Team**](https://nuccdc.club/). This year we have advanced on to regionals!
 
 🌋 Help produce [**Survivor Northeastern**](http://survivornortheastern.com). I played season 3 - check it out on YouTube _soon_!
 
-🖥 Co-founded Northeastern clubs like the Computer Science Mentoring Organization [(CoSMO)](https://nuCoSMO.club/), and help run clubs like [nuACM](https://acm.org). CoSMO runs interactive technical workshops and runs student-driven panels throughout the semester - let me know if you'd like to run one!
+🖥 Founded the Computer Science Mentoring Organization [(CoSMO)](https://nuCoSMO.club/) at Northeastern. CoSMO runs interactive technical workshops and student-driven panels throughout the semester - let me know if you'd like to run one!
 
 <!--
 -- Coffee / Tennis
