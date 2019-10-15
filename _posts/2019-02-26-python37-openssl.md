@@ -100,7 +100,7 @@ wget https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tar.xz
 tar xvf Python-3.7.0.tar.xz
 ```
 
-Now STOP, cd to `/tmp/openssl/Python-3.7.0` and open up the file `Modules/Setup.dist`
+Now STOP, cd to `/tmp/Python37/Python-3.7.0` and open up the file `Modules/Setup.dist`
 
 You should see the following lines COMMENTED.
 
