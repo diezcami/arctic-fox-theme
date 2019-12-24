@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "Monthly Playlists - 2018"
+title: "My Monthly Playlists! (2018)"
 date: 2019-01-01
 permalink: monthly-playlist-2018
 ---
 
+For 2018 I decided to create a playlist every month, and force myself to use that as my “go to” playlist (during commutes, throughout flights, etc…) for that span of time. The result is my life for the past year encoded into twelve very different playlists.
 
-For 2018 I decided to create a playlist every month, and force myself to use that as my “go to” playlist(during commutes, throughout flights, etc…) for that span of time. The result is my life for the past year encoded into twelve very different playlists.
-
-2018 was a year full of adventure and new experiences.  I worked my first full time (co-op) job.  I did more traveling in this one year then i’ve done in my entire life. I lived in a foreign country for a third of the year. I even turned 21.
+2018 was a year full of adventure and new experiences. I worked my first full time (co-op) job. I did more traveling in this one year then i’ve done in my entire life. I lived in a foreign country for a third of the year. I even turned 21.
 
 - [january](https://open.spotify.com/user/joshspicer37/playlist/5F6oN4gdB46l3WYxJnlZtE?si=zuD_yY4_R167BDx6DpWTDg)
 - [february](https://open.spotify.com/user/joshspicer37/playlist/2bPo2xWxAUMsoq2T2HWtVh?si=dagDT8uAScywFUk0f5Vw1Q)
@@ -23,4 +22,4 @@ For 2018 I decided to create a playlist every month, and force myself to use tha
 - [november](https://open.spotify.com/user/joshspicer37/playlist/6lQEb2cLBWM61OC9SsmnCB?si=2C-yAdMkTVakq4Ix0O0jWA)
 - [december](https://open.spotify.com/user/joshspicer37/playlist/3QtKScz59qpfL8X7kFRUjw?si=YP3cHgjgTXqTQamKphnFbw)
 
-I highly recommend it!  This year I chose to use Turkish for all my months (thanks, Ezgi!).  Check out january’s playlist - [ocak](https://open.spotify.com/user/joshspicer37/playlist/6UKHwCMYwRmij4ibqBYzQA?si=kc8y1c1CQLGzSa7jSPyo9g).
+I highly recommend it! This year I chose to use Turkish for all my months (thanks, Ezgi!). Check out january’s playlist - [ocak](https://open.spotify.com/user/joshspicer37/playlist/6UKHwCMYwRmij4ibqBYzQA?si=kc8y1c1CQLGzSa7jSPyo9g).

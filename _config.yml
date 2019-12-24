@@ -52,3 +52,5 @@ markdown_ext: markdown,mkdown,mkdn,mkd,md
 permalink: pretty
 plugins:
   - jekyll-redirect-from
+
+future: true
