@@ -1,5 +1,2 @@
-- name: My Concerts List
-  link: https://www.notion.so/joshspicer/Concerts-40d26ea2565a426a8d6f1a971b006155
-
 - name: Add to my Spotify Queue
   link: ./queue
