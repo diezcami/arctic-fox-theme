@@ -1,15 +1,14 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Past
+permalink: /past/
 ---
 
-I’m **Josh** - a Boston-based college student studying Computer Science at [**Northeastern University**](http://ccs.neu.edu/home/joshua). 
+I’m **Josh** - a Boston-based graduate of Khoury College at [**Northeastern University**](http://ccs.neu.edu/home/joshua).
 
 📍 I last interned at [**Microsoft**](https://microsoft.com/) working under M365's Intelligent Conversation and Communication Cloud (IC3) team.
 
 ☕️ I abide by the three C's: <b>concerts, coffee</b>, and <b>[cats](../cinnamon)</b>.
-
 
 <br>
 ### What i've done.
@@ -19,8 +18,7 @@ I’m **Josh** - a Boston-based college student studying Computer Science at [**
 
 🌐 Co-op'ed (again) - this time at [**Akamai Technologies**](https://akamai.com/) on their **Enterprise Network Engineering team**.
 
-
-🏡 Lived (briefly) in [**Florence, Italy**](https://joshspicer.com/geo-fellowship) and more recently in [**Edinburgh, UK**](https://joshspicer.com/hitch-to-paris), where I studied abroad at the University of Edinburgh. 
+🏡 Lived (briefly) in [**Florence, Italy**](https://joshspicer.com/geo-fellowship) and more recently in [**Edinburgh, UK**](https://joshspicer.com/hitch-to-paris), where I studied abroad at the University of Edinburgh.
 
 <br>
 ### What else do I do?
@@ -43,5 +41,3 @@ I’m **Josh** - a Boston-based college student studying Computer Science at [**
 
 “ReactNative | Django | ….”
 -->
-<br>
-**You can find my email, PGP key, and contact info [here]({{ site.url }}/contact).**

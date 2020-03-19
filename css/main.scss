@@ -15,7 +15,6 @@ $spacing-unit: 30px;
 
 $text-color: #454545;
 $background-color: #fff;
-// $brand-color: #750303;
 $brand-color: #4a9e4f;
 
 $spotify-green: #8acb8f;
@@ -41,7 +40,6 @@ $on-laptop: 700px;
     @content;
   }
 }
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "base", "layout", "syntax-highlighting";
