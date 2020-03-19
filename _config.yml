@@ -2,7 +2,7 @@
 title: Josh Spicer
 email: hello@joshspicer.com
 description: > # this means to ignore newlines until "baseurl:"
-  Joshua Spicer is a computer science student at Northeastern University
+  The home of a Cambridge, MA based Software Engineer
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://joshspicer.com # Site url. Place your path here, or leave blank to work local.
 twitter_username: joshspicer_
