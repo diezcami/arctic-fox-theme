@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Azure Function & Siri Shortcuts - Automating Playlist Management"
+title: "Azure Function & Siri Shortcuts - Playlist Quicksave"
 date: 2020-03-29
 permalink: playlists-azure
 ---
