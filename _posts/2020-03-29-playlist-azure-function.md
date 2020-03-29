@@ -5,7 +5,7 @@ date: 2020-03-29
 permalink: playlists-azure
 ---
 
-> /“Hey Siri - add this song to my monthly playlist!"/
+> *“Hey Siri - add this song to my monthly playlist!"*
 >
 > ![1](../assets/resources-playlist-azure/1.PNG)
 >
