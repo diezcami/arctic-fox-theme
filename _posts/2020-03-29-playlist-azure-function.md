@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Automating playlist management with an Azure Function"
+title: "Azure Function \& Siri Shortcuts - Automating Playlist Management"
 date: 2020-03-29
 permalink: playlists-azure
 ---
