@@ -39,6 +39,10 @@ That said, there is a Windows utilty written to patch just this. I followed the 
 
 ESXI lives on a flash drive and is loaded into RAM upon my system's boot. This lets me use my entire SSD for VMs.
 
+### SSL Cert
+
+_Edit: 3/31/20_ I followed [this guide](https://deliciousbrains.com/https-locally-without-browser-privacy-errors/) to update my self-signed certs for the ESXi web portal for anyone on Google Chrome 58 or higher
+
 ### Auto Start
 
 Be sure to enable AutoStart within the ESXI console for important VMs. My lab doesn't have any redundant power, but it's nice that on an unexpected reboot, everything should eventually power back on.
