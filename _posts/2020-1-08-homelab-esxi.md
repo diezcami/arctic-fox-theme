@@ -41,7 +41,11 @@ ESXI lives on a flash drive and is loaded into RAM upon my system's boot. This l
 
 ### SSL Cert
 
-_Edit: 3/31/20_ I followed [this guide](https://deliciousbrains.com/https-locally-without-browser-privacy-errors/) to update my self-signed certs for the ESXi web portal for anyone on Google Chrome 58 or higher
+_Edit: 3/31/20_ I followed [this guide](https://deliciousbrains.com/https-locally-without-browser-privacy-errors/) to update my self-signed certs for the ESXi web portal for anyone on Google Chrome 58 or higher.
+
+You'll then need to get your newly generated `cert.key` and `cert.crt` files onto your ESXi host. To do that, enable SSH, connect to the machine, and replace `/etc/vmware/ssl/rui.key` and `/etc/vmware/ssl/rui.crt` with the files above. 
+
+Make sure your new key and crt files are renamed to `rui.*`!
 
 ### Auto Start
 
