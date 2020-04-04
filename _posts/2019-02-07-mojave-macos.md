@@ -5,10 +5,13 @@ date: 2019-02-07
 redirect_from:
   - /SpotStatus/
   - /spotstatus/
-permalink: applescript-mojave
+  - /applescript-mojave/
+  - /applescript-catalina/
+permalink: applescript
 favorite: "true"
-
 ---
+
+> Download the latest release of SpotStatus, the result of this blog post, on [**GitHub**](http://github.com:joshspicer/SpotStatus). (4/4/20 - v1.3.1 updated for MacOS Catalina).
 
 I recently discovered AppleScript and I _love_ it. Unfortunately i'm **several** years late, and with Mojave's latest security additions, AppleScript is more restricted then ever.
 
@@ -120,3 +123,7 @@ if let scriptObject = NSAppleScript(source: currentTrackScript) {
     }
 }
 ```
+
+### Footnote
+
+There have been several minor edits to this project, especially with the addition of Mac OS Catalina and its notarization requirements. Check out the [GitHub](http://github.com:joshspicer/SpotStatus) repo for updated info.
