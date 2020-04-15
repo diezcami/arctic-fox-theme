@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pi ContrHOLE - Manage your Pi-Hole with a Xamarin Forms App"
+title: "Pi ContrHOLE -  Pi-Hole + Xamarin Forms"
 date: 2020-04-15
 permalink: pihole
 redirect_to:
