@@ -3,6 +3,7 @@ layout: post
 title: "Paying Attention to Android (React Native)"
 date: 2018-08-27
 permalink: react-native-android
+tags: react-native parade
 ---
 
 > Edit: Our Android release is out NOW on Google Play! Find it [here](https://play.google.com/store/apps/details?id=com.parade).

@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<!-- Nav -->
+<a href="{{site.url}}">
+    <i style="color: #000;" class="fas fa-home"></i></a>
+<br /><br />
+
+<div>
+    <div class="post">
+        <h1>{{ page.tag | capitalize}}</h1>
+        </br>
+        <ul class="post-list" style="margin-bottom: 0;padding-bottom: 0;">
+            {% for post in site.tags[page.tag] %}
+            <li style="padding-bottom: 0;height: 3em;">
+                <a href="{{ post.url }}">
+
+                    <span class="post-link">
+                        <strong>››</strong>
+
+                        {% if post.favorite == "true" %}
+                        <span style="font-weight: 400; text-decoration: none;">
+                            {{ post.title }}
+                            <i style="color: orange; font-size: 12px; margin-bottom: 2px;" class="fas fa-star"></i>
+                        </span>
+                        {% else %}
+                        {{ post.title }} {% endif %}
+                    </span>
+                </a>
+                <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}
+                </p>
+
+                {{ post.description }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+</br></br></br>
+</a>

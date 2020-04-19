@@ -9,6 +9,7 @@ redirect_from:
   - /applescript-catalina/
 permalink: applescript
 favorite: "true"
+tags: macOS
 ---
 
 > Download the latest release of SpotStatus, the result of this blog post, on [**GitHub**](http://github.com:joshspicer/SpotStatus). (4/4/20 - v1.3.1 updated for MacOS Catalina).

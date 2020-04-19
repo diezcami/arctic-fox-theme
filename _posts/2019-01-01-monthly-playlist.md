@@ -3,6 +3,7 @@ layout: post
 title: "My Monthly Playlists! (2018)"
 date: 2019-01-01
 permalink: monthly-playlist-2018
+tags: music
 ---
 
 For 2018 I decided to create a playlist every month, and force myself to use that as my “go to” playlist (during commutes, throughout flights, etc…) for that span of time. The result is my life for the past year encoded into twelve very different playlists.

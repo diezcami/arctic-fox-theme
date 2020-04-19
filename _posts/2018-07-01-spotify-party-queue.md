@@ -3,19 +3,21 @@ layout: post
 title: Spotify Public Queue - for Parties, Car Rides, and Strangers
 date: 2018-07-01
 permalink: spotify-public-queue
+tags: spotify aws music
 ---
+
 <h2>Intro</h2>
 
 I love discovering new music.
 <br><br>
-Whether that be through Spotify's daily playlists, or through suggestions from a friend,  I really enjoy
+Whether that be through Spotify's daily playlists, or through suggestions from a friend, I really enjoy
 discovering, diving into, and experiencing new music.
 <br><br>
 I've had this idea for a while - how can I make it dead-simple to add songs to a queue. With this post, i've taken it one
-step further, letting *anyone* add to my queue.
+step further, letting _anyone_ add to my queue.
 <br><br>
-Well ok...not *exactly* my queue. Song get added instead to a [playlist called "Josh's Public Queue"](https://open.spotify.com/user/joshspicer37/playlist/0OBq0h6EjCmaPXjeCB4IlM?si=6ZeWyAiRR0u51UJK-7Hb_g). You can follow and listen to that
-playlist, and of course add song recommendations through this site. 
+Well ok...not _exactly_ my queue. Song get added instead to a [playlist called "Josh's Public Queue"](https://open.spotify.com/user/joshspicer37/playlist/0OBq0h6EjCmaPXjeCB4IlM?si=6ZeWyAiRR0u51UJK-7Hb_g). You can follow and listen to that
+playlist, and of course add song recommendations through this site.
 
 <h2>How does it work!?</h2>
 The backend service runs as an AWS Lambda function, just like my **[Spotify "now playing" post]({{site.url}}/spotify-now-playing)**. That post will give you the background necessary in getting a Spotify client ID, as well as setting up AWS DynamoDB, API Gateway, and Lambda.
@@ -31,15 +33,18 @@ import json
 # Lambda function written by Josh Spicer <https://joshspicer.com/>
 
 # REMEMBER TO REPLACE `<YOUR REFRESH TOKEN>` and `<YOUR SECRET>` with, well those values!
+
 # Check my guide for how to do so: https://joshspicer.com/spotify-public-queue
 
 # Connect the DynamoDB database
+
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('Spotify-State')
 
 refreshToken = '<YOUR REFRESH TOKEN>'
 
 # Main Function -- SPOTIFY ADD PARTY QUEUE
+
 def lambda_handler(event, context):
 
     # Get the id query parameter from AWS API gateway
@@ -73,10 +78,8 @@ def lambda_handler(event, context):
     else:
         return {'statusCode': 400, 'headers': {'Access-Control-Allow-Origin' : "*", 'content-type': 'application/json'}, 'body': json.dumps({'status': "Error!"})}
 
-
-
-
 # Only called if the current accessToken is expired (on first visit after ~1hr)
+
 def refreshTheToken(refreshToken):
 
     clientIdClientSecret = 'Basic <YOUR SECRET>'
@@ -91,6 +94,9 @@ def refreshTheToken(refreshToken):
     table.put_item(Item={'spotify': 'prod', 'expiresAt': int(time.time()) + 3200, 'accessToken': spotifyToken['access_token']})
 
 def validateInput(input):
-    tmp = input.split(":")
-    return len(tmp) == 3 and tmp[0] == 'spotify' and tmp[1] == 'track' and tmp[2].isalnum()
+tmp = input.split(":")
+return len(tmp) == 3 and tmp[0] == 'spotify' and tmp[1] == 'track' and tmp[2].isalnum()
+
+```
+
 ```

@@ -3,6 +3,7 @@ layout: post
 title: "SSL issues with Python 3.7 Install From Source"
 date: 2019-02-26
 permalink: python37-ssl-issue
+tags: linux
 ---
 
 Recently I was configuring Python on a fresh Ubuntu server. The environment I was in required me to install Python 3.7 from source. Easy enough, I found Manivannan’s [quick bash -script](https://medium.com/@manivannan_data/install-python3-7-in-ubuntu-16-04-dfd9b4f11e5c) to run through the dependencies for me.

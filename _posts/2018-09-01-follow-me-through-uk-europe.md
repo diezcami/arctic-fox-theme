@@ -3,6 +3,7 @@ layout: post
 title: "Follow Me Through Edinburgh and the UK"
 date: 2018-09-01
 permalink: uk
+tags: travel tips-tricks
 ---
 
 ![1]({{site.url}}/assets/resources-edinburgh/1.jpg)

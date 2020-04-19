@@ -7,6 +7,6 @@ redirect_to:
   - https://www.parchment.com/u/award/c601494b52e1a00cda9c72897146a97f
 ---
 
-Bachelor of Science in Computer Science. From Northeastern University. 
+Bachelor of Science in Computer Science. From Northeastern University.
 
 https://www.parchment.com/u/award/c601494b52e1a00cda9c72897146a97f

@@ -4,6 +4,7 @@ title: "Keep your Home Number While Abroad (iCloud Hack)"
 date: 2018-09-18
 permalink: dual-sim-hack
 favorite: "true"
+tags: tips-tricks
 ---
 
 I recently moved to the UK for my semester abroad. While still at home, I knew I wanted to pick up a local

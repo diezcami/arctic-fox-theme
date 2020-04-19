@@ -3,6 +3,7 @@ layout: post
 title: "iOS Universal Linking with React Native"
 date: 2018-08-02
 permalink: parade-linking
+tags: react-native parade mobile-dev
 ---
 
 [Universal linking](https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html) was
@@ -23,21 +24,21 @@ domain with `applinks:`
 
 ![xcode]({{site.url}}/assets/resources-parade-linking/xcode.png)
 
-
 In the webroot of the `parade.events` website, I then added this json object in a file
 called `apple-app-site-association`. This is to prove to actually own the domain, I guess. You can use an asterisk to
 specify wildcard.
+
 ```json
 {
-    "applinks": {
-        "apps": [],
-        "details": [
-            {
-                "appID": "V3AVXCHMVA.com.paradeevents.parade",
-                "paths": [ "/event/*","e/*","/org/*","o/","/user/*"]
-            }
-        ]
-    }
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "V3AVXCHMVA.com.paradeevents.parade",
+        "paths": ["/event/*", "e/*", "/org/*", "o/", "/user/*"]
+      }
+    ]
+  }
 }
 ```
 
@@ -87,7 +88,6 @@ _handleOpenURL(evt) {
   }
 }
 ```
-
 
 <h2>Test Links!</h2>
 

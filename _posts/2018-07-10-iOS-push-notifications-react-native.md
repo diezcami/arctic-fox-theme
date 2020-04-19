@@ -4,6 +4,7 @@ title: Push Notifications in React Native & iOS (Client & Server Setup!)
 date: 2018-07-12
 permalink: parade-push-notifications
 favorite: "true"
+tags: parade mobile-dev react-native
 ---
 
 > There's lots of guides online about push notification setup for a React Native iOS app...and that's the problem!

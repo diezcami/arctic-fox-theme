@@ -42,7 +42,7 @@ layout: default
     <li>
       <a class="post-link" href="{{ post.link }}">
         <strong>››</strong>
-        <span style="text-decoration:none">
+        <span style="text-decoration: none;">
           {{ post.name }}
         </span>
       </a>
@@ -51,13 +51,11 @@ layout: default
   </ul>
 
   <!-- Tags -->
-  <!-- Tags: {%- for tt in site.data.tags -%}
-  <a class="" href="tag/{{ tt }}">
-    <span style="text-decoration:none">
-      {{ tt }}
-    </span>
-  </a>
-  {%- endfor -%} -->
+  </br>
+  <span style="">
+    <h3>Topics</h3>
+    {% include archive.html %}
+  </span>
 
   <!-- Chronological  -->
   <ul class="post-list">
@@ -71,15 +69,14 @@ layout: default
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
         <strong>››</strong>
         {% if post.favorite == "true" %}
-        <span style="font-weight:400;text-decoration:none">
+        <span style="font-weight: 400; text-decoration: none;">
           {{ post.title }}
           <i
-            style="color:orange;font-size:12px;margin-bottom:2px"
+            style="color: orange; font-size: 12px; margin-bottom: 2px;"
             class="fas fa-star"
           ></i>
         </span>
         {% else %}
-        <!-- <i style="color:black;font-size:6px;margin-bottom:2px" class="fas fa-circle"></i> -->
         {{ post.title }} {% endif %}
       </a>
     </li>

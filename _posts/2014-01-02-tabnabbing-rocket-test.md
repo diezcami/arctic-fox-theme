@@ -3,6 +3,7 @@ layout: post
 title: Tabnabbing Example
 date: 2018-02-19
 permalink: Tabnabbing
+tags: hacking
 ---
 
 > I learned about [tabnabbing](https://www.owasp.org/index.php/Reverse_Tabnabbing) one day at co-op when software we use internally

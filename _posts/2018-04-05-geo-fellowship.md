@@ -3,6 +3,7 @@ layout: post
 title: "Global Fellowship Entry (Florence, Italy)"
 date: 2018-04-05
 permalink: geo-fellowship
+tags: travel
 ---
 
 <h4> Italy - Dialogue of Civilizations -  Summer 2017</h4>

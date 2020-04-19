@@ -3,6 +3,7 @@ layout: post
 title: "Italian Citizenship through Jure Sanguinis (my journey)"
 date: 2020-03-05
 permalink: jure-sanguinis
+tags: travel
 ---
 
 [Jure Sanguinis](https://en.wikipedia.org/wiki/Jus_sanguinis), or "right of blood", is a principle of nationality law that many countries uses to determine citizenship. I grew up hearing about my maternal great-grandparents who emigrated from Italy. I discovered jure sanguinis and wondered if I was eligible. If I was eligible, I would be able to claim my citizenship, and eventually apply for an Italian passport, allowing me to live and work in the EU indefinitely.

@@ -3,9 +3,11 @@ layout: post
 title: "Azure Function & Siri Shortcuts - Playlist Quicksave"
 date: 2020-03-29
 permalink: playlists-azure
+tags: music spotify
+future_tag: azure
 ---
 
-> *“Hey Siri - add this song to my monthly playlist!"*
+> _“Hey Siri - add this song to my monthly playlist!"_
 >
 > ![1](../assets/resources-playlist-azure/1.PNG)
 >

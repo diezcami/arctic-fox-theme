@@ -4,6 +4,7 @@ title: "Husky Hunt - Visualizing 1st Place!"
 date: 2020-01-05
 permalink: husky-hunt-2019
 favorite: "true"
+tags: linux mobile-dev
 ---
 
 Last November I participated in my third Northeastern [Husky Hunt](https://www.facebook.com/events/481195489382688/), this time with the aid of our team's homebrew'ed app PawPrints. HuskyHunt is a continuous 24-hour scavenger hunt (+ more) around Boston (and often the greater Boston area). Best part was - we won first!

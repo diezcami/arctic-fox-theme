@@ -3,6 +3,7 @@ layout: post
 title: "AWS ec2 Auto Deploy Scripts"
 date: 2018-10-08
 permalink: aws-deploy
+tags: aws
 ---
 
 Over the past few months i've really gained a lot of experience working with

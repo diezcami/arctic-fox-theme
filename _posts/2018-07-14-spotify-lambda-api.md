@@ -4,6 +4,7 @@ title: Spotify "Now Playing" with AWS Lambda
 date: 2018-07-14
 permalink: spotify-now-playing
 favorite: "true"
+tags: spotify aws music
 ---
 
 I really love the social media aspect that Spotify brings to music. I discover so many great tracks by
