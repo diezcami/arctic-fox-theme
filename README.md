@@ -14,12 +14,17 @@ Various scripts, including client-side Spotify polling code, can be found in [js
 Client-side code interfacing with my "Spotify Public Queue" can be found in [/spotify.html](/spotify.html)
 
 
-## License
+## Licenses
 
-All content (items in `_post`,`js`, or elsewhere that contain original work), are property of Josh Spicer and owned solely by him.  Theme originally provided by Camille Diez via the MIT License.  
+### Attribution Required
 
+All content in this repo not superseded by another license is property of Josh Spicer and owned solely by him.  You are welcome to link to this content from elsewhere provided you clearly attribute <https://joshspicer.com> as your source. Thanks!
 
-Original License:
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+### Other Licenses
+
+Theme forked from Camille Diez with the license below:
 
 The MIT License (MIT)
 
