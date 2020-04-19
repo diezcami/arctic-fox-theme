@@ -10,31 +10,40 @@ layout: default
 
     <!-- Nav -->
     <a href="{{site.url}}">
-    <i style="color:#000" class="fas fa-home"></i>
-    <br><br>
+      <i style="color:#000" class="fas fa-home"></i>
+      <br><br>
 
 
     </a>
-     <h1 class="post-title">{{ page.title }}</h1>
-     <p class="post-meta">Posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-     <br>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">Posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} •
+      {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <br>
 
-     <span>
+    <span>
       {% for tag in page.tags %}
-        {% capture tag_name %}{{ tag }}{% endcapture %}
-        <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+      {% capture tag_name %}{{ tag }}{% endcapture %}
+      <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
       {% endfor %}
     </span>
 
-</header>
-
+  </header>
 
   <article class="post-content">
     {{ content }}
   </article>
 
-  <div class='center'>
-
+  <br>
+  <div style="color: gray;font-style: normal; font-size: small">
+    Found a mistake or typo in this post? &nbsp;
+    <a style=" color: #222222; font-style: normal;font-weight: 900;"
+      href="https://github.com/joshspicer/joshspicer.github.io/edit/master/{{ page.path }}">Suggest edit</a>
+    <br>
+    Questions/Comments?
+    <a style=" color: #222222 ; font-style:normal; font-weight: 900;" href="http://twitter.com/joshspicer_">Let me know
+      on
+      &nbsp;<i style="color:#1DA1F2" class=" fab fa-twitter"></i> </a>
   </div>
+
 
 </div>

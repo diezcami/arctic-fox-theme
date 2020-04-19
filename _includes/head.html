@@ -10,32 +10,18 @@
   <title>
     {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
   </title>
-  <meta
-    name="description"
-    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
-  />
+  <meta name="description"
+    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/css/animated.css" | prepend: site.baseurl
-  }}">
 
-  <link
-    rel="canonical"
-    href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
-  />
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
-  href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-  <link
-    href="https://fonts.googleapis.com/css?family=PT+Sans:400,700"
-    rel="stylesheet"
-    type="text/css"
-  />
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,700"
-    rel="stylesheet"
-    type="text/css"
-  />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet" type="text/css" />
 
   <!-- Josh -->
   {% if site.tags != "" %} {% include collecttags.html %} {% endif %}
@@ -47,29 +33,17 @@
   <script src="{{site.url}}/js/pollLambdaAPI.js"></script>
 
   <!-- font awesome -->
-  <script
-    defer
-    src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"
     integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
   <!-- Lodash -->
   <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
   <!-- Google webmaster -->
-  <meta
-    name="google-site-verification"
-    content="eHUr_GdPKUI2r4CVwHbl1_XkpAN6xAWjIOjdvGhjnEY"
-  />
+  <meta name="google-site-verification" content="eHUr_GdPKUI2r4CVwHbl1_XkpAN6xAWjIOjdvGhjnEY" />
   <!-- Bootstrap CSS-->
 
   <!-- spicer.dev google verification -->
-  <meta
-    name="google-site-verification"
-    content="ycSlJt4HhT5FCbOJU0K9RSp8tfhltGo3p7MMsfLnkSA"
-  />
+  <meta name="google-site-verification" content="ycSlJt4HhT5FCbOJU0K9RSp8tfhltGo3p7MMsfLnkSA" />
   <!-- spcr.me verification -->
-  <meta
-    name="google-site-verification"
-    content="uMfauSWYA6jbC2Y_De011yUPNsqSzcTnTc5ECVxrTjQ"
-  />
+  <meta name="google-site-verification" content="uMfauSWYA6jbC2Y_De011yUPNsqSzcTnTc5ECVxrTjQ" />
 </head>

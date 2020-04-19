@@ -1,32 +1,30 @@
 <div class="site-header">
 
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <i class="fa fa-navicon fa-lg"></i>
-      </a>
+  <nav class="site-nav">
+    <a href="#" class="menu-icon">
+      <i class="fa fa-navicon fa-lg"></i>
+    </a>
 
-      <div class="trigger">
-          <!-- <a class="page-link" href="{{ site.baseurl }}/">Home</a> -->
+    <div class="trigger">
+      <!-- <a class="page-link" href="{{ site.baseurl }}/">Home</a> -->
 
-        <!-- {% for page in site.links %}
+      <!-- {% for page in site.links %}
           {% if page.name %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.name }}</a>
           {% endif %}
         {% endfor %} -->
-        <ui>
-          {% for link in site.social-links %}
+      <ui>
+        {% for link in site.social-links %}
         <span style="padding:0;margin:0">
-          <a style="padding:0;margin:0"href="{{link.url}}" target="_blank">
-              <i
-                  style="color:black;font-size:28px;"
-                   class="{{ link.icon }}"></i>
+          <a style="padding:0;margin:0" href="{{link.url}}" target="_blank">
+            <i style="color:black;font-size:28px;" onmouseover="set" class="{{ link.icon }}"></i>
           </a>
         </span>
-          {% endfor %}
-          <!-- End Social Media -->
-        </ui>
-      </div>
-    </nav>
+        {% endfor %}
+        <!-- End Social Media -->
+      </ui>
+    </div>
+  </nav>
 
 
 </div>
