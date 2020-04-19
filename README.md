@@ -1,17 +1,8 @@
 # joshspicer.com
 
-Current* iteration of my website! This repo hold all the code that serves as my front page on the internet!  I recently started from scratch with this site - check out my [previous homepage here](https://github.com/joshspicer/josh_personal_site_old).
+My "Smart" static-site powered by [jekyllrb.com](jekyllrb.com).
 
-This is a Jekyll site based off of diezcami's [arctic fox theme](https://github.com/diezcami/arctic-fox-theme).
-
-
-## Notable Additions 
-
-Blog posts are stored in [_posts](/_posts).
-
-Various scripts, including client-side Spotify polling code, can be found in [js](/js).
-
-Client-side code interfacing with my "Spotify Public Queue" can be found in [/spotify.html](/spotify.html)
+View this page by visiting [https://joshspicer.com/](https://joshspicer.com/)
 
 
 ## Licenses
