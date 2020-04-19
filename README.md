@@ -15,6 +15,8 @@ All content in this repo not superseded by another license is property of Josh S
 
 ### Other Licenses
 
+Code borrowed from another source if often attributed in-line with the relevant source code.
+
 Theme forked from Camille Diez with the license below:
 
 The MIT License (MIT)
