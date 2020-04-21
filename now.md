@@ -16,10 +16,11 @@ Hi - I'm **Josh**.
 
 🛠 Developer Tooling<br>
 📱 Mobile app dev<br>
-🔐 Web & Network Security _pentesting_<br>
+🔐 Pentesting (Cyber Security)<br>
 <br>
 ☕️ Coffee<br>
 😺 Cats<br>
-🎧 [**Concerts**](/concerts)
+🎧 Concerts
 
-**You can find my email, PGP key, and contact info [here]({{ site.url }}/contact).**
+<br>
+**You can find my PGP key and contact info [here]({{ site.url }}/contact).**
