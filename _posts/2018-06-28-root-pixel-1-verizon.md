@@ -4,6 +4,7 @@ title: Rooting your Bootlocked Pixel Phone (Verizon Edition)
 date: 2018-06-28
 permalink: root-pixel-1
 favorite: "true"
+tags: hacking
 ---
 
 I bought a new Pixel phone on Ebay a couple months ago for testing an Android app i'm developing. To my surprise,

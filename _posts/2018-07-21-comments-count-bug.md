@@ -3,7 +3,6 @@ layout: post
 title: "JSX Comment Bug"
 date: 2018-07-21
 permalink: comments-count-bug
-tags: react-native
 ---
 
 I was seeing this error recently while configuring a feature in my React Native application.

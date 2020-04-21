@@ -4,7 +4,7 @@ title: "Parade: NU's Event Discovery App - Now on the App Store!"
 date: 2018-08-22
 permalink: parade
 favorite: "true"
-tags: parade mobile-dev
+tags: mobile-dev
 ---
 
 > Parade is an events discovery app I co-founded and am actively developing!

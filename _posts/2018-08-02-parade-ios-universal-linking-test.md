@@ -3,7 +3,7 @@ layout: post
 title: "iOS Universal Linking with React Native"
 date: 2018-08-02
 permalink: parade-linking
-tags: react-native parade mobile-dev
+tags: react-native mobile-dev
 ---
 
 [Universal linking](https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html) was
