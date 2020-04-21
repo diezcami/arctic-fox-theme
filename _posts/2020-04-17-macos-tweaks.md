@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My MacOS Tips & Tweak"
+title: "My MacOS Tips & Tweaks"
 date: 2020-04-19
 permalink: macos-tweaks
 tags: macOS tips-tricks
