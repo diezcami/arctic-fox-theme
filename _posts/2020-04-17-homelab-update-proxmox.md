@@ -148,7 +148,7 @@ Proxmox has native support for LXC (Linux Containers).
 In a Proxmox shell, check what containers are preloaded with `pveam available`.
 
 ```bash
-root@proxmox:/mnt# pvexam available | grep ubuntu
+root@proxmox:/mnt# pveam available | grep ubuntu
 system          ubuntu-16.04-standard_16.04.5-1_amd64.tar.gz
 system          ubuntu-18.04-standard_18.04.1-1_amd64.tar.gz
 system          ubuntu-19.04-standard_19.04-1_amd64.tar.gz
