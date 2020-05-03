@@ -72,6 +72,8 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - TunnelBlick
 - BetterTouchTool
 - Arq
+- GnuPG
+- jq
 
 ### Favorite Apps
 

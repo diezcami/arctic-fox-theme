@@ -132,6 +132,15 @@ bulk         1.15M  1.76T       96K  /bulk
 bulk/secure   196K  1.76T      196K  /bulk/secure
 ```
 
+### Mounting Volume
+
+```
+zfs load-key -a
+# Enter password
+
+zfs mount bulk/secure
+```
+
 ## Pulling linux container
 
 Proxmox has native support for LXC (Linux Containers).
