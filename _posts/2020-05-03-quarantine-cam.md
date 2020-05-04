@@ -1,15 +1,16 @@
 ---
 layout: post
-title: "Repurpose an old iPhone as a (Teams/Slack/Zoom) webcam in Catalina"
+title: "Repurpose an old iPhone as a (Teams/Slack/Zoom) Mac Webcam"
 date: 2020-05-03
 permalink: quarantine-cam
+tags: macOS
 ---
 
-Like many people these days, i've been living my life through video calling apps like Microsoft Teams, Slack, and Zoom. When working at my monitor, it is cumbersome to prop my laptop open next to my external keyboard and mouse setup. In addition, the video quality of laptop webcams STILL suck in 2020. I looked into buying a cheap USB webcam, but these days finding one online is either very difficult, or incredibly price-gouging.
+Like many people these days in the quarantine/COVID-19/social distancing world, i've been living my life through video calling apps like Microsoft Teams, Slack, and Zoom. When working at my monitor, it is cumbersome to prop my laptop open next to my external keyboard and mouse setup. In addition, the video quality of laptop webcams STILL suck in 2020. I looked into buying a cheap USB webcam, but these days finding one online is either very difficult, or incredibly price-gouging.
 
 That got me thinking - what do I have laying around? I've got several old iPhones with fantastic cameras. Why not repurpose those?
 
-I'm definitely not the first to think of this, but yet I haven't been able to find any definitive guide for newer MacOS editions. Below are my ramblings (cleaned up work notes) of how I got it working with Microsoft Teams, Slack, and Zoom on my Macbook / OSX.
+I'm definitely not the first to think of this, but yet I haven't been able to find any definitive guide for newer MacOS editions (ie Catalina with Hardened Runtime). Below are my ramblings (cleaned up work notes) of how I got it working with Microsoft Teams, Slack, and Zoom on my Macbook / OSX.
 
 ## WARNING
 
@@ -49,7 +50,7 @@ I've tested this with an iPhone XS on `13.5 (beta)` and an iPhone 6s on iOS `11.
 
 Note that I **couldn't** get OBS Studio to work with an old, jailbroken iPhone on `9.3.3`. Not sure why 🤷🏽‍♂️.
 
-I am running macOS `10.15.4` (Catalina).
+I am running macOS `10.15.4` Catalina. You may only need to complete the first part in Mojave and older.
 
 I am running the latest release version (as of May 3rd, 2020) of Teams/Zoom/Slack.
 
@@ -97,13 +98,16 @@ Below, replace `<YOUR-DEV-ID>` with either your 40 character hex identifier, or 
 
 Check all the code signing identities available on your Mac with `security find-identity -v -p codesigning`. This is assuming you've done some MacOS Xcode development on your machine, and are signed into your developer account in Xcode. You can head to the [Apple Developer Certificate Center](https://developer.apple.com/account/resources/certificates/list) to generate new Developer IDs.
 
-```bash
+```
 APPLICATION=/Applications/zoom.us.app \
-&& codesign -d --entitlements :- $APPLICATION \
-| { xml2; echo "/plist/dict/key=com.apple.security.cs.disable-library-validation"; \
-echo "/plist/dict/true"; } | 2xml > entitlements.xml \
-&& sudo codesign --sign <YOUR-DEV-ID> $APPLICATION --force \
---preserve-metadata=identifier,resource-rules --entitlements=entitlements.xml \
+&& codesign -d --entitlements :- $APPLICATION | \
+{ xml2; echo "/plist/dict/key=com.apple.security.cs.disable-library-validation"; echo "/plist/dict/true"; } | \
+2xml > entitlements.xml \
+&& sudo codesign \
+--sign <YOUR-DEV-ID> $APPLICATION \
+--force \
+--preserve-metadata=identifier,resource-rules \
+--entitlements=entitlements.xml \
 && rm entitlements.xml
 ```
 
@@ -179,7 +183,10 @@ Slack is an Electron app, and conveniently there exists a tool from Electron the
 I suspect there are some better settings, but these worked for me a proof of concept.
 
 ```bash
-➜ electron-osx-sign /Applications/Slack.app --type=development --entitlements="/Users/josh/entitlements.xml" --gatekeeper-assess=false
+➜ electron-osx-sign /Applications/Slack.app \
+--type=development \
+--entitlements="/Users/josh/entitlements.xml" \
+--gatekeeper-assess=false
 
 Application signed: /Applications/Slack.app
 ```
