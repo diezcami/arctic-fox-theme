@@ -204,6 +204,7 @@ In `/etc/samba/smb.conf` :
     fruit:time machine = yes
     valid users=tmachine
 ```
+- Set a password for our user with `smbpasswd -a tmachine`
 
 - Restart samba `sudo systemctl restart smbd`
 
