@@ -196,7 +196,6 @@ _Note: Again, you can avoid passing this entitlement by ensuring all linked soft
 If you do decide to remove library validation, here is the entitlement xml I used in testing `/Users/josh/entitlements.xml`:
 
 ```xml
-Executable=/Applications/Slack.app/Contents/MacOS/Slack
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
