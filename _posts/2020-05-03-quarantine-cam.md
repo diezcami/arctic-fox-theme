@@ -180,7 +180,7 @@ Aha, looks like library validation at work! I thought just adding `--deep` to re
 
 Slack is an Electron app, and conveniently there exists a tool from Electron themselves titled [electron-osx-sign](https://github.com/electron/electron-osx-sign). You can pull it easily with npm: `npm install -g electron-osx-sign`.
 
-I suspect there are some better settings, but these worked for me a proof of concept.
+I suspect there are some better settings, but these worked for me as a proof of concept.
 
 ```bash
 ➜ electron-osx-sign /Applications/Slack.app \
