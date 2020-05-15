@@ -180,7 +180,7 @@ Aha, looks like library validation at work! I thought just adding `--deep` to re
 
 Slack is an Electron app, and conveniently there exists a tool from Electron themselves titled [electron-osx-sign](https://github.com/electron/electron-osx-sign). You can pull it easily with npm: `npm install -g electron-osx-sign`.
 
-I suspect there are some better settings, but these worked for me a proof of concept.
+I suspect there are some better settings, but these worked for me as a proof of concept.
 
 ```bash
 ➜ electron-osx-sign /Applications/Slack.app \
@@ -196,7 +196,6 @@ _Note: Again, you can avoid passing this entitlement by ensuring all linked soft
 If you do decide to remove library validation, here is the entitlement xml I used in testing `/Users/josh/entitlements.xml`:
 
 ```xml
-Executable=/Applications/Slack.app/Contents/MacOS/Slack
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

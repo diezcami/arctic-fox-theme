@@ -4,6 +4,7 @@ My "Smart" static-site powered by [jekyllrb.com](jekyllrb.com).
 
 View this page by visiting [https://joshspicer.com/](https://joshspicer.com/)
 
+Cookies may be set by this website, as outlined in [privacy](https://joshspicer.com/privacy)
 
 ## Licenses
 
