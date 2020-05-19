@@ -32,7 +32,7 @@ I’m **Josh** - a Boston-based graduate of Khoury College at [**Northeastern Un
 
 🌋 Help produce [**Survivor Northeastern**](http://survivornortheastern.com). I played season 3 - check it out on YouTube _soon_!
 
-🖥 Founded the Computer Science Mentoring Organization [(CoSMO)](https://nuCoSMO.club/) at Northeastern. CoSMO runs interactive technical workshops and student-driven panels throughout the semester - let me know if you'd like to run one!
+🖥 Founded the Computer Science Mentoring Organization [(CoSMO)](http://cosmo.khoury.northeastern.edu/eboard/past) at Northeastern. CoSMO runs interactive technical workshops and student-driven panels throughout the semester - let me know if you'd like to run one!
 
 <!--
 -- Coffee / Tennis
