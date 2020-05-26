@@ -3,7 +3,7 @@ layout: post
 title: "Bridge iPhone Hotspot to LAN with Pfsense"
 date: 2020-05-25
 permalink: iphone-pfsense
-tags: tips-tricks linux
+tags: tips-tricks homelab
 ---
 
 ## Intro
