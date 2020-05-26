@@ -64,6 +64,8 @@ Add the following `<earlyshellcmd>` to `/conf/config.xml` like so.
 <earlyshellcmd>usbconfig -d 1.2 set_config 3</earlyshellcmd></system></pfsense>
 ```
 
+Of course, changing `1.2` to whatever value you have.
+
 Afterwards, remove the cache with `rm /tmp/config.cache`.
 
-Of course, changing `1.2` to whatever value you have. Note that something I notice that I still need to manually run this command if my iPhone gets unplugged. YMMV!
+Note that sometimes I still need to manually run this command if my iPhone gets unplugged. YMMV!
