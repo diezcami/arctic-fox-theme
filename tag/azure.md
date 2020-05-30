@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "parade"
-tag: parade
+title: "azure"
+tag: azure
 robots: noindex
 ---

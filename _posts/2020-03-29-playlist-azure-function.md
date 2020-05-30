@@ -3,7 +3,7 @@ layout: post
 title: "Azure Function & Siri Shortcuts - Playlist Quicksave"
 date: 2020-03-29
 permalink: playlists-azure
-tags: music spotify
+tags: music spotify azure
 future_tag: azure
 ---
 

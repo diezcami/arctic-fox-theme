@@ -3,7 +3,7 @@ layout: post
 title: "Repurpose an old iPhone as a (Teams/Slack/Zoom) Mac Webcam"
 date: 2020-05-03
 permalink: quarantine-cam
-tags: macOS
+tags: macOS tips-tricks
 ---
 
 Like many people these days in the quarantine/COVID-19/social distancing world, i've been living my life through video calling apps like Microsoft Teams, Slack, and Zoom. When working at my monitor, it is cumbersome to prop my laptop open next to my external keyboard and mouse setup. In addition, the video quality of laptop webcams STILL suck in 2020. I looked into buying a cheap USB webcam, but these days finding one online is either very difficult, or incredibly price-gouging.

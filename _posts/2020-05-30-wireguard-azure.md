@@ -3,6 +3,7 @@ layout: post
 title: "Pi-Hole & Wireguard on Azure (in 10 minutes or less!)"
 date: 2020-05-30
 permalink: wireguard-azure
+tags: azure linux
 ---
 
 ## Intro
