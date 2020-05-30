@@ -6,7 +6,18 @@ permalink: macos-tweaks
 tags: macOS tips-tricks
 ---
 
-> **Updated** Apr. 19, 2020 for macOS Catalina.
+> **Updated** Apr. 19, 2020 for macOS Catalina. 
+> **Updated** May 30, 2020 with hidden folder shortcut
+
+## Show Hidden Folders in Finder
+
+MacOS Sierra introduced a quick keyboard shortcut to show/hide hidden (dot) files.  
+
+When in finder just type:
+
+```
+ CMD + SHIFT + .
+```
 
 ## Sudo with Touch ID
 
