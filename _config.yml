@@ -39,6 +39,11 @@ social-links:
     icon: fab fa-spotify
     color: "#1db954"
     external: true
+  - name: RSS
+    url: https://joshspicer.com/feed.xml
+    icon: fa fa-rss
+    color: "#ee802f"
+    external: true
 
 include: [".well-known"]
 
