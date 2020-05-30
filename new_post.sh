@@ -17,7 +17,7 @@ echo  "layout: post" >> ./_posts/$filename
 echo "title: \"$title\"" >> ./_posts/$filename 
 echo  "date: $(date +%F)" >> ./_posts/$filename
 echo  "permalink: $permalink" >> ./_posts/$filename
-echo "---\n" >> ./_posts/$filename
+echo "---" >> ./_posts/$filename
 echo "![1.png]({{site.url}}/assets/resources-$permalink/1.png)" >> ./_posts/$filename # Example image structure
 
 # Create assets folder.
