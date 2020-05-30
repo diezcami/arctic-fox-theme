@@ -8,11 +8,7 @@ tags: mobile-dev linux homelab
 
 "Pi ContrHOLE" is a simple [Xamarin Forms Shell](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/shell/) app to manage your local [Pi-hole](https://pi-hole.net/) instance.
 
-The idea of this app is to provide "quick toggles" and display information that would be useful at a glance. My goal is _not_ to reach parity with the (awesome) web app that already exists. Use cases include:
-
-1. Allow less technically inclined/interested people to disable your home's pihole temporarily.
-2. Ensure your pihole instance is up and running.
-3. Check that a given device is routing through pihole.
+The idea of this app is to provide "quick toggles" and display information that would be useful at a glance. 
 
 I've released the app on the iOS [App Store](https://apps.apple.com/us/app/pi-contrhole/id1507963158). If you have an iPhone or iPad, [**download the app for free!**](https://apps.apple.com/us/app/pi-contrhole/id1507963158)
 
