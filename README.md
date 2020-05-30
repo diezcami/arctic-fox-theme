@@ -6,6 +6,8 @@ View this page by visiting [https://joshspicer.com/](https://joshspicer.com/)
 
 Cookies may be set by this website, as outlined in [privacy](https://joshspicer.com/privacy)
 
+Subscribe to new posts with any RSS feed reader: http://joshspicer.com/feed.xml
+
 ## Licenses
 
 ### Attribution Required
