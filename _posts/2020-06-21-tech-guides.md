@@ -10,3 +10,4 @@ permalink: tech-guides
 * [How to Install Minecraft Server on Ubuntu 18.04 (includes some best practices/tips)](https://linuxize.com/post/how-to-install-minecraft-server-on-ubuntu-18-04/)
 * [WireGuard in Proxmox LXC](https://nixvsevil.com/posts/wireguard-in-proxmox-lxc/)
 * [Chatty: A Full Stack React Native guide (possibly out of date now)](https://medium.com/react-native-training/building-chatty-a-whatsapp-clone-with-react-native-and-apollo-part-1-setup-68a02f7e11)
+* [Using the Linux `find` command](https://www.tecmint.com/35-practical-examples-of-linux-find-command/)
