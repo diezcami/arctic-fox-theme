@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Suggested Tech Guides (A growing list)"
+title: "Suggested Tech Guides (a growing list)"
 date: 2020-06-21
 permalink: tech-guides
 ---
