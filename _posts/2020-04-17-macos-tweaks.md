@@ -79,7 +79,7 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - Brew
 - OhMyZsh
 - CopyClip
-- Amethyst
+- ~Amethyst~ Magnet
 - TunnelBlick
 - BetterTouchTool
 - Arq

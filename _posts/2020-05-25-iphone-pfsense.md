@@ -10,13 +10,13 @@ tags: tips-tricks homelab
 
 Bridging your iPhone hotspot is useful for an array of reasons. Just move and not have internet from the local ISP yet? Want some redundancy in case the ISP fails? Maybe your phone's 4G is actually faster or more reliable? Whatever the reason, bridging your phone plan's internet connection is not too hard with open source router software Pfsense.
 
-I use Pfsense as my LANs router. Pfsense is running on a proxmox server VM and is on the same subnet as a home router in "access point mode" to supply Wifi. I assume in this guide you already have some sort of pfsense set up.
+I use Pfsense as my LANs router. Pfsense is running on a proxmox server VM and is on the same subnet as a home router in "access point mode" to supply Wifi. **I assume in this guide you already have pfsense set up as your network's router/gateway**.
 
 ## Steps
 
 The steps below were heavily inspired by [a 2016 pfsense forum post](https://forum.netgate.com/topic/106435/iphone-tether). Thank you to [daredevilbear](https://forum.netgate.com/user/daredevilbear) and [tff24](https://forum.netgate.com/user/tff24) for getting me started!
 
-I was running Pfsense `2.4.5-RELEASE`, which already shipped with the freeBSD iPhone drivers `ipheth`. If you don't have that driver you'll need to follow the steps in the forum post above.
+I am running Pfsense `2.4.5-RELEASE`, which already shipped with the freeBSD iPhone drivers `ipheth`. If you don't have that driver you'll need to follow the steps in the forum post above.
 
 First, load in the drivers by executing:
 
@@ -84,7 +84,7 @@ Afterwards, remove the cache with `rm /tmp/config.cache`.
 Sometimes i've noticed pfsense having trouble acquiring an IP even though the interface appears to be up.  For this I do the following.
 
 1. Restart Pfsense (`Diagnostics > Reboot`) **with** iPhone plugged in
-2. As soon as you are prompted to "trust" on your iPhone, do that and then toggle hotspot off/on
+2. **As soon as** you are prompted to "trust" on your iPhone, do that and then quickly toggle hotspot off/on
 3. You may be prompted to "trust" twice.  Repeat step (2) if so
 4. If "Setting up WAN" starts to hang during the boot up, start from step (1) and try again
 
