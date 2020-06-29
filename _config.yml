@@ -1,7 +1,7 @@
 # Site settings
 title: Josh Spicer
 email: hello@joshspicer.com
-description: The home of a Cambridge, MA based Software Engineer
+description: The home of Cambridge based Software Engineer
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://joshspicer.com # Site url. Place your path here, or leave blank to work local.
 twitter_username: joshspicer_
