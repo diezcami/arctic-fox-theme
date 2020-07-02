@@ -6,8 +6,7 @@ permalink: macos-tweaks
 tags: macOS tips-tricks
 ---
 
-> **Updated** Apr. 19, 2020 for macOS Catalina. 
-> **Updated** May 30, 2020 with hidden folder shortcut
+> **Updated** favorite apps on July 2nd 2020
 
 ## Show Hidden Folders in Finder
 
@@ -85,6 +84,7 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - Arq
 - GnuPG
 - jq
+- Gifski
 
 ### Favorite Apps
 
