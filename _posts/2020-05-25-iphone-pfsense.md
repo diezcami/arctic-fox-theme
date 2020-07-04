@@ -3,7 +3,7 @@ layout: post
 title: "Bridge iPhone Hotspot to LAN with Pfsense"
 date: 2020-05-25
 permalink: iphone-pfsense
-tags: tips-tricks homelab
+tags: tips-tricks homelab networking
 ---
 
 ## Intro
@@ -22,7 +22,7 @@ First, load in the drivers by executing:
 
 `kldload if_ipheth`
 
-Success if you load that in without an error message.  You may now also be prompted to "trust this device" on your iPhone...do that.
+Success if you load that in without an error message. You may now also be prompted to "trust this device" on your iPhone...do that.
 
 Run `dmesg` to see if your iPhone is being detected. Take note of the value after `ugen`. In my case, the value is `1.2`.
 
@@ -38,7 +38,7 @@ You will now hopefully see a new interface in the pfsense menu. In this example 
 
 ![2.png]({{site.url}}/assets/resources-iphone-pfsense/2.png)
 
-Two quirks i've noticed. First, I have to manually toggle the hotspot on/off on my iPhone to make the blue hotspot logo appear on the phone. Next, I need to toggle the WAN interface on/off in: 
+Two quirks i've noticed. First, I have to manually toggle the hotspot on/off on my iPhone to make the blue hotspot logo appear on the phone. Next, I need to toggle the WAN interface on/off in:
 
 `Interfaces > WAN > Enable Interface.`
 
@@ -81,11 +81,11 @@ Afterwards, remove the cache with `rm /tmp/config.cache`.
 
 ### Troubleshooting
 
-Sometimes i've noticed pfsense having trouble acquiring an IP even though the interface appears to be up.  For this I do the following.
+Sometimes i've noticed pfsense having trouble acquiring an IP even though the interface appears to be up. For this I do the following.
 
 1. Restart Pfsense (`Diagnostics > Reboot`) **with** iPhone plugged in
 2. **As soon as** you are prompted to "trust" on your iPhone, do that and then quickly toggle hotspot off/on
-3. You may be prompted to "trust" twice.  Repeat step (2) if so
+3. You may be prompted to "trust" twice. Repeat step (2) if so
 4. If "Setting up WAN" starts to hang during the boot up, start from step (1) and try again
 
-Most of the time this works first try.  You need to be quick with step 2, though!
+Most of the time this works first try. You need to be quick with step 2, though!

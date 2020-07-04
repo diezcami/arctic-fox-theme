@@ -4,7 +4,7 @@ title: "My Home Lab - ESXI/PiHole/PfSense/Docker"
 date: 2020-01-08
 permalink: homelab
 favorite: "true"
-tags: homelab
+tags: homelab networking
 ---
 
 > Introducing my Home Lab! As a software engineer and general tinkerer, I was incredibly excited to get a home server set up to run services, VMs, and other tools. I often find myself wasting time redownloading VM images only to have them run too slow and take up too much space on my laptop. This is just one inconvenience my homelab solved. Below is a general walkthrough of the server's design, as well as some roadblocks I hit (and how I got around them).
