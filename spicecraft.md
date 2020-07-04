@@ -1,6 +1,6 @@
 ---
 layout: page
-title: SpiceCraft - A Minecraft Server
+title: SpiceCraft
 permalink: /spicecraft/
 redirect_from:
   - /mc
