@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Add Font Awesome icons to a Xamarin Forms app"
+title: "Add Font Awesome Icons to a Xamarin Forms App"
 date: 2020-07-02
 permalink: fa-xamarin
 tags: mobile-dev xamarin
