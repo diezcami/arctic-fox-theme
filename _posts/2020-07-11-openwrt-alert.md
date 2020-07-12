@@ -116,7 +116,7 @@ This script simply loops through and fetches every MAC address currently associa
 
 ### Event Script
 
-This script will run when a device associates (or dissociates) with the access point.  It it automatically called by `hostapd` through the setup we did in the boot script above.  If it finds a match, it works just like the script above - logging the MAC in the shared cache and sending a Telegram message.
+This script will run when a device associates (or dissociates) with the access point.  It is automatically called by `hostapd` through the setup we did in the boot script above.  If it finds a match, it works just like the script above, logging the MAC in the shared cache and sending a Telegram message.
 
 <script src="https://gist.github.com/joshspicer/e09c3158074cdd584c79e2bb5bd4e640.js?file=event_alert.sh"></script>
 
