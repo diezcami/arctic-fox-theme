@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Monthly Playlists - Turkish Edition!"
+title: "Monthly Playlists (2019) - Turkish Edition!"
 date: 2020-1-4
 permalink: monthly-playlist-2019
 tags: music
