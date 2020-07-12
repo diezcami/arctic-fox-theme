@@ -22,7 +22,7 @@ Below i'll be live updating this post through my process for claiming (or failin
 
 ## My Lineage
 
-Below is the lineage i'm using to claim my citizenship. (will add more info _soon_).
+Below is the lineage i'm using to claim my citizenship.
 
 ```
 Great-Grandfather
@@ -104,7 +104,7 @@ What a surprise! I opened the mailbox one day to a letter from Casalvecchio di P
 
 ### March 3rd, 2020
 
-This was now my third month in a row trying to get an appointment. Thankfully, I got one this time! Bad news, it was in October 2021.
+This was now my third month in a row trying to get an appointment. Thankfully, I got one this time! Bad news, it is in September __2021__.
 
 Once I get all my documents together, i'm going to continue to check for earlier appointments due to cancellations. For now, it's nice to know I have something on the books.
 
@@ -113,6 +113,14 @@ Once I get all my documents together, i'm going to continue to check for earlier
 I got an email back from the Italian document service saying they had received my great-grandfather's birth record back from Italy!
 
 I saw a scan of the document, and got a tracking number for the original document to be sent to me.
+
+### June 15, 2020
+
+Due to Covid, this process has seemed to slow even further. Nonetheless, today I received the official historical documentation on my great-grandfather's naturalization from US Citizenship and Immigration Services.  I was given an official letter and photocopies of my great-grandfather's "Petition for Citizenship" and "Certification of Naturalization".  The letter and consulate state that along with the original envelope, they will accept this as official proof of naturalization.  The certificate also comes with a picture of my relative - pretty cool!
+
+I also received a bonus photocopy of another man's naturalization documents.  I had never heard of this man before, but somehow he must be related to me. Unfortunately USCIS didn't explain __why__ they included this. Guess I have a bit more research to do!
+
+While i'm sure Covid did delay the process slightly, remember that we first wrote to USCIS _4 months ago_ in February. 
 
 ### TBD
 

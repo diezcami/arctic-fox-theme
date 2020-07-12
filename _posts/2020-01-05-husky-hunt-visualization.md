@@ -11,7 +11,7 @@ Last November I participated in my third Northeastern [Husky Hunt](https://www.f
 
 ![hh-logo]({{site.url}}/assets/resources-huskyhunt2019/hh_logo.jpg)
 
-Pawprints is a [React Native mobile app](https://github.com/daniel-goldstein/pawprints-mobile) + a [React webapp](https://github.com/daniel-goldstein/pawprints-web) (created by [Daniel Goldstein](https://twitter.com/dgoldsteinn)) that work together to organize, track, and automatically sort our clue submissions into Google Drive folders. Pawprints uses player's smartphones to track them throughout the hunt and relay that to our the people in "HQ". The app also tracks the status of each clue (completed/uncompleted), as well as the category of clue it falls into.
+Pawprints is a [React Native mobile app](https://github.com/daniel-goldstein/pawprints-mobile) + a [React webapp](https://github.com/daniel-goldstein/pawprints-web) (originally created by my teammate [Daniel Goldstein](https://twitter.com/dgoldsteinn)) that work together to organize, track, and automatically sort our clue submissions into Google Drive folders. Pawprints uses player's smartphones to track them throughout the hunt and relay that to our the people in "HQ". The app also tracks the status of each clue (completed/uncompleted), as well as the category of clue it falls into.  
 
 ![map]({{site.url}}/assets/resources-huskyhunt2019/map.png)
 

@@ -18,7 +18,7 @@ The only file I ended up using from the zip was `webfonts/fa-solid-900.ttf`, but
 
 ### Add the Font to your project
 
-I'd suggest hopping over to the offical [devblog post](https://devblogs.microsoft.com/xamarin/embedded-fonts-xamarin-forms/) for this part. It's really simple though: **(1)** Ensure you're running Forms 4.5+, **(2)** Copy the `ttf` file from above anywhere in the shared project, and mark it as `EmbeddedResource`, and **(3)** Add this line to your `AssemblyInfo.cs`.
+I'd suggest hopping over to the official [devblog post](https://devblogs.microsoft.com/xamarin/embedded-fonts-xamarin-forms/) for this part. It's really simple though: **(1)** Ensure you're running Forms 4.5+, **(2)** Copy the `ttf` file from above anywhere in the shared project, and mark it as `EmbeddedResource`, and **(3)** Add this line to your `AssemblyInfo.cs`.
 
 ```csharp
 using Xamarin.Forms;
