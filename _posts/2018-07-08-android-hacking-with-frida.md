@@ -174,7 +174,7 @@ a new text file called `disableRoot.js` that contains the following payload.
 {% highlight java linenos %}
 Java.perform(function() {
 
-       theClass = Java.use("sg.vantagepoint.a.c");
+       var theClass = Java.use("sg.vantagepoint.a.c");
 
        theClass.a.implementation = function(v) {
             console.log("In function A");
