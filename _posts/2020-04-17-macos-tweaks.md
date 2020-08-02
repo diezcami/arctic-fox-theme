@@ -67,6 +67,16 @@ sudo chmod 000 ~/Library/Preferences/ByHost/com.apple.loginwindow*
 
 To restore, just `rm` that file so macOS can regenerate it.
 
+## Disable Bluetooth auto-connect
+
+I have Sony WH-1000XM3 wireless headphones that I love, EXCEPT for the fact that they can only pair with one device.  The headphones often auto-connect to my Macbook, even if it's closed and sleeping. If i'm trying to pair the headphone to my phone, this can get very annoying as the only way to unpair is to login to my Macbook and disconnect from there.
+
+I disable Bluetooth auto-connecting across the board with this terminal command:
+
+```bash
+sudo defaults write /Library/Preferences/com.apple.Bluetooth.plist DontPageAudioDevices 1
+```
+
 ## First Hour Installs
 
 Below is a list of the software (off the top of my head) that I immediately install on a fresh Mac.
