@@ -171,6 +171,9 @@ root@proxmox:/# pct enter 102
 root@storage:/#
 ```
 
+You can get the container ID either from the proxmox web GUI, or from `pct list`.
+
+
 ## Setting Up Time Machine Backups
 
 Lots of guides online seem outdated on enabling time machine on linux. Since [Samba 4.8](https://github.com/samba-team/samba/pull/64) we've been able to advertise sambda shares as time capsules - and it's very easy!
