@@ -18,6 +18,13 @@ When in finder just type:
  CMD + SHIFT + .
 ```
 
+## Enable Full Word Backspace in Terminal
+
+I use the `Option + delete` keyboard combo to delete full words all throughout MacOS.  By default Terminal doesn't honor the full word backspace.  Enabling it is really simple:
+
+1. Go to `Terminal > Preferences > Profiles > Keyboard`
+2. Check "Use option key as meta key"
+
 ## Sudo with Touch ID
 
 Typing your sudo password is a lot of work! Utilize the touchID Pluggable Authentication Module (PAM) to run those commands quickly!
@@ -105,7 +112,6 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - Burp Suite Community
 - VS Code
 - Little Snitch
-- iTerm
 
 ## Dot Files
 
