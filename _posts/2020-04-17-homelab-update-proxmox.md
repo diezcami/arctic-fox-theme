@@ -3,6 +3,8 @@ layout: post
 title: "Homelab Update - Proxmox"
 date: 2020-04-17
 permalink: homelab-2
+redirect_from:
+    - proxmox
 tags: homelab linux
 ---
 
