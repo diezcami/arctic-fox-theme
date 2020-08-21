@@ -102,6 +102,7 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - GnuPG
 - jq
 - Gifski
+- pcregrep (grep across lines)
 
 ### Favorite Apps
 
@@ -112,6 +113,7 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - Burp Suite Community
 - VS Code
 - Little Snitch
+- Hex Fiend
 
 ## Dot Files
 
