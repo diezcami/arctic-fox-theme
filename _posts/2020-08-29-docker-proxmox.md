@@ -69,18 +69,15 @@ wget <MY_LAPTOP_IP>:8000/cloud-config.yml
 
 # Connecting to 10.1.0.99:8000 (10.1.0.99:8000)
 # cloud-config.yml     100% |*****************************************|   847   0:00:00 ETA
-
 ```
 
 Validate the `yml` file with, specify the device you'd like to install to (check with `df`), and install.
 
 ```bash
 sudo ros config validate -i cloud-config.yml
-
-# Nothing to standard out == good
+# No output means no errors!
 
 sudo ros install -c cloud-config.yml -d /dev/sda
-
 # Installing....
 ```
 
