@@ -18,6 +18,13 @@ When in finder just type:
  CMD + SHIFT + .
 ```
 
+## Enable Full Word Backspace in Terminal
+
+I use the `Option + delete` keyboard combo to delete full words all throughout MacOS.  By default Terminal doesn't honor the full word backspace.  Enabling it is really simple:
+
+1. Go to `Terminal > Preferences > Profiles > Keyboard`
+2. Check "Use option key as meta key"
+
 ## Sudo with Touch ID
 
 Typing your sudo password is a lot of work! Utilize the touchID Pluggable Authentication Module (PAM) to run those commands quickly!
@@ -67,6 +74,16 @@ sudo chmod 000 ~/Library/Preferences/ByHost/com.apple.loginwindow*
 
 To restore, just `rm` that file so macOS can regenerate it.
 
+## Disable Bluetooth auto-connect
+
+I have Sony WH-1000XM3 wireless headphones that I love, EXCEPT for the fact that they can only pair with one device.  The headphones often auto-connect to my Macbook, even if it's closed and sleeping. If i'm trying to pair the headphone to my phone, this can get very annoying as the only way to unpair is to login to my Macbook and disconnect from there.
+
+I disable Bluetooth auto-connecting across the board with this terminal command:
+
+```bash
+sudo defaults write /Library/Preferences/com.apple.Bluetooth.plist DontPageAudioDevices 1
+```
+
 ## First Hour Installs
 
 Below is a list of the software (off the top of my head) that I immediately install on a fresh Mac.
@@ -85,6 +102,7 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - GnuPG
 - jq
 - Gifski
+- pcregrep (grep across lines)
 
 ### Favorite Apps
 
@@ -95,7 +113,7 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - Burp Suite Community
 - VS Code
 - Little Snitch
-- iTerm
+- Hex Fiend
 
 ## Dot Files
 

@@ -3,6 +3,8 @@ layout: post
 title: "Homelab Update - Proxmox"
 date: 2020-04-17
 permalink: homelab-2
+redirect_from:
+    - proxmox
 tags: homelab linux
 ---
 
@@ -161,6 +163,15 @@ Before using a container, you'll need to download it.
 
 Your container should now be availble in the Proxmox GUI!
 
+### Locale issues in debian-based LXC container
+
+I sometimes see locale errors a lot in fresh debian LXC containers (esp. when running `apt`).  I've found reinstalling locales and configuring it with your own locale (`en-US` for me).
+
+```
+apt install --reinstall --purge locales
+dpkg-reconfigure locales
+```
+
 ## Enter a Linux Container from Proxmox SSH
 
 Quick one! This is the equivalent of `docker exec -it <container name> /bin/bash`.
@@ -170,6 +181,9 @@ root@proxmox:/# pct enter 102
 
 root@storage:/#
 ```
+
+You can get the container ID either from the proxmox web GUI, or from `pct list`.
+
 
 ## Setting Up Time Machine Backups
 

@@ -272,4 +272,3 @@ docker run -d -p 9000:9000 -p 8000:8000 --name portainer \
 
 I have several ISOs loaded for various workstation OSs (Windows, Debian). These have already come in handy for running OS-specific software, testing, and more.
 
-I'm working on a hackintosh VM - (if it's done) details can be found here [esxi-hackintosh](esxi-hackintosh).
