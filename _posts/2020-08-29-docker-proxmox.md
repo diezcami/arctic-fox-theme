@@ -81,7 +81,14 @@ sudo ros install -c cloud-config.yml -d /dev/sda
 # Installing....
 ```
 
-Now reboot, and remove the mounted ISO within the proxmox GUI. You should now be able to ssh with that ssh key you added in the config.
+### Proxmox GUI Configuration
+
+Everything inside the VM is now setup.  Power down the VM and go to Proxmox's web UI.  
+
+- Select your rancher VM, and in "Hardware" remove the CD/DVD ISO file.  
+- In "Options", go and enable "Enable QEMU Guest Agent"
+
+Now reboot! You should now be able to ssh with that ssh key you added in the config.
 
 ## Install Portainer
 
