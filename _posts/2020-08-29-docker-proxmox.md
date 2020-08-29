@@ -3,6 +3,7 @@ layout: post
 title: "Docker VM on Proxmox (rancherOS/Portainer)"
 date: 2020-08-29
 permalink: docker-proxmox
+tags: homelab
 ---
 
 ## Intro
