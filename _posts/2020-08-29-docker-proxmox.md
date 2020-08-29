@@ -52,7 +52,7 @@ ssh_authorized_keys:
 
 To get this config onto the VM, I started a simple python HTTP server in the directory of my config.
 
-#### On laptop/local machine
+#### On laptop/local machine ->
 
 ```bash
 python3 -m http.server
@@ -62,7 +62,7 @@ python3 -m http.server
 
 Assuming you're on the same local network, you can now `wget` your config into your rancher instance.
 
-### In Rancher VM
+#### In Rancher VM ->
 
 ```bash
 wget <MY_LAPTOP_IP>:8000/cloud-config.yml
