@@ -57,7 +57,7 @@ az group delete --name wgphRG --yes
 
 ## Setup Wireguard
 
-Now, SSH to your new VM to set up the VPN. [Wireguard](wireguard.com) is an awesome, modern VPN solution that we're going to be setting up. We're going to use [PiVPN](pivpn.io) to conduct the entire wireguard process for us.
+Now, SSH to your new VM to set up the VPN. [Wireguard](http://wireguard.com) is an awesome, modern VPN solution that we're going to be setting up. We're going to use [PiVPN](http://pivpn.io) to conduct the entire wireguard process for us.
 
 Your SSH key should've been automatically placed in `~/.ssh`.
 
