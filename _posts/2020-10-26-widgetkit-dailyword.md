@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "WidgetKit (Daily Word -- Learn Italian!)"
+title: "Daily Word (WidgetKit/SwiftUI)"
 date: 2020-10-26
 permalink: widgetkit-dailyword
 tags: mobile-dev
@@ -9,7 +9,7 @@ tags: mobile-dev
 
 > **Daily Word** is now on the [App Store](https://apps.apple.com/us/app/daily-word-language-widget/id1535573526) if you want to add a little language to your homescreen.  Its source can be found on [GitHub](https://github.com/joshspicer/widgetkit-daily-language).
 
-WidgetKit has been very exciting for lots of mobile developers, and something I recently explored a bit.  The result of this exploration is "Daily Word" - a simple app that, every ~24-hours, shows you a new (Italian|French|Japanese) word right on your homescreen!  It's simple and helped me nail down the basics of WidgetKit (and SwiftUI, something else i'd be wanting to try).
+WidgetKit has been very exciting for lots of mobile developers, and something I recently explored a bit.  The result of this exploration is "Daily Word" - a simple app that, every ~24-hours, shows you a new `(Italian|French|Japanese)` word right on your homescreen!  It's simple and helped me nail down the basics of WidgetKit (and SwiftUI, something else i'd be wanting to try).
 
 Specifically the [`getTimeline()`](https://github.com/joshspicer/widgetkit-daily-language/blob/main/DailyWidget/DailyWidget.swift#L32-L51) function, which defines the earliest possible time you'd like the widget to refresh (the OS will decide when _actually_ to do that refresh).  You then pass that new timeline to the completion.  
 
