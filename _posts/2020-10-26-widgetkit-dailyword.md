@@ -75,3 +75,7 @@ class {{language}} : LanguageBase {
 3. Add your new class here in the [LanguageFactory.swift](https://github.com/joshspicer/widgetkit-daily-italian/blob/main/DailyItalianWord/Languages/LanguageFactory.swift).
 
 Your language will be available in the picker! 
+
+----
+
+**Get Daily Word for yourself on the app [App Store](https://apps.apple.com/us/app/daily-word-language-widget/id1535573526) and check out its source on [GitHub](https://github.com/joshspicer/widgetkit-daily-language).**
