@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Italian Citizenship through Jure Sanguinis (my journey)"
+title: "Italian Citizenship through Jure Sanguinis (my journey, live)"
 date: 2020-03-05
 permalink: jure-sanguinis
 tags: travel
@@ -120,7 +120,39 @@ Due to Covid, this process has seemed to slow even further. Nonetheless, today I
 
 I also received a bonus photocopy of another man's naturalization documents.  I had never heard of this man before, but somehow he must be related to me. Unfortunately USCIS didn't explain __why__ they included this. Guess I have a bit more research to do!
 
-While i'm sure Covid did delay the process slightly, remember that we first wrote to USCIS _4 months ago_ in February. 
+While i'm sure Covid did delay the process slightly, remember that we first wrote to USCIS _4 months ago_ in February.
+
+### Oct 2020
+
+This month I decided to finally start collecting the local docuements i'd need. Since (i've heard) you don't get these documents returned to you, I have to get new copies for each certificate i'd require, even if I already had a copy at home.
+
+My entire lineage from my grandfather forward has lived in Massachusetts (very convenient!).  I recieved 9 new, certified documents in total.
+
+
+```
+1. Mother's Birth Certifcate
+2. Father's Birth Certifcate
+3. My Birth Certificate
+4. Grandmother's Birth Certifcate
+5. Great Grandfather's Death Certificate
+6. Great Grandmother's Death Certificate
+7. Grandfather's Death Certificate
+8. Grandparent's Marriage
+9. Parent's Marriage
+```
+
+The process was pretty painless ([details on the Mass Vitals site](https://www.mass.gov/orgs/registry-of-vital-records-and-statistics)).  Each document cost $20, and there were some hoops to jump through due to COVID, but overall not bad. I dropped off the forms and had the documents mailed to me within a week.
+
+I originally ordered 11 documents but two (Grandfather's birth and Great Grandparent's marriage) occurred prior to 1926. Prior to 1926 you can't go to the vital records office in MA, you need to contact the State Archives (see next section).
+
+There are some name descrepencies (My GGM's name is "Grace" on American docs vs "Grazia" on Italian ones).  Since this write-up is iterative over several years, you can scroll down to see if i've encountered any problems with that yet 😅.
+
+Next step, get these [apostilled](https://www.sec.state.ma.us/pre/precom/comidx.htm) and translated.
+
+## Nov 2020
+
+There are two more documents I needed from Massachusetts pre-1926 - my grandfather's birth certificate and my great-grandparent's marriage.  For this I need to contact the [Massachusetts State Archives](https://www.sec.state.ma.us/arc/arcvitalrecords/vitalrecordsidx.htm).  Luckily these docs are much cheaper (only $6) and can be conducted entirely over mail.
+
 
 ### TBD
 
