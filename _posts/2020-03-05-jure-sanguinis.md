@@ -124,7 +124,7 @@ While i'm sure Covid did delay the process slightly, remember that we first wrot
 
 ### Oct 2020
 
-This month I decided to finally start collecting the local docuements i'd need. Since (i've heard) you don't get these documents returned to you, I have to get new copies for each certificate i'd require, even if I already had a copy at home.
+This month I decided to finally start collecting the local documents i'd need. Since (i've heard) you don't get these documents returned to you, I have to get new copies for each certificate i'd require, even if I already had a copy at home.
 
 My entire lineage from my grandfather forward has lived in Massachusetts (very convenient!).  I recieved 9 new, certified documents in total.
 
