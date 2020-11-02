@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Italian Citizenship through Jure Sanguinis (my journey, live)"
+title: "Italian Citizenship through Jure Sanguinis (as it happens!)"
 date: 2020-03-05
 permalink: jure-sanguinis
 tags: travel
@@ -148,6 +148,8 @@ I originally ordered 11 documents but two (Grandfather's birth and Great Grandpa
 There are some name descrepencies (My GGM's name is "Grace" on American docs vs "Grazia" on Italian ones).  Since this write-up is iterative over several years, you can scroll down to see if i've encountered any problems with that yet 😅.
 
 Next step, get these [apostilled](https://www.sec.state.ma.us/pre/precom/comidx.htm) and translated.
+
+For translations, i'm currently looking into getting that done of Fiverr thanks to the info in the [Dual US-Italian Citizenship Facebook group](https://m.facebook.com/groups/23386646249/permalink/10155484576601250/).
 
 ## Nov 2020
 
