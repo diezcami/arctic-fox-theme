@@ -108,7 +108,7 @@ You should see the following lines COMMENTED.
 ```
 # Socket module helper for SSL support; you must comment out the other
 # socket line above, and possibly edit the SSL variable:
-:SSL=/usr/local/ssl
+SSL=/usr/local/ssl
  _ssl _ssl.c \
     -DUSE_SSL -I$(SSL)/include -I$(SSL)/include/openssl \
     -L$(SSL)/lib -lssl -lcrypto
