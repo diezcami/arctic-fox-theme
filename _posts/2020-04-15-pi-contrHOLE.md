@@ -3,6 +3,8 @@ layout: post
 title: "Pi ContrHOLE - Xamarin Forms & Pi-Hole"
 date: 2020-04-15
 permalink: pihole
+redirect_from:
+  - /pihole-mobile-app
 tags: mobile-dev linux homelab xamarin networking
 ---
 
