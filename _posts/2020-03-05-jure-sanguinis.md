@@ -155,6 +155,7 @@ For translations, i'm currently looking into getting that done of Fiverr thanks 
 
 There are two more documents I needed from Massachusetts pre-1926 - my grandfather's birth certificate and my great-grandparent's marriage.  For this I need to contact the [Massachusetts State Archives](https://www.sec.state.ma.us/arc/arcvitalrecords/vitalrecordsidx.htm).  Luckily these docs are much cheaper (only $6) and can be conducted entirely over mail.
 
+Today I both mailed out the 9 MA documents I already had to get [apostilled](https://www.sec.state.ma.us/pre/precom/comidx.htm), while concurrently engaged with someone to provide Italian translations for those docs (tip: take scans of your docs as soon as you receive them - it's nice to have a digital copy!).  
 
 ### TBD
 
