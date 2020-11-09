@@ -41,8 +41,8 @@ Want to see your favorite language on your homescreen!  Add a word list to my ap
 
 Wordlists are embedded into the widget and can be added easily.
 
-1. Add a unique enum for your newly [Supported Language](https://github.com/joshspicer/widgetkit-daily-italian/blob/main/DailyItalianWord/SupportedLanguages.swift).
-2. Create a new `.swift` file to [/Languages](https://github.com/joshspicer/widgetkit-daily-italian/tree/main/DailyItalianWord/Languages) that conforms to the `LanguageBase` protocol.
+* Add a unique enum for your newly [Supported Language](https://github.com/joshspicer/widgetkit-daily-italian/blob/main/DailyItalianWord/SupportedLanguages.swift).
+* Create a new `.swift` file to [/Languages](https://github.com/joshspicer/widgetkit-daily-italian/tree/main/DailyItalianWord/Languages) that conforms to the `LanguageBase` protocol.
 
 ### Example {{language}}.swift
 
@@ -72,7 +72,7 @@ class {{language}} : LanguageBase {
 }
 ```
 
-3. Add your new class here in the [LanguageFactory.swift](https://github.com/joshspicer/widgetkit-daily-italian/blob/main/DailyItalianWord/Languages/LanguageFactory.swift).
+* Add your new class here in the [LanguageFactory.swift](https://github.com/joshspicer/widgetkit-daily-italian/blob/main/DailyItalianWord/Languages/LanguageFactory.swift).
 
 Your language will be available in the picker! 
 
