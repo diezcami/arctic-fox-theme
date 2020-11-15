@@ -1,0 +1,7 @@
+This is Josh Spicer <hello@joshspicer.com>.  I am confirming that:
+
+My OLD pgp key created on March 8th 2018 with fingerprint 415A 4243 34C5 C83A BE00  04CA D5C4 AC84 C321 1123 is now REVOKED.
+
+My NEW pgp key created on Nov 15th 2020 with fingerprint F5EB 0F7A B4DC 73D7 CF2A  2F07 4DFE 42EE 22D8 4A62 is now my ACTIVE key.
+
+This is correct as of Nov 15th 2020.  I am signing this file two times with my OLD key and my NEW key as proof.
