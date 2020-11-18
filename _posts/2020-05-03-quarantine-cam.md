@@ -3,6 +3,7 @@ layout: post
 title: "Repurpose an old iPhone as a (Teams/Slack/Zoom) Mac Webcam"
 date: 2020-05-03
 permalink: quarantine-cam
+favorite: true
 tags: macOS tips-tricks
 ---
 
