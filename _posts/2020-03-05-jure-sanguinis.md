@@ -151,11 +151,17 @@ Next step, get these [apostilled](https://www.sec.state.ma.us/pre/precom/comidx.
 
 For translations, i'm currently looking into getting that done of Fiverr thanks to the info in the [Dual US-Italian Citizenship Facebook group](https://m.facebook.com/groups/23386646249/permalink/10155484576601250/).
 
-## Nov 2020
+## Early Nov 2020
 
-There are two more documents I needed from Massachusetts pre-1926 - my grandfather's birth certificate and my great-grandparent's marriage.  For this I need to contact the [Massachusetts State Archives](https://www.sec.state.ma.us/arc/arcvitalrecords/vitalrecordsidx.htm).  Luckily these docs are much cheaper (only $6) and can be conducted entirely over mail.
+There are two more documents I needed from Massachusetts pre-1926 - my grandfather's birth certificate and my great-grandparent's marriage.  For this I need to contact the [Massachusetts State Archives](https://www.sec.state.ma.us/arc/arcvitalrecords/vitalrecordsidx.htm).  Luckily these docs are much cheaper (only $6) and can be conducted entirely over mail.  I mailed them on November 3rd.
 
 Today I both mailed out the 9 MA documents I already had to get [apostilled](https://www.sec.state.ma.us/pre/precom/comidx.htm), while concurrently engaged with someone to provide Italian translations for those docs (tip: take scans of your docs as soon as you receive them - it's nice to have a digital copy!).  
+
+## Late November 2020
+
+I received the two necessary records from the Massachusetts State Archives on Nov. 21st.  There is again a slight name discrepency (Luigi -> Louis), but everything else (dates, parent names) seem to be in order.  
+
+This doc also confirms that my great-grandparents WERE married when my grandfather was born (this was some discrepency on online resources).  I didn't know if that would be an issue, but now I don't need to even consider it.
 
 ### TBD
 
