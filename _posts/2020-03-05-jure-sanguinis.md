@@ -6,6 +6,8 @@ permalink: jure-sanguinis
 tags: travel
 ---
 
+> Welcome to my Italian citizenship journey!  I'm going to be posting here in chronological order _as things happen_.  
+
 [Jure Sanguinis](https://en.wikipedia.org/wiki/Jus_sanguinis), or "right of blood", is a principle of nationality law that many countries uses to determine citizenship. I grew up hearing about my maternal great-grandparents who emigrated from Italy. I discovered jure sanguinis and wondered if I was eligible. If I was eligible, I would be able to claim my citizenship, and eventually apply for an Italian passport, allowing me to live and work in the EU indefinitely.
 
 I won't go into the full details of understanding if you qualify. There are some great resources [on wikipedia](https://en.wikipedia.org/wiki/Italian_nationality_law) and on dedicated citizenship services like [MyItalianFamily.com](https://www.myitalianfamily.com/apply-italian-citizenship/learn-if-you-qualify).
@@ -150,6 +152,8 @@ There are some name descrepencies (My GGM's name is "Grace" on American docs vs 
 Next step, get these [apostilled](https://www.sec.state.ma.us/pre/precom/comidx.htm) and translated.
 
 For translations, i'm currently looking into getting that done of Fiverr thanks to the info in the [Dual US-Italian Citizenship Facebook group](https://m.facebook.com/groups/23386646249/permalink/10155484576601250/).
+
+> IMPORTANT NOTE!  I realized this later, but the Boston consulate requires a NOTARIZED signature from the translator (for each translation) and then _that_ needs to be APOSTILLED.  One person the Facebook group recommended to handle this was [avepally on Fiverr](https://www.fiverr.com/avepally).
 
 ## Early Nov 2020
 
