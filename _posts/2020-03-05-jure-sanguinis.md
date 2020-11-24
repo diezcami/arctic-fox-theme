@@ -159,13 +159,17 @@ For translations, i'm currently looking into getting that done of Fiverr thanks 
 
 There are two more documents I needed from Massachusetts pre-1926 - my grandfather's birth certificate and my great-grandparent's marriage.  For this I need to contact the [Massachusetts State Archives](https://www.sec.state.ma.us/arc/arcvitalrecords/vitalrecordsidx.htm).  Luckily these docs are much cheaper (only $6) and can be conducted entirely over mail.  I mailed them on November 3rd.
 
-Today I both mailed out the 9 MA documents I already had to get [apostilled](https://www.sec.state.ma.us/pre/precom/comidx.htm), while concurrently engaged with someone to provide Italian translations for those docs (tip: take scans of your docs as soon as you receive them - it's nice to have a digital copy!).  
+On November 6th I  mailed out the 9 MA documents I already had to get [apostilled](https://www.sec.state.ma.us/pre/precom/comidx.htm), while concurrently engaged with someone to provide Italian translations for those docs (tip: take scans of your docs as soon as you receive them - it's nice to have a digital copy!).  
 
 ## Late November 2020
 
-I received the two necessary records from the Massachusetts State Archives on Nov. 21st.  There is again a slight name discrepency (Luigi -> Louis), but everything else (dates, parent names) seem to be in order.  
+I received the two necessary records from the Massachusetts State Archives on Nov. 21st.  There is again a slight name discrepency (Luigi -> Louis), but everything else (dates, parent names) seem to be in order.  This doc also confirms that my great-grandparents WERE married when my grandfather was born (this was some discrepency on online resources).  I didn't know if that would be an issue, but now I don't need to even consider it.
 
-This doc also confirms that my great-grandparents WERE married when my grandfather was born (this was some discrepency on online resources).  I didn't know if that would be an issue, but now I don't need to even consider it.
+On November 24th I received back the nine docs i'd sent out to get apostilled.  I had called a few days earlier to get the status and the woman said the office was really backed up, and it still only took 2.5 weeks. Nice! 
+
+Around this time I also engaged another translator to retranslate and certify/apostille my vital record documents.  She will handle that entire process and mail them to me.  I expect that to take a little over a month.  _That's what I get for not reading Boston's [consulate page](https://consboston.esteri.it/consolato_boston/en/i_servizi/per_i_cittadini/cittadinanza/citizenship-jure-sanguinis.html) well enough_.
+
+Since it seems i'll have some time until my appointment, I decided to explore the other Italian branch of my family (my grandmother's parents).  I did a search online and found that both my great-grandparents on that side are from a city in Sicily.  Out of curiosity (and perhaps insurance in this whole process in case I missed a key fact) I wrote the comune to potentially get their birth certificates.  While not needed for the ancestry line i'm going to be using, it would certainly complete my set of family documents.
 
 ### TBD
 
