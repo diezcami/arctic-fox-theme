@@ -97,7 +97,7 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - CopyClip
 - ~Amethyst~ Magnet
 - TunnelBlick
-- BetterTouchTool
+- BetterTouchTool (if you ever think to yourself, "_I wish my Mac could do X_" - BTT probably helps you accomplish that.)
 - Arq
 - GnuPG
 - jq
