@@ -1,4 +1,4 @@
 /_site
-!/.gitignore
+.jekyll-cache/
 /FUTURE_POSTS
 _posts/_site
