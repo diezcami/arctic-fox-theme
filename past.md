@@ -8,7 +8,7 @@ I’m **Josh** - a Boston-based graduate of Khoury College at [**Northeastern Un
 
 🖥️ I started full time at Microsoft early 2020 on the [Xamarin](https://dotnet.microsoft.com/apps/xamarin) Tooling team. 
 
-🖥️ Previously i'd interned in M365's Intelligent Conversation and Communication Cloud (IC3) group.
+🏔️ Previously i'd interned in M365's Intelligent Conversation and Communication Cloud (IC3) group.
 
 ☕️ I abide by the three C's: <b>concerts, coffee</b>, and <b>[cats](../cinnamon)</b>.
 
