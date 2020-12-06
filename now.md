@@ -8,11 +8,13 @@ redirect_from:
 
 Hi - I'm **Josh**.
 
-📍 I live in Cambridge, MA and work at [Microsoft](https://microsoft.com/) on the Xamarin UI Tooling Team.
+📍 I live in Cambridge, MA and work at [Microsoft](https://microsoft.com/) on the [Github Codespaces](https://github.com/features/codespaces) team.
 
-🇮🇹 In my free time i'm (slowly) learning Italian while applying for [citizenship](/jure-sanguinis).  <!-- JHU -->
+🇮🇹 In my free time i'm (slowly) learning Italian while applying for [citizenship](/jure-sanguinis). 
 
-🎓 Check out what i've done in the [**past**](/past), including graduate from [Northeastern University](http://ccs.neu.edu/home/joshua) with a degree in computer science, and create [Parade](https://parade.events/).
+🎓 I am soon starting my Master's degree part-time.  I'll be studying Cybersecurity at [Johns Hopkins University](https://pages.jh.edu/jspice10/).
+
+🕥 Check out what i've done in the [**past**](/past), including graduate from [Northeastern University](http://ccs.neu.edu/home/joshua) with a degree in computer science, and create [Parade](https://parade.events/).
 
 **Interests include**
 
