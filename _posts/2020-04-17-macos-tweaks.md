@@ -32,6 +32,7 @@ Typing your sudo password is a lot of work! Utilize the touchID Pluggable Authen
 ```bash
 cd /etc/pam.d
 sudo chmod +w sudo
+sudo vim sudo
 ```
 
 Add a new first entry to include the PAM module `pam_tid.so` (like so):

@@ -3,6 +3,7 @@ layout: post
 title: "Bluetooth Low Energy devices on HomeKit"
 date: 2020-12-06
 permalink: bluetooth-le-homekit
+tags: linux hacking homelab
 ---
 
 I recently bought a bluetooth thermometer/hydrometer [(Govee H5072)](https://www.amazon.com/dp/B07DWMJKP5/ref=cm_sw_em_r_mt_dp_MXoZFb6S7CWZD) for $15 on Amazon to use in my apartment.  After purchasing, I thought of several smart home automations that would be nice to have triggered based on the sensor's readings.  This device communicates via my phone with Bluetooth LE, and didn't offer any smarthome hooks in the app.  Govee also offers a **$60** WiFi version of this sensor that does work with the typical smart home providers.  
@@ -73,7 +74,9 @@ on the host VM.
 
 ## It works!
 
+Awesome - we now see our devices in the iOS Home app.
+
 ![map]({{site.url}}/assets/resources-bluetooth-le-homekit/homekit.jpeg)
 
-Just like that, I now had sensor readings available in my Home app.  With Siri automations you can trigger other things to happen around the home (namely interfacing with smart plugs, etc...)
+With Siri automations you can trigger other things to happen around the home (namely interfacing with smart plugs, etc...).  I have other bluetooth devices around the house that I have yet to find premade solutions for.  Thanks to this investigation I feel confident in getting those hooked up to my homekit network as well.
 
