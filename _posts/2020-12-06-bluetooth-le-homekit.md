@@ -59,7 +59,7 @@ Battery:  100%
 
 I run [Homebridge](https://github.com/homebridge/homebridge) on a local machine to..uh.._bridge_ certain to make certain homekit _incompatible_ devices speak the Apple language. 
 
-I found a plugin by [asednev](https://github.com/asednev/homebridge-plugin-gove) that worked great for my model of hydrometer.
+I found a plugin by [asednev](https://github.com/asednev/homebridge-plugin-govee) that worked great for my model of hydrometer.
 
 There were some "gotchas" setting this up. Namely:
 
