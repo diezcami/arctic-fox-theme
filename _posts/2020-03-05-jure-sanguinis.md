@@ -171,6 +171,12 @@ Around this time I also engaged another translator to retranslate and certify/ap
 
 Since it seems i'll have some time until my appointment, I decided to explore the other Italian branch of my family (my grandmother's parents).  I did a search online and found that both my great-grandparents on that side are from a city in Sicily.  Out of curiosity (and perhaps insurance in this whole process in case I missed a key fact) I wrote the comune to potentially get their birth certificates.  While not needed for the ancestry line i'm going to be using, it would certainly complete my set of family documents.
 
+## December 6 2020
+
+Reading some posts on the Dual citizenship Facebook group, I decided to try to get additional documentation from [NARA Boston](https://www.archives.gov/boston) on my great grandfather's naturalization. These docs are on top of the USCIS docs that I have (since it appears just having the USCIS for Boston is often not enough).   
+
+My great-grandfather naturalized in Suffolk county, so in my case NARA held the records federally. For other counties in MA your records may be held in county court records.  The NARA Boston office in Waltham is closed due to COVID, but a few people are still working to fulfill certificate requests via email.  I emailed the office, getting a cryptic "we're closed" email in response.  Rest assured a week later I got an email from an employee named Joe.  They had found my great-grandfather's NARA naturalization records, and could mail them to me for $10 (+ a $15 certification fee, which of course we want!).  I payed over the phone and the docs should be on their way now.
+
 ### TBD
 
 That's all for now! I'll be updating this as more develops!
