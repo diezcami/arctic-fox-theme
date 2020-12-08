@@ -130,7 +130,6 @@ This month I decided to finally start collecting the local documents i'd need. S
 
 My entire lineage from my grandfather forward has lived in Massachusetts (very convenient!).  I recieved 9 new, certified documents in total.
 
-
 ```
 1. Mother's Birth Certifcate
 2. Father's Birth Certifcate
@@ -167,7 +166,9 @@ I received the two necessary records from the Massachusetts State Archives on No
 
 On November 24th I received back the nine docs i'd sent out to get apostilled.  I had called a few days earlier to get the status and the woman said the office was really backed up, and it still only took 2.5 weeks. Nice! 
 
-Around this time I also engaged another translator to retranslate and certify/apostille my vital record documents.  She will handle that entire process and mail them to me.  I expect that to take a little over a month.  _That's what I get for not reading Boston's [consulate page](https://consboston.esteri.it/consolato_boston/en/i_servizi/per_i_cittadini/cittadinanza/citizenship-jure-sanguinis.html) well enough_.
+Around this time I also engaged another translator to retranslate and certify/apostille my vital record documents.  She will handle that entire process and mail them to me.  I expect that to take a little over a month.  _That's what I get for not reading Boston's [consulate page](https://consboston.esteri.it/consolato_boston/en/i_servizi/per_i_cittadini/cittadinanza/citizenship-jure-sanguinis.html) well enough_. 
+
+> I used Avepally from Fiverr for the translation/apostille/certification process.  He was fantastic and got everything processed and mailed to me in record time.  He apparently lives in Ohio since my apostilles are from that state, which is great because their turnaround time was _much_ faster than MA's.
 
 Since it seems i'll have some time until my appointment, I decided to explore the other Italian branch of my family (my grandmother's parents).  I did a search online and found that both my great-grandparents on that side are from a city in Sicily.  Out of curiosity (and perhaps insurance in this whole process in case I missed a key fact) I wrote the comune to potentially get their birth certificates.  While not needed for the ancestry line i'm going to be using, it would certainly complete my set of family documents.
 
