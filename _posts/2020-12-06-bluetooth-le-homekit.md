@@ -36,7 +36,7 @@ hcitool lescan
 
 The `GVH5072_XXXX` device matched the name of the device in my Govee app.
 
-I was fully prepared to reverse engineer the communications. I read [this guide](https://github.com/joshspicer/bluetooth-le-govee/blob/main/govee.py) and used an old android device to generate a pcap file for analysis in wireshark.
+I was fully prepared to reverse engineer the communications. I read [this guide](https://thejeshgn.com/2020/08/05/reverse-engineering-a-bluetooth-low-energy-oximeter/) and [this other guide](https://www.instructables.com/Reverse-Engineering-Smart-Bluetooth-Low-Energy-Dev/) and used an old android device to generate a pcap file for analysis in wireshark.
 
 Before moving forward though I looked a bit online, and to my surpise there was already a lot of work done.  Here is one python and node implementation by [Thrilleratplay](https://github.com/Thrilleratplay/GoveeWatcher), utilzing the awesome [bleson python module](https://github.com/TheCellule/python-bleson).
 
@@ -59,7 +59,7 @@ Battery:  100%
 
 I run [Homebridge](https://github.com/homebridge/homebridge) on a local machine to..uh.._bridge_ certain to make certain homekit _incompatible_ devices speak the Apple language. 
 
-I found a plugin by [asednev](https://github.com/asednev/homebridge-plugin-gove) that worked great for my model of hydrometer.
+I found a plugin by [asednev](https://github.com/asednev/homebridge-plugin-govee) that worked great for my model of hydrometer.
 
 There were some "gotchas" setting this up. Namely:
 
