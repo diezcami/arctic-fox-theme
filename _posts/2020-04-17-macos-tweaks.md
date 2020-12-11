@@ -98,12 +98,16 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - CopyClip
 - ~Amethyst~ Magnet
 - TunnelBlick
-- BetterTouchTool (if you ever think to yourself, "_I wish my Mac could do X_" - BTT probably helps you accomplish that.)
+- BetterTouchTool
 - Arq
 - GnuPG
 - jq
 - Gifski
 - pcregrep (grep across lines)
+
+### Misc Tweaks
+-  [Copy Git Link (VSCode)](https://marketplace.visualstudio.com/items?itemName=reduckted.vscode-gitweblinks) (VS: [CopyGitLink](https://marketplace.visualstudio.com/items?itemName=EtienneBAUDOUX.CopyGitLink))
+- [Git Open (zsh)](https://github.com/paulirish/git-open)
 
 ### Favorite Apps
 
