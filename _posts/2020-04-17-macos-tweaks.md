@@ -106,7 +106,7 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - pcregrep (grep across lines)
 
 ### Misc Tweaks
--  [Copy Git Link (VSCode)](https://marketplace.visualstudio.com/items?itemName=reduckted.vscode-gitweblinks) (VS: [CopyGitLink](https://marketplace.visualstudio.com/items?itemName=EtienneBAUDOUX.CopyGitLink))
+-  [Copy Git Link (VSCode)](https://marketplace.visualstudio.com/items?itemName=reduckted.vscode-gitweblinks)[*](https://github.com/joshspicer/vscode-gitweblinks)
 - [Git Open (zsh)](https://github.com/paulirish/git-open)
 
 ### Favorite Apps
