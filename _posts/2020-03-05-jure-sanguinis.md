@@ -181,6 +181,8 @@ My great-grandfather naturalized in Suffolk county, so in my case NARA held the 
 
 ## December 21 2020
 
+I had three more documents (GF's BC, GP's MC, and GM's DC) that I needed to get apostilled in MA.  I sent those in and got them back last week (~3 week turnaround time.)
+
 Nearly one year since I began this process and I **think** that I have all of the documents I need! 🎉
 
 My consulate appointment is still scheduled for September 2021.  I've been (constantly (obsessively)) checking Prenota to find an earlier appointment via a cancellation - hopefully I get one!  Regardless, very happy I have *something* scheduled. 
