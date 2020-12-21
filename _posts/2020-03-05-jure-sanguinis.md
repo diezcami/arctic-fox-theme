@@ -178,6 +178,13 @@ Reading some posts on the Dual citizenship Facebook group, I decided to try to g
 
 My great-grandfather naturalized in Suffolk county, so in my case NARA held the records federally. For other counties in MA your records may be held in county court records.  The NARA Boston office in Waltham is closed due to COVID, but a few people are still working to fulfill certificate requests via email.  I emailed the office, getting a cryptic "we're closed" email in response.  Rest assured a week later I got an email from an employee named Joe.  They had found my great-grandfather's NARA naturalization records, and could mail them to me for $10 (+ a $15 certification fee, which of course we want!).  I payed over the phone and the docs should be on their way now.
 
+
+## December 21 2020
+
+Nearly one year since I began this process and I **think** that I have all of the documents I need! 🎉
+
+My consulate appointment is still scheduled for September 2021.  I've been (constantly (obsessively)) checking Prenota to find an earlier appointment via a cancellation - hopefully I get one!  Regardless, very happy I have *something* scheduled. 
+
 ### TBD
 
 That's all for now! I'll be updating this as more develops!
