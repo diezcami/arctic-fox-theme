@@ -10,7 +10,7 @@ tags: travel
 
 [Jure Sanguinis](https://en.wikipedia.org/wiki/Jus_sanguinis), or "right of blood", is a principle of nationality law that many countries uses to determine citizenship. I grew up hearing about my maternal great-grandparents who emigrated from Italy. I discovered jure sanguinis and wondered if I was eligible. If I was eligible, I would be able to claim my citizenship, and eventually apply for an Italian passport, allowing me to live and work in the EU indefinitely.
 
-I won't go into the full details of understanding if you qualify. There are some great resources [on wikipedia](https://en.wikipedia.org/wiki/Italian_nationality_law) and on dedicated citizenship services like [MyItalianFamily.com](https://www.myitalianfamily.com/apply-italian-citizenship/learn-if-you-qualify).
+I won't go into the full details of understanding if you qualify. There are some great resources [on wikipedia](https://en.wikipedia.org/wiki/Italian_nationality_law) and on dedicated citizenship services like [MyItalianFamily.com](https://www.myitalianfamily.com/apply-italian-citizenship/learn-if-you-qualify).  _Edit_: The BEST resource for this process is the [Italian Dual Citzenship Facebook page](https://m.facebook.com/groups/23386646249/permalink/10155484576601250/).  
 
 If you determine you qualify, you'll essentially need proof of unbroken Italian lineage (ending at you) in the form of birth, marriage, death, and naturalization certificates. This includes official birth records of your most recent Italian ancestor. You'll need all of these internationally certified and translated to Italian. You'll then need to book an appointment with an your local Italian consulate, pay Italy some money, and then wait for Italy to give you the thumbs up.
 
