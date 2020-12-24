@@ -315,8 +315,8 @@ which simply converts the byte array into a string we can easily read.
 {% highlight java linenos %}
 //Helper function to decode byte[] to String
 function arrToStr(byteArr) {
-tmp = "";
-for (k = 0; k < byteArr.length; k++) {
+var tmp = "";
+for (var k = 0; k < byteArr.length; k++) {
 tmp += String.fromCharCode(byteArr[k]);
 }
 return tmp;
@@ -325,7 +325,7 @@ return tmp;
 // Java.perform wraps all of our Frida code.
 Java.perform(function() {
 //
-classAC = Java.use("sg.vantagepoint.a.c");
+var classAC = Java.use("sg.vantagepoint.a.c");
 
 classAC.a.implementation = function(x) {
 console.log("In function A");
@@ -346,15 +346,15 @@ console.log("Root Bypass Complete");
 
 console.log("Finding Password....");
 
-classAA = Java.use("sg.vantagepoint.a.a");
+var classAA = Java.use("sg.vantagepoint.a.a");
 // Method a() in a.a
 classAA.a.implementation = function(x1, x2) {
 console.log("In function a.a.a()");
 // Call this function and store its return value
 //x1 and x2 are the variables the _app_ is calling with.
-rawFunctionCall = this.a(x1, x2);
+var rawFunctionCall = this.a(x1, x2);
 // Convert Byte[] to String
-output = arrToStr(rawFunctionCall);
+var output = arrToStr(rawFunctionCall);
 // Log the password.
 console.log("=====> " + output);
 return rawFunctionCall;
