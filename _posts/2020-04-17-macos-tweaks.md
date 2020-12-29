@@ -108,6 +108,7 @@ Below is a list of the software (off the top of my head) that I immediately inst
 ### Misc Tweaks
 -  [Copy Git Link (VSCode)](https://marketplace.visualstudio.com/items?itemName=reduckted.vscode-gitweblinks)[*](https://github.com/joshspicer/vscode-gitweblinks)
 - [Git Open (zsh)](https://github.com/paulirish/git-open)
+- ["Open in VSCode" from Finder](https://www.jimbobbennett.io/open-anything-in-vs-code-using-a-macos-quick-action/)
 
 ### Favorite Apps
 
