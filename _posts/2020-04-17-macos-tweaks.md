@@ -6,7 +6,8 @@ permalink: macos-tweaks
 tags: macOS tips-tricks
 ---
 
-> **Updated** favorite apps on July 2nd 2020
+> **Last updated on** Dec 29 2020
+
 
 ## Show Hidden Folders in Finder
 
