@@ -17,10 +17,7 @@ redirect_from:
 <details><summary>CLICK ME</summary>
 <p>
 
-```python
-
-
-```
+...
 
 </p>
 </details>
