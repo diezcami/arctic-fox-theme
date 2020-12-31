@@ -1,5 +1,5 @@
 {
     "postCreateCommand": ".devcontainer/jekyll-dep.sh",
     "forwardPorts": [4000],
-    "image" : "joshspicer/josh"
+    "image" : "ubuntu"
 }
