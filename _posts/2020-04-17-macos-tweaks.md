@@ -98,13 +98,15 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - OhMyZsh
 - CopyClip
 - ~Amethyst~ Magnet
-- TunnelBlick
+- ~TunnelBlick~ Wireguard
 - BetterTouchTool
 - Arq
 - GnuPG
 - jq
 - Gifski
 - pcregrep (grep across lines)
+- [Rocket](https://matthewpalmer.net/rocket/)
+- Amphetamine
 
 ### Misc Tweaks
 -  [Copy Git Link (VSCode)](https://marketplace.visualstudio.com/items?itemName=reduckted.vscode-gitweblinks)[*](https://github.com/joshspicer/vscode-gitweblinks)
