@@ -14,7 +14,7 @@ Hi - I'm **Josh**.
 
 🎓 I am soon starting my Master's degree part-time.  I'll be studying Cybersecurity at [Johns Hopkins University](https://pages.jh.edu/jspice10/).
 
-🕥 Check out what i've done in the [**past**](/past), including graduate from [Northeastern University](http://ccs.neu.edu/home/joshua) with a degree in computer science, and create [Parade](https://parade.events/).
+🕥 Check out what i've done in the [**past**](/past), including graduate from [Northeastern University](https://ccs.neu.edu/home/joshua) with a degree in computer science, and create [Parade](https://parade.events/).
 
 **Interests include**
 
