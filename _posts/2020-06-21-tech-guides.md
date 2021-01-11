@@ -13,3 +13,4 @@ permalink: tech-guides
 * [Xamarin Forms State Persistence Tips](https://codemilltech.com/persist-whatever-you-want-with-xamarin-forms/)
 * [Virtualizing MacOS](https://www.nicksherlock.com/2020/04/installing-macos-catalina-on-proxmox-with-opencore/)
 * [reverse tty shells](https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/)
+* [Encrypted Bind and Reverse Shells with Socat](https://erev0s.com/blog/encrypted-bind-and-reverse-shells-socat/)
