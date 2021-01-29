@@ -10,7 +10,7 @@ Hi - I'm **Josh**.
 
 📍 I live in Cambridge, MA and work at [Microsoft](https://microsoft.com/) on the [Github Codespaces](https://github.com/features/codespaces) team.
 
-🇮🇹 In my free time i'm (slowly) learning Italian while applying for [citizenship](/jure-sanguinis). 
+🇮🇹 In my free time i'm (slowly) learning Italian while getting my [citizenship](/jure-sanguinis) recognized. 
 
 🎓 I am soon starting my Master's degree part-time.  I'll be studying Cybersecurity at [Johns Hopkins University](https://pages.jh.edu/jspice10/).
 
