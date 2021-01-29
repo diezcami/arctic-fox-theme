@@ -20,3 +20,5 @@ permalink: monthly-playlist-2020
 * [ottobre](https://open.spotify.com/playlist/02jgyMMXDx1agydJy0lkka?si=-j0TsTWZTsu12LUYjUweHQ)
 * [novembre](https://open.spotify.com/playlist/3YBNBEEUWCuqP7NyDFGG3d?si=3W6dTINBS8ect9KbG7WA1A)
 * [dicembre](https://open.spotify.com/playlist/41MqpxHZegtIyafvPromKt?si=zUv63rFaQzq64Pn_vpE6eQ)
+
+_[2019](./monthly-playlist-2019), [2018](./monthly-playlist-2018)_
