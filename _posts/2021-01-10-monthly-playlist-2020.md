@@ -3,6 +3,7 @@ layout: post
 title: "Monthly Playlists - 2020!"
 date: 2021-01-10
 permalink: monthly-playlist-2020
+tags: music
 ---
 <!-- ![1.png]({{site.url}}/assets/resources-monthly-playlist-2020/1.png) -->
 
