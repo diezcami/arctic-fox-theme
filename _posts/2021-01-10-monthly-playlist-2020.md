@@ -22,6 +22,6 @@ tags: music
 * [novembre](https://open.spotify.com/playlist/3YBNBEEUWCuqP7NyDFGG3d?si=3W6dTINBS8ect9KbG7WA1A)
 * [dicembre](https://open.spotify.com/playlist/41MqpxHZegtIyafvPromKt?si=zUv63rFaQzq64Pn_vpE6eQ)
 
-This year we're starting 2021 off with our first _morse code month_ [*.--- .- -.*](https://open.spotify.com/playlist/28VcuE4ezfRFmJMMRcjTNc?si=pGFrp0t3SdShLZbl6ZpQhg)
+This year we're starting 2021 off with our first _morse code month_  <span style="font-size:larger">[*.--- .- -.*](https://open.spotify.com/playlist/28VcuE4ezfRFmJMMRcjTNc?si=pGFrp0t3SdShLZbl6ZpQhg)</span>
 
 _Previous: [2019](./monthly-playlist-2019), [2018](./monthly-playlist-2018)_
