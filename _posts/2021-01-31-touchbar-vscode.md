@@ -6,7 +6,7 @@ permalink: touchbar-vscode
 tags: macOS
 ---
 
-[**On my Github**](https://github.com/joshspicer/vscode-touchbar-command-shortcut) you'll find my first (not work-related) [vscode extension](https://marketplace.visualstudio.com/items?itemName=joshspicer.touchbarcommandshortcuts) - a simple tool to map your commonly used extension commands to touchbar buttons.
+[**On my Github**](https://github.com/joshspicer/vscode-touchbar-command-shortcuts) you'll find my first (not work-related) [vscode extension](https://marketplace.visualstudio.com/items?itemName=joshspicer.touchbarcommandshortcuts) - a simple tool to map your commonly used extension commands to touchbar buttons.
 
 ![1.png](https://github.com/joshspicer/vscode-touchbar-command-shortcuts/blob/main/imgs/tb.png?raw=true)
 
