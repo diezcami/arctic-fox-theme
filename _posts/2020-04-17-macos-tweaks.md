@@ -97,8 +97,8 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - Brew
 - OhMyZsh
 - CopyClip
-- ~Amethyst~ Magnet
-- ~TunnelBlick~ Wireguard
+- ~~Amethyst~~ Magnet
+- ~~TunnelBlick~~ Wireguard
 - BetterTouchTool
 - Arq
 - GnuPG
@@ -115,11 +115,12 @@ Below is a list of the software (off the top of my head) that I immediately inst
 
 ### Favorite Apps
 
-- Proxyman
+- [Proxyman](https://proxyman.io)! - alternative: MITMProxy
+- [Proxifier (or something like it)](http://proxifier.com/)
 - DaisyDisk
 - Bear
 - qBitTorrent
-- Burp Suite Community
+- ~~Burp Suite Community~~
 - VS Code
 - Little Snitch
 - Hex Fiend
