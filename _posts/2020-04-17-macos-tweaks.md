@@ -3,6 +3,8 @@ layout: post
 title: "My MacOS Tips & Tweaks"
 date: 2020-04-19
 permalink: macos-tweaks
+redirect_from:
+  - macos
 tags: macOS tips-tricks
 ---
 
