@@ -8,7 +8,7 @@ redirect_from:
 tags: macOS tips-tricks
 ---
 
-> **Last updated on** Dec 29 2020
+> **Last updated on** Feb 14 2021
 
 
 ## Show Hidden Folders in Finder
@@ -87,6 +87,17 @@ I disable Bluetooth auto-connecting across the board with this terminal command:
 ```bash
 sudo defaults write /Library/Preferences/com.apple.Bluetooth.plist DontPageAudioDevices 1
 ```
+
+## Drag a window by clicking anywhere
+
+I wanted the linux alt-drag functionality, and luckily in MacOS similar functionality is hidden behind a flag.  I found this tip [here.](https://www.mackungfu.org/UsabilityhackClickdraganywhereinmacOSwindowstomovethem)
+
+```
+defaults write -g NSWindowShouldDragOnGesture -bool true
+```
+
+After rebooting, **hold down ctrl+cmd and click a window to drag**.  This pairs nicely with a window manager like Magnet.
+
 
 ## First Hour Installs
 
