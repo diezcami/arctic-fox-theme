@@ -90,6 +90,8 @@ sudo defaults write /Library/Preferences/com.apple.Bluetooth.plist DontPageAudio
 
 ## Drag a window by clicking anywhere
 
+### Natively
+
 I wanted the linux alt-drag functionality, and luckily in MacOS similar functionality is hidden behind a flag.  I found this tip [here.](https://www.mackungfu.org/UsabilityhackClickdraganywhereinmacOSwindowstomovethem)
 
 ```
@@ -98,6 +100,9 @@ defaults write -g NSWindowShouldDragOnGesture -bool true
 
 After rebooting, **hold down ctrl+cmd and click a window to drag**.  This pairs nicely with a window manager like Magnet.
 
+### Utility: Easy-move-resize
+
+If you want a little more functionality there is a GitHub Projectby dmarcotte called [called easy-move-resize](https://github.com/dmarcotte/easy-move-resize).
 
 ## First Hour Installs
 
