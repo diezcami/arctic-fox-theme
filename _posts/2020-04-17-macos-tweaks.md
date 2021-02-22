@@ -8,7 +8,7 @@ redirect_from:
 tags: macOS tips-tricks
 ---
 
-> **Last updated on** Feb 14 2021
+> **Last updated on** Feb 22 2021
 
 
 ## Show Hidden Folders in Finder
@@ -103,6 +103,19 @@ After rebooting, **hold down ctrl+cmd and click a window to drag**.  This pairs 
 ### Utility: Easy-move-resize
 
 If you want a little more functionality there is a GitHub Projectby dmarcotte called [called easy-move-resize](https://github.com/dmarcotte/easy-move-resize).
+
+## VSCode Tweaks
+
+### Vim Extension: Press and hold movement keys (H,J,K,L)
+
+If you use the Vim extension in VSCode, you'll notice that when a movement key is held down it will only trigger once instead of holding like you'd expect.  
+
+```
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+```
+
+Execute this in your terminal and restart VSCode to fix it.
+
 
 ## First Hour Installs
 
