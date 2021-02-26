@@ -167,6 +167,10 @@ If you get into a state where DNS won't resolve and you need to download somethi
 echo "nameserver 1.1.1.1" >> /etc/resolv.conf
 ```
 
+### Setting up the DNS to use Pi-Hole
+
+Now that Pi-hole is running and you're connected through the VPN, you just need to change your DNS settings inside the wireguard app to use the Pi-hole machine's IP.  On android this was as simple as selecting the pivpn connection and editing the DNS field to say 10.4.0.1.
+
 ### Conclusion
 
 You should now be able to access the pi-hole admin interface at `http://10.4.0.1/admin` (or whatever your local IP was) from within the VPN.
