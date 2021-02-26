@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Touchbar Quick Commands in VSCode"
-date: 2021-01-31
+date: 2020-12-05
 permalink: touchbar-vscode
 tags: macOS
 ---
