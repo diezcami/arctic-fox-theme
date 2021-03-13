@@ -15,3 +15,5 @@ permalink: tech-guides
 * [reverse tty shells](https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/)
 * [Encrypted Bind and Reverse Shells with Socat](https://erev0s.com/blog/encrypted-bind-and-reverse-shells-socat/)
 * [vim.so - Learn vim fast!](https://www.vim.so/)
+* [k3s on a raspberry pi cluster](https://www.chriswoolum.dev/k3s-cluster-on-raspberry-pi)
+* [The k3OS imager tool for Raspi](https://github.com/sgielen/picl-k3os-image-generator)
