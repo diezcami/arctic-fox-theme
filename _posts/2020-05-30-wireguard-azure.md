@@ -156,7 +156,7 @@ sudo ufw allow from 10.4.0.0/24 to any port 80
 Azure's DHCP servers will reset `/etc/resolv.conf` on each reboot. To keep our localhost in the list of resolvers, we need to add the following:
 
 ```bash
-echo "prepend domain-name-servers 172.0.0.1;" >> /etc/dhcp/dhclient.conf
+echo "prepend domain-name-servers 127.0.0.1;" >> /etc/dhcp/dhclient.conf
 ```
 
 #### Debug tips
