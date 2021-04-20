@@ -88,7 +88,7 @@ Everything inside the VM is now setup.  Power down the VM and go to Proxmox's we
 - Select your rancher VM, and in "Hardware" remove the CD/DVD ISO file.  
 - In "Options", go and enable "Enable QEMU Guest Agent"
 
-Now reboot! You should now be able to ssh with that ssh key you added in the config.
+Now reboot! You should now be able to ssh with that ssh key you added in the config. Be sure to use the username 'rancher'.
 
 ## Install Portainer
 
