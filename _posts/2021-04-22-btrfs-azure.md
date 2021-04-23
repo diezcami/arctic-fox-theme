@@ -5,11 +5,11 @@ date: 2021-04-22
 permalink: btrfs-azure
 ---
 
-Recently, i've had the requirement of creating a repeatable method of generating a "fully-loaded" Linux disk image. This disk image is then consumed within an Azure VM Scale Set, (and consequently) Azure Devops (ADO) pipeline.
+Recently, I spent some time creating a repeatable method of generating a customized Linux disk image. This disk image is then consumed within an Azure VM Scale Set, (and consequently) in an Azure Devops (ADO) pipeline.
 
-On our VMs we repeatedly copy large files (20ish GBs) between directories, so I decided I to try and utilize a [copy-on-write filesystem](https://en.wikipedia.org/wiki/Copy-on-write) like btrfs to speed up that operation. I found that it was best to leave the OS disk to something default on the marketplace, and create a separate data disk which I will format and mount in.
+On this disk image we pre-cache a large (20GBB) file and repeatedly copy that large files into "work" directories.  Copying large files in the default ext4 filesystem is unnecessarily slow, so I decided I to try and utilize a [copy-on-write filesystem](https://en.wikipedia.org/wiki/Copy-on-write) like btrfs to speed up that operation. I found that it was best to leave the OS disk to something default on the marketplace, and create a separate data disk which I will format and mount in.
 
-Packer allows you to specify additional data disks, but that still leaves you to configure the block device from scratch. On the Microsoft Docs the steps to [Attach a data disk to Linux VM](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/attach-disk-portal) are laid out. Below the provisioner JSON block programatically detects our block device (which we created as a `128GB` disk), formats it to our preferred filesystem `brfs`, and updates the `/etc/fstab` accordingly so it will be mounted again in the future.
+Packer allows you to specify additional data disks, but that still leaves you to configure the block device from scratch. On the Microsoft Docs the steps to [Attach a data disk to Linux VM](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/attach-disk-portal) are laid out. Below the provisioner JSON block programatically detects our block device (which we created as a `128GB` disk - you'll need to update accordingly for your disk size), formats it to our preferred filesystem `btrfs`, and updates the `/etc/fstab` accordingly so it will be mounted again in the future.
 
 ```json
 {
@@ -114,11 +114,11 @@ Here is the output of the provisioner command above - yours should look similar!
     azure-arm: /dev/sda on /butter type btrfs (rw,relatime,space_cache,subvolid=5,subvol=/)
 ```
 
-A full JSON packer file can be found below.
+A full example  packer file can be found below.
 
 This configuration...
 
-- Creates an ordinary Ubuntu 18.04 VM
+- Creates an ordinary Ubuntu 18.04 VM from the Azure marketplace
 - Attaches a 128GB data disk
 - Installs some useful tools (Azure CLI, dotnet, docker, docker-compose, etc)
 - Formats the attached block device as btrfs and mounts it
