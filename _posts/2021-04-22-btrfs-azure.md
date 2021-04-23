@@ -3,6 +3,7 @@ layout: post
 title: "Create a btrfs data disk with Azure + Packer"
 date: 2021-04-22
 permalink: btrfs-azure
+tags: azure linux
 ---
 
 Recently, I spent some time creating a repeatable method of generating a customized Linux disk image. This disk image is then consumed within an Azure VM Scale Set, (and consequently) in an Azure Devops (ADO) pipeline.
