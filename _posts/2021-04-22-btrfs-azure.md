@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Create a btrfs data disk for (fast) large-file IO | Azure + Packer"
+title: "Create a btrfs data disk with Azure + Packer"
 date: 2021-04-22
 permalink: btrfs-azure
 ---
