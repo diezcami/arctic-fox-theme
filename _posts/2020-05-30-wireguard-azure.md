@@ -156,7 +156,7 @@ sudo ufw allow from 10.4.0.0/24 to any port 80
 Azure's DHCP servers will reset `/etc/resolv.conf` on each reboot. To keep our localhost in the list of resolvers, we need to add the following:
 
 ```bash
-echo "prepend domain-name-servers 172.0.0.1;" >> /etc/dhcp/dhclient.conf
+echo "prepend domain-name-servers 127.0.0.1;" >> /etc/dhcp/dhclient.conf
 ```
 
 #### Debug tips
@@ -166,6 +166,10 @@ If you get into a state where DNS won't resolve and you need to download somethi
 ```bash
 echo "nameserver 1.1.1.1" >> /etc/resolv.conf
 ```
+
+### Setting up the DNS to use Pi-Hole
+
+Now that Pi-hole is running and you're connected through the VPN, you just need to change your DNS settings inside the wireguard app to use the Pi-hole machine's IP.  On android this was as simple as selecting the pivpn connection and editing the DNS field to say 10.4.0.1.
 
 ### Conclusion
 

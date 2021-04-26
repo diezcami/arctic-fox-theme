@@ -6,6 +6,7 @@ permalink: pihole
 redirect_from:
   - /pihole-mobile-app
 tags: mobile-dev linux homelab xamarin networking
+favorite: "true"
 ---
 
 "Pi ContrHOLE" is a simple [Xamarin Forms Shell](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/shell/) app to manage your local [Pi-hole](https://pi-hole.net/) instance.  The app provides quick toggles and display information that would be useful at a glance to a pi-hole "admin".

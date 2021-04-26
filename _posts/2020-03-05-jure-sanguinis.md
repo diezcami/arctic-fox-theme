@@ -6,9 +6,11 @@ permalink: jure-sanguinis
 tags: travel
 ---
 
+> Welcome to my Italian citizenship journey!  I'm going to be posting here in chronological order _as things happen_.  
+
 [Jure Sanguinis](https://en.wikipedia.org/wiki/Jus_sanguinis), or "right of blood", is a principle of nationality law that many countries uses to determine citizenship. I grew up hearing about my maternal great-grandparents who emigrated from Italy. I discovered jure sanguinis and wondered if I was eligible. If I was eligible, I would be able to claim my citizenship, and eventually apply for an Italian passport, allowing me to live and work in the EU indefinitely.
 
-I won't go into the full details of understanding if you qualify. There are some great resources [on wikipedia](https://en.wikipedia.org/wiki/Italian_nationality_law) and on dedicated citizenship services like [MyItalianFamily.com](https://www.myitalianfamily.com/apply-italian-citizenship/learn-if-you-qualify).
+I won't go into the full details of understanding if you qualify. There are some great resources [on wikipedia](https://en.wikipedia.org/wiki/Italian_nationality_law) and on dedicated citizenship services like [MyItalianFamily.com](https://www.myitalianfamily.com/apply-italian-citizenship/learn-if-you-qualify).  _Edit_: The BEST resource for this process is the [Italian Dual Citzenship Facebook page](https://m.facebook.com/groups/23386646249/permalink/10155484576601250/).  
 
 If you determine you qualify, you'll essentially need proof of unbroken Italian lineage (ending at you) in the form of birth, marriage, death, and naturalization certificates. This includes official birth records of your most recent Italian ancestor. You'll need all of these internationally certified and translated to Italian. You'll then need to book an appointment with an your local Italian consulate, pay Italy some money, and then wait for Italy to give you the thumbs up.
 
@@ -128,7 +130,6 @@ This month I decided to finally start collecting the local documents i'd need. S
 
 My entire lineage from my grandfather forward has lived in Massachusetts (very convenient!).  I recieved 9 new, certified documents in total.
 
-
 ```
 1. Mother's Birth Certifcate
 2. Father's Birth Certifcate
@@ -151,11 +152,40 @@ Next step, get these [apostilled](https://www.sec.state.ma.us/pre/precom/comidx.
 
 For translations, i'm currently looking into getting that done of Fiverr thanks to the info in the [Dual US-Italian Citizenship Facebook group](https://m.facebook.com/groups/23386646249/permalink/10155484576601250/).
 
-## Nov 2020
+> IMPORTANT NOTE!  I realized this later, but the Boston consulate requires a NOTARIZED signature from the translator (for each translation) and then _that_ needs to be APOSTILLED.  One person the Facebook group recommended to handle this was [avepally on Fiverr](https://www.fiverr.com/avepally).
 
-There are two more documents I needed from Massachusetts pre-1926 - my grandfather's birth certificate and my great-grandparent's marriage.  For this I need to contact the [Massachusetts State Archives](https://www.sec.state.ma.us/arc/arcvitalrecords/vitalrecordsidx.htm).  Luckily these docs are much cheaper (only $6) and can be conducted entirely over mail.
+## Early Nov 2020
 
-Today I both mailed out the 9 MA documents I already had to get [apostilled](https://www.sec.state.ma.us/pre/precom/comidx.htm), while concurrently engaged with someone to provide Italian translations for those docs (tip: take scans of your docs as soon as you receive them - it's nice to have a digital copy!).  
+There are two more documents I needed from Massachusetts pre-1926 - my grandfather's birth certificate and my great-grandparent's marriage.  For this I need to contact the [Massachusetts State Archives](https://www.sec.state.ma.us/arc/arcvitalrecords/vitalrecordsidx.htm).  Luckily these docs are much cheaper (only $6) and can be conducted entirely over mail.  I mailed them on November 3rd.
+
+On November 6th I  mailed out the 9 MA documents I already had to get [apostilled](https://www.sec.state.ma.us/pre/precom/comidx.htm), while concurrently engaged with someone to provide Italian translations for those docs (tip: take scans of your docs as soon as you receive them - it's nice to have a digital copy!).  
+
+## Late November 2020
+
+I received the two necessary records from the Massachusetts State Archives on Nov. 21st.  There is again a slight name discrepency (Luigi -> Louis), but everything else (dates, parent names) seem to be in order.  This doc also confirms that my great-grandparents WERE married when my grandfather was born (this was some discrepency on online resources).  I didn't know if that would be an issue, but now I don't need to even consider it.
+
+On November 24th I received back the nine docs i'd sent out to get apostilled.  I had called a few days earlier to get the status and the woman said the office was really backed up, and it still only took 2.5 weeks. Nice! 
+
+Around this time I also engaged another translator to retranslate and certify/apostille my vital record documents.  She will handle that entire process and mail them to me.  I expect that to take a little over a month.  _That's what I get for not reading Boston's [consulate page](https://consboston.esteri.it/consolato_boston/en/i_servizi/per_i_cittadini/cittadinanza/citizenship-jure-sanguinis.html) well enough_. 
+
+> I used Avepally from Fiverr for the translation/apostille/certification process.  He was fantastic and got everything processed and mailed to me in record time.  He apparently lives in Ohio since my apostilles are from that state, which is great because their turnaround time was _much_ faster than MA's.
+
+Since it seems i'll have some time until my appointment, I decided to explore the other Italian branch of my family (my grandmother's parents).  I did a search online and found that both my great-grandparents on that side are from a city in Sicily.  Out of curiosity (and perhaps insurance in this whole process in case I missed a key fact) I wrote the comune to potentially get their birth certificates.  While not needed for the ancestry line i'm going to be using, it would certainly complete my set of family documents.
+
+## December 6 2020
+
+Reading some posts on the Dual citizenship Facebook group, I decided to try to get additional documentation from [NARA Boston](https://www.archives.gov/boston) on my great grandfather's naturalization. These docs are on top of the USCIS docs that I have (since it appears just having the USCIS for Boston is often not enough).   
+
+My great-grandfather naturalized in Suffolk county, so in my case NARA held the records federally. For other counties in MA your records may be held in county court records.  The NARA Boston office in Waltham is closed due to COVID, but a few people are still working to fulfill certificate requests via email.  I emailed the office, getting a cryptic "we're closed" email in response.  Rest assured a week later I got an email from an employee named Joe.  They had found my great-grandfather's NARA naturalization records, and could mail them to me for $10 (+ a $15 certification fee, which of course we want!).  I payed over the phone and the docs should be on their way now.
+
+
+## December 21 2020
+
+I had three more documents (GF's BC, GP's MC, and GM's DC) that I needed to get apostilled in MA.  I sent those in and got them back last week (~3 week turnaround time.)
+
+Nearly one year since I began this process and I **think** that I have all of the documents I need! 🎉
+
+My consulate appointment is still scheduled for September 2021.  I've been (constantly (obsessively)) checking Prenota to find an earlier appointment via a cancellation - hopefully I get one!  Regardless, very happy I have *something* scheduled. 
 
 ### TBD
 

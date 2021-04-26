@@ -3,6 +3,7 @@ layout: post
 title: "Repurpose an old iPhone as a (Teams/Slack/Zoom) Mac Webcam"
 date: 2020-05-03
 permalink: quarantine-cam
+favorite: "true"
 tags: macOS tips-tricks
 ---
 
@@ -98,17 +99,15 @@ Below, replace `<YOUR-DEV-ID>` with either your 40 character hex identifier, or 
 
 Check all the code signing identities available on your Mac with `security find-identity -v -p codesigning`. This is assuming you've done some MacOS Xcode development on your machine, and are signed into your developer account in Xcode. You can head to the [Apple Developer Certificate Center](https://developer.apple.com/account/resources/certificates/list) to generate new Developer IDs.
 
-```
-APPLICATION=/Applications/zoom.us.app \
-&& codesign -d --entitlements :- $APPLICATION | \
-{ xml2; echo "/plist/dict/key=com.apple.security.cs.disable-library-validation"; echo "/plist/dict/true"; } | \
-2xml > entitlements.xml \
-&& sudo codesign \
+```bash
+APPLICATION=/Applications/zoom.us.app && \
+codesign -d --entitlements :- $APPLICATION | { xml2; echo "/plist/dict/key=com.apple.security.cs.disable-library-validation"; echo "/plist/dict/true"; } | 2xml > entitlements.xml && \ 
+sudo codesign \
 --sign <YOUR-DEV-ID> $APPLICATION \
 --force \
 --preserve-metadata=identifier,resource-rules \
---entitlements=entitlements.xml \
-&& rm entitlements.xml
+--entitlements=entitlements.xml && \
+rm entitlements.xml
 ```
 
 Let's break that down.

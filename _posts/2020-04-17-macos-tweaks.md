@@ -3,10 +3,13 @@ layout: post
 title: "My MacOS Tips & Tweaks"
 date: 2020-04-19
 permalink: macos-tweaks
+redirect_from:
+  - macos
 tags: macOS tips-tricks
 ---
 
-> **Updated** favorite apps on July 2nd 2020
+> **Last updated on** Feb 22 2021
+
 
 ## Show Hidden Folders in Finder
 
@@ -32,6 +35,7 @@ Typing your sudo password is a lot of work! Utilize the touchID Pluggable Authen
 ```bash
 cd /etc/pam.d
 sudo chmod +w sudo
+sudo vim sudo
 ```
 
 Add a new first entry to include the PAM module `pam_tid.so` (like so):
@@ -84,6 +88,35 @@ I disable Bluetooth auto-connecting across the board with this terminal command:
 sudo defaults write /Library/Preferences/com.apple.Bluetooth.plist DontPageAudioDevices 1
 ```
 
+## Drag a window by clicking anywhere
+
+### Natively
+
+I wanted the linux alt-drag functionality, and luckily in MacOS similar functionality is hidden behind a flag.  I found this tip [here.](https://www.mackungfu.org/UsabilityhackClickdraganywhereinmacOSwindowstomovethem)
+
+```
+defaults write -g NSWindowShouldDragOnGesture -bool true
+```
+
+After rebooting, **hold down ctrl+cmd and click a window to drag**.  This pairs nicely with a window manager like Magnet.
+
+### Utility: Easy-move-resize
+
+If you want a little more functionality there is a GitHub Projectby dmarcotte called [called easy-move-resize](https://github.com/dmarcotte/easy-move-resize).
+
+## VSCode Tweaks
+
+### Vim Extension: Press and hold movement keys (H,J,K,L)
+
+If you use the Vim extension in VSCode, you'll notice that when a movement key is held down it will only trigger once instead of holding like you'd expect.  
+
+```
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+```
+
+Execute this in your terminal and restart VSCode to fix it.
+
+
 ## First Hour Installs
 
 Below is a list of the software (off the top of my head) that I immediately install on a fresh Mac.
@@ -95,22 +128,30 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - Brew
 - OhMyZsh
 - CopyClip
-- ~Amethyst~ Magnet
-- TunnelBlick
+- ~~Amethyst~~ Magnet
+- ~~TunnelBlick~~ Wireguard
 - BetterTouchTool
 - Arq
 - GnuPG
 - jq
 - Gifski
 - pcregrep (grep across lines)
+- [Rocket](https://matthewpalmer.net/rocket/)
+- Amphetamine
+
+### Misc Tweaks
+-  [Copy Git Link (VSCode)](https://marketplace.visualstudio.com/items?itemName=reduckted.vscode-gitweblinks)[*](https://github.com/joshspicer/vscode-gitweblinks)
+- [Git Open (zsh)](https://github.com/paulirish/git-open)
+- ["Open in VSCode" from Finder](https://www.jimbobbennett.io/open-anything-in-vs-code-using-a-macos-quick-action/)
 
 ### Favorite Apps
 
-- Proxyman
+- [Proxyman](https://proxyman.io)! - alternative: MITMProxy
+- [Proxifier (or something like it)](http://proxifier.com/)
 - DaisyDisk
 - Bear
 - qBitTorrent
-- Burp Suite Community
+- ~~Burp Suite Community~~
 - VS Code
 - Little Snitch
 - Hex Fiend
