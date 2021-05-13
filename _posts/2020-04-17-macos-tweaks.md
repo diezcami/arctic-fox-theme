@@ -8,7 +8,7 @@ redirect_from:
 tags: macOS tips-tricks
 ---
 
-> **Last updated on** Feb 22 2021
+> **Last updated on** May 13, 2021
 
 
 ## Show Hidden Folders in Finder
@@ -128,8 +128,8 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - Brew
 - OhMyZsh
 - CopyClip
-- ~~Amethyst~~ Magnet
-- ~~TunnelBlick~~ Wireguard
+- ~~Amethyst~~ **Magnet**
+- ~~TunnelBlick~~ **Wireguard**
 - BetterTouchTool
 - Arq
 - GnuPG
@@ -146,15 +146,16 @@ Below is a list of the software (off the top of my head) that I immediately inst
 
 ### Favorite Apps
 
-- [Proxyman](https://proxyman.io)! - alternative: MITMProxy
+- [Proxyman](https://proxyman.io) - alternative: MITMProxy
 - [Proxifier (or something like it)](http://proxifier.com/)
 - DaisyDisk
 - Bear
 - qBitTorrent
-- ~~Burp Suite Community~~
+- Burp Suite Community
 - VS Code
 - Little Snitch
 - Hex Fiend
+- MonoDraw
 
 ## Dot Files
 
