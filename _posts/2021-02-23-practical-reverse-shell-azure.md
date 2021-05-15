@@ -2,6 +2,7 @@
 layout: post
 title: "Reverse shell to your Azure VM without inbound access"
 date: 2021-02-23
+tags: azure linux
 permalink: reverse-shell-azure
 ---
 
