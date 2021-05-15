@@ -90,6 +90,23 @@ Everything inside the VM is now setup.  Power down the VM and go to Proxmox's we
 
 Now reboot! You should now be able to ssh with that ssh key you added in the config. Be sure to use the username 'rancher'.
 
+### Update - Switching Consoles
+
+RancherOS supports a bunch of [consoles](https://rancher.com/docs/os/v1.1/en/configuration/switching-consoles/), basically the "OS"/tty you interact with when ssh'ing into your rancher box.  By default a busybox console is running - I prefer to swap it to an ubuntu console.
+
+```
+$ sudo ros console list
+disabled alpine
+disabled centos
+disabled debian
+current  default
+disabled fedora
+disabled ubuntu
+
+$ sudo ros console switch ubuntu
+
+```
+
 ## Install Portainer
 
 I like to use portainer to visualize the containers running on my system. It's super easy to install. Taken from [their docs](https://www.portainer.io/installation/), simply run within a rancher shell...
