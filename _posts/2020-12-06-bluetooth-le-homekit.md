@@ -38,9 +38,8 @@ The `GVH5072_XXXX` device matched the name of the device in my Govee app.
 
 I was fully prepared to reverse engineer the communications. I read [this guide](https://thejeshgn.com/2020/08/05/reverse-engineering-a-bluetooth-low-energy-oximeter/) and [this other guide](https://www.instructables.com/Reverse-Engineering-Smart-Bluetooth-Low-Energy-Dev/) and used an old android device to generate a pcap file for analysis in wireshark.
 
-Before moving forward though I looked a bit online, and to my surpise there was already a lot of work done.  Here is one python and node implementation by [Thrilleratplay](https://github.com/Thrilleratplay/GoveeWatcher), utilzing the awesome [bleson python module](https://github.com/TheCellule/python-bleson).
+Before moving forward though I looked a bit online, and to my surpise there was already a lot of work done.  Here is one python and node implementation by [Thrilleratplay](https://github.com/Thrilleratplay/GoveeWatcher/blob/master/python/goveeWatcher.py), utilzing the awesome [bleson python module](https://github.com/TheCellule/python-bleson).
 
-<script src="https://gist.github.com/joshspicer/0b7e4e411e4f7eb3d5d9493f8c6f5baf.js"></script>
 
 The script observes the advertisement by the Govee device, which contains the snapshot information we're looking for.
 
