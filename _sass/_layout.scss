@@ -155,10 +155,11 @@
   width: 100%;
 
   @include media-query($on-palm) {
-    font-size: 0.8em;
+    font-size: 0.9em;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    line-height: 1.9;
   }
 }
 
