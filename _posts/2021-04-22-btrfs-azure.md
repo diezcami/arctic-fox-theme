@@ -12,6 +12,7 @@ On this disk image we pre-cache a large (20GB) file and repeatedly copy that lar
 
 [Packer](https://www.packer.io/docs/builders/azure/arm) allows you to specify additional data disks, but that still leaves you to configure the block device from scratch. On the Microsoft Docs the steps to [Attach a data disk to Linux VM](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/attach-disk-portal) are laid out. Below the provisioner JSON block programatically detects our block device (which we created as a `128GB` disk - you'll need to update accordingly for your disk size), formats it to our preferred filesystem `btrfs`, and updates the `/etc/fstab` accordingly so it will be mounted again in the future.
 
+{% raw %}
 ```jsonc
 {
   "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'",
@@ -47,6 +48,7 @@ On this disk image we pre-cache a large (20GB) file and repeatedly copy that lar
   "type": "shell"
 }
 ```
+{% endraw %}
 
 Here is the output of the provisioner command above - yours should look similar!
 
@@ -128,6 +130,7 @@ This configuration...
 
 Note that I had manually created the resource group and image gallery prior to running this packer file.
 
+{% raw %}
 ```jsonc
 {
   "variables": {
@@ -229,3 +232,4 @@ Note that I had manually created the resource group and image gallery prior to r
   ]
 }
 ```
+{% endraw %}

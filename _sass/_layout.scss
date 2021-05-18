@@ -120,7 +120,7 @@
  * ============================================== */
 .page-content {
   padding: $spacing-unit 0;
-  text-align: justify;
+  // text-align: justify;
 }
 
 .page-heading {
@@ -155,10 +155,11 @@
   width: 100%;
 
   @include media-query($on-palm) {
-    font-size: 0.8em;
+    font-size: 0.9em;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    line-height: 1.9;
   }
 }
 
