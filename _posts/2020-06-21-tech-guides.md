@@ -18,3 +18,4 @@ permalink: tech-guides
 * [k3s on a raspberry pi cluster](https://www.chriswoolum.dev/k3s-cluster-on-raspberry-pi)
 * [The k3OS imager tool for Raspi](https://github.com/sgielen/picl-k3os-image-generator)
 * [Traefik + Kubernetes setup for dummies](https://medium.com/@geraldcroes/kubernetes-traefik-101-when-simplicity-matters-957eeede2cf8)
+* [Syslog remote services with Influx/Telegraf/Granfana Stack](https://henrikhain.io/post/raspberry-pi-as-log-server-with-rsyslog-influx-telegraf-and-grafana/)
