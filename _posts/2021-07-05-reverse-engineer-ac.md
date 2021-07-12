@@ -130,3 +130,36 @@ void loop() {
 
 
 ```
+
+```arduino
+#include <Arduino.h>
+#include <IRremoteESP8266.h>
+#include <IRsend.h>
+#include <ir_Midea.h>
+
+const uint16_t irLed = 4;
+IRMideaAC ac(irLed);
+
+void setup() {
+  // put your setup code here, to run once:
+  ac.begin();
+  Serial.begin(115200);
+  delay(200);
+  Serial.println("Setup Complete.");
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  ac.on();
+  ac.setFan(1);
+  ac.setTemp(65,false);
+  ac.send();
+  Serial.println("waiting...");
+  delay(5000);
+  ac.off();
+  ac.send();
+  delay(5000);
+
+}
+
+```
