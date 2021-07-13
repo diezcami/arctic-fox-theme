@@ -2,7 +2,7 @@
 layout: post
 title: "Reverse Engineering my A/C into a HomeKit Accessory"
 date: 2021-07-05
-permalink: reverse-engineer-ac
+permalink: aircon-homekit
 ---
 <!-- ![1.png]({{site.url}}/assets/resources-reverse-engineer-ac/1.png) -->
 
