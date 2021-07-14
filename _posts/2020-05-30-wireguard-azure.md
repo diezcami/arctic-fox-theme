@@ -137,16 +137,21 @@ You should now be able to connect via VPN!
 
 We're going to set up pi-hole directly on the host, but note you could also use Docker if you'd like.
 
-Be sure to select `wg0` as your interface and use the following values for your IP and gateway.
-
 `ip a show dev wg0` and note the IP there. Mine was `10.4.0.1/24`.
 
 Then run `ip r | grep default` and note your default gateway. Mine was `10.0.0.1`.
+
+Be sure to select `wg0` as your interface when running through the pihole installer, and use the previous values for your IP and gateway.
 
 ```bash
 # Pull and execute pi hole script
 sudo curl -sSL https://install.pi-hole.net | bash
 ```
+
+_Note_: Use **SPACEBAR** to select an option, then **TAB, ENTER** to move and select the <Ok>.
+
+<img width="537" alt="Screen Shot 2021-07-14 at 8 19 04 AM" src="https://user-images.githubusercontent.com/23246594/125621078-bb104b7c-91e1-46dc-a2b3-6fbcd03d5d21.png">
+
 
 To set ourselves up for pi-hole, we are going to also allow ports inbound 80 and 53 from anyone within our VPN subnet. This will allow web traffic (for pi-hole console) and DNS traffic to pass through the server firewall from any client (your phone and laptop) on the VPN subnet.
 
