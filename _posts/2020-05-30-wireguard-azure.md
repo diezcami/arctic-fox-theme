@@ -210,6 +210,7 @@ The DNS endpoint can also be edited directly from the wireguard app.
 ![IMG_8564D7F3ACD5-1](https://user-images.githubusercontent.com/23246594/125625361-67b2a8d6-e5e1-4fcb-a75b-6b5eb216c624.jpeg)
 
 ----
+<br>
 
 You should now see traffic in the pi-hole logs! You can also use my [pi-hole iOS app to observe the traffic](https://joshspicer.com/pihole) :)
 
