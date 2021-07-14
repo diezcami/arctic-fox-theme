@@ -64,10 +64,10 @@ az group delete --name wgphRG --yes
 
 Now, SSH to your new VM to set up the VPN. [Wireguard](http://wireguard.com) is an awesome, modern VPN solution that we're going to be setting up. We're going to use [PiVPN](http://pivpn.io) to conduct the entire wireguard process for us.
 
-Your SSH key should've been automatically placed in `~/.ssh`.
+If you didn't have an SSH key already, it should've been automatically placed in `~/.ssh`.
 
 ```bash
-ssh ubuntu@<PUBLIC-IP-ADDRESS>
+ssh -i ~/.ssh/id_rsa ubuntu@<PUBLIC-IP-ADDRESS> 
 
 # Update, upgrade, install ufw
 sudo apt update && sudo apt upgrade && sudo apt install ufw
