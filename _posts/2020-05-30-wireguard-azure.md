@@ -45,7 +45,7 @@ You can then look at the output above, or run the query below, to find your VM's
 az network public-ip show \
   --resource-group wgphRG \
   --name wgphIP \
-  --query [ipAddress,publicIpAllocationMethod,sku] \
+  --query '[ipAddress,publicIpAllocationMethod,sku]' \
   --output table
 ```
 
