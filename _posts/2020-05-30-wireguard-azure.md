@@ -174,7 +174,7 @@ echo "prepend domain-name-servers 127.0.0.1;" >> /etc/dhcp/dhclient.conf
 
 #### Debug tips
 
-If you get into a state where DNS won't resolve and you need to download something from the internet, you can tempoarily add in a DNS server into `/etc/resolv.conf`.
+If you get into a state where DNS won't resolve and you need to download something from the internet, you can temporarily add in a DNS server into `/etc/resolv.conf`.
 
 ```bash
 echo "nameserver 1.1.1.1" >> /etc/resolv.conf
