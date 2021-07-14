@@ -207,7 +207,7 @@ Endpoint = <PUBLIC_IP>:4400
  
 The DNS endpoint can also be edited directly from the wireguard app.
   
-![Untitled](https://user-images.githubusercontent.com/23246594/125624341-e2b30911-53ab-4e1d-a993-1c95ace01616.png)
+![IMG_8564D7F3ACD5-1](https://user-images.githubusercontent.com/23246594/125625361-67b2a8d6-e5e1-4fcb-a75b-6b5eb216c624.jpeg)
 
 
 You should now see traffic in the pi-hole logs! You can also use my [pi-hole iOS app to observe the traffic](https://joshspicer.com/pihole) :)
