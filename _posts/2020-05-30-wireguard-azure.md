@@ -35,13 +35,18 @@ az vm create \
 # Open Port (Pick something random >1024 that we'll use for wireguard later)
 az vm open-port --port 4400 --resource-group wgphRG --name wgphVM
 
+```
+
+You can then look at the output above, or run the query below, to find your VM's public IP address.
+
+```bash
+
 # Check your IP
 az network public-ip show \
   --resource-group wgphRG \
   --name wgphIP \
   --query [ipAddress,publicIpAllocationMethod,sku] \
   --output table
-
 ```
 
 If you have any issue with the above, be sure to reference the [Microsoft Azure VM docs](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/).
