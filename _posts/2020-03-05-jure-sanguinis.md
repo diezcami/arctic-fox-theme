@@ -192,9 +192,9 @@ My consulate appointment is still scheduled for September 2021.  I've been (cons
 
 My consulate appointment is a month away!  For the past 8 months i've mostly just been waiting out the appointment, but I also:
 
-- Took my mom to our local bank to get Forms 2 & 3 notarized (she's planning on coming with me to the appointment, but _just in case_ something came up)
-- Heard back from USCIS Geneology regarding my great-grandmother's naturalization.  While not strictly needed, I wanted to have a backup route.  I sent in the request on Nov. 21, 2020, and got the "Index Search Completed" email on July 30, 2021.  They found the C-File for her naturalization as well as an "AR-2 Form"
-- Organized the document binder many times!
+- Took my mom to our local bank to get Forms [3](https://consboston.esteri.it/consolato_boston/resource/doc/2020/11/form3nov2020.pdf) and [4](https://consboston.esteri.it/consolato_boston/resource/doc/2020/08/form4.pdf) notarized (she's planning on coming with me to the appointment, but _just in case_ something came up)
+- Heard back from USCIS Geneology regarding my great-grandmother's naturalization.  While not strictly needed, I wanted to have this document as a backup, and to provide additional information on my great-grandmother.  I sent in the request on Nov. 21, 2020, and got the "Index Search Completed" email on July 30, 2021.  They found the C-File for her naturalization as well as an "AR-2 Form". I paid $130 for those two documents the next day and am awaiting them to arrive in the mail. I don't expect them to arrive before my appointment, but having them on the way is reassuring nonetheless.
+- Organized my document binder many times!
 
 ### TBD
 
