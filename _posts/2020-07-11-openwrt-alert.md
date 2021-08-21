@@ -33,8 +33,8 @@ Now create a group chat in the Telegram app and invited my new bot.  To retrieve
 Replace `$APIKEY` with your api key.
 
 ```bash
-curl https://api.telegram.org/bot$APIKEYgetUpdates \
-                                      | jq '.result[0].message.chat.id'
+curl https://api.telegram.org/bot$APIKEY/getUpdates \
+                        | jq '.result[0].my_chat_member.chat.id'
 
 -4545454545
 ```
@@ -44,8 +44,8 @@ Without `jq` your response will look something like this:
 ```json
 {
   "ok": true,
-  "result": [
-    {
+  "result": [ {
+  "my_chat_member": {
       "update_id": 75757575,
       "message": {
         "message_id": 15,
@@ -63,6 +63,7 @@ Without `jq` your response will look something like this:
         "new_chat_title": "My Cool Group"
       }
     }
+  }
   ]
 }
 ```
