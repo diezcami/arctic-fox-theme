@@ -30,6 +30,8 @@ BotFather:
 
 Now create a group chat in the Telegram app and invited my new bot.  To retrieve that group chat's telegram "ID", you can invoke `getUpdates` to see all active chats your bot is in (which should just be the single one you added it to).  I use `jq` to parse out the appropriate value.
 
+_NOTE: if this is a group chat you'll need to do some extra steps - see this [StackOverflow post](https://stackoverflow.com/questions/38565952/how-to-receive-messages-in-group-chats-using-telegram-bot-api)_
+
 Replace `$APIKEY` with your api key.
 
 ```bash
