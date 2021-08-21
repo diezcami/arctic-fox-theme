@@ -21,6 +21,11 @@ https://medium.com/finc-engineering/reverse-engineering-ir-airconditioning-codes
 
 
 https://github.com/crankyoldgit/IRremoteESP8266/blob/master/examples/IRrecvDumpV3/IRrecvDumpV3.ino
+
+
+[My Code](https://github.com/joshspicer/keystone-AC-homekit-esp8266)
+
+
 ```
 Timestamp : 000080.500
 Library   : v2.7.19
@@ -161,5 +166,29 @@ void loop() {
   delay(5000);
 
 }
+
+```
+
+
+```
+
+...................................................................................................................................................................................................................................................................
+WiFi connected, IP: 10.44.3.140
+starting my_homekit_setup
+about to call arduino_homekit_setup
+>>> [  14008] HomeKit: Starting server
+>>> [  14019] HomeKit: Using existing accessory ID: BF:A6:FD:8A:CC:9F
+>>> [  14025] HomeKit: Preiniting pairing context
+>>> [  14030] HomeKit: Using user-specified password: 134-11-134
+>>> [  14050] HomeKit: Call s_mp_exptmod in integer.c, original winsize 6
+>>> [  20763] HomeKit: Call s_mp_exptmod in integer.c, original winsize 5
+>>> [  24193] HomeKit: Preinit pairing context success
+>>> [  24198] HomeKit: Configuring MDNS
+>>> [  24203] HomeKit: MDNS begin: AirCon, IP: 10.44.3.140
+>>> [  24209] HomeKit: Init server over
+exiting my_homekit_setup
+Free heap: 40568, HomeKit clients: 0
+Free heap: 41056, HomeKit clients: 0
+Free heap: 41104, HomeKit clients: 0
 
 ```
