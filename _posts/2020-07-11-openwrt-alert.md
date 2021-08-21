@@ -30,8 +30,10 @@ BotFather:
 
 Now create a group chat in the Telegram app and invited my new bot.  To retrieve that group chat's telegram "ID", you can invoke `getUpdates` to see all active chats your bot is in (which should just be the single one you added it to).  I use `jq` to parse out the appropriate value.
 
+Replace `$APIKEY` with your api key.
+
 ```bash
-curl https://api.telegram.org/bot<YOUR_API_KEY_HERE>/getUpdates \
+curl https://api.telegram.org/bot$APIKEYgetUpdates \
                                       | jq '.result[0].message.chat.id'
 
 -4545454545
@@ -65,13 +67,15 @@ Without `jq` your response will look something like this:
 }
 ```
 
-Grab the relevant chat's "id" value, which represents the `CHAT_ID` below, and you'll  have all the pieces you need to invoke the bot! We interact with a simple GET request formatted like below.  Note the word "bot" preceding your API key.
+Grab the relevant chat's "id" value, which represents the `$CHATID` below, and you'll  have all the pieces you need to invoke the bot! We interact with a simple GET request formatted like below.  Note the word "bot" preceding your API key.
+
+Replace `$APIKEY`, `$CHATID`, and `$MSG` appropriately.
 
 ```bash
-curl https://api.telegram.org/bot<YOUR_API_KEY_HERE>/sendMessage?chat_id=<YOUR_CHAT_ID_HERE>&text=<YOUR_MSG>
+curl https://api.telegram.org/bot$APIKEY/sendMessage?chat_id=$CHATID&text=$MSG
 ```
 
-The `<YOUR_MSG>` field can be anything url encoded. That's the message you'll receive in the telegram group chat from your bot.
+The `$MSG` field can be anything url encoded. That's the message you'll receive in the telegram group chat from your bot.
 
 ## Configure Your OpenWRT router
 
