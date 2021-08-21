@@ -35,13 +35,18 @@ az vm create \
 # Open Port (Pick something random >1024 that we'll use for wireguard later)
 az vm open-port --port 4400 --resource-group wgphRG --name wgphVM
 
+```
+
+You can then look at the output above, or run the query below, to find your VM's public IP address.
+
+```bash
+
 # Check your IP
 az network public-ip show \
   --resource-group wgphRG \
   --name wgphIP \
-  --query [ipAddress,publicIpAllocationMethod,sku] \
+  --query '[ipAddress,publicIpAllocationMethod,sku]' \
   --output table
-
 ```
 
 If you have any issue with the above, be sure to reference the [Microsoft Azure VM docs](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/).
@@ -59,10 +64,10 @@ az group delete --name wgphRG --yes
 
 Now, SSH to your new VM to set up the VPN. [Wireguard](http://wireguard.com) is an awesome, modern VPN solution that we're going to be setting up. We're going to use [PiVPN](http://pivpn.io) to conduct the entire wireguard process for us.
 
-Your SSH key should've been automatically placed in `~/.ssh`.
+If you didn't have an SSH key already, it should've been automatically placed in `~/.ssh`.
 
 ```bash
-ssh ubuntu@<PUBLIC-IP-ADDRESS>
+ssh -i ~/.ssh/id_rsa ubuntu@<PUBLIC-IP-ADDRESS> 
 
 # Update, upgrade, install ufw
 sudo apt update && sudo apt upgrade && sudo apt install ufw
@@ -132,23 +137,31 @@ You should now be able to connect via VPN!
 
 We're going to set up pi-hole directly on the host, but note you could also use Docker if you'd like.
 
-Be sure to select `wg0` as your interface and use the following values for your IP and gateway.
-
-`ip a show dev wg0` and note the IP there. Mine was `10.4.0.1/24`.
+`ip a show dev wg0` and note the IP there. Mine was `10.6.0.1/24`.
 
 Then run `ip r | grep default` and note your default gateway. Mine was `10.0.0.1`.
+
+Be sure to select `wg0` as your interface when running through the pihole installer, and use the previous values for your IP and gateway.
 
 ```bash
 # Pull and execute pi hole script
 sudo curl -sSL https://install.pi-hole.net | bash
 ```
 
+_Note_: Use **SPACEBAR** to select an option, then **TAB, ENTER** to move and select the \<Ok\>.
+
+<img width="537" alt="Screen Shot 2021-07-14 at 8 19 04 AM" src="https://user-images.githubusercontent.com/23246594/125621078-bb104b7c-91e1-46dc-a2b3-6fbcd03d5d21.png">
+  
+<img width="537" alt="Screen Shot 2021-07-14 at 8 19 04 AM" src="https://user-images.githubusercontent.com/23246594/125624502-ebe73a5d-c3c7-4341-98be-83c8ade0c19b.png">
+  
+
+
 To set ourselves up for pi-hole, we are going to also allow ports inbound 80 and 53 from anyone within our VPN subnet. This will allow web traffic (for pi-hole console) and DNS traffic to pass through the server firewall from any client (your phone and laptop) on the VPN subnet.
 
 ```bash
 # Use what you got from `ip a show dev wg0`
-sudo ufw allow from 10.4.0.0/24 to any port 53
-sudo ufw allow from 10.4.0.0/24 to any port 80
+sudo ufw allow from 10.6.0.0/24 to any port 53
+sudo ufw allow from 10.6.0.0/24 to any port 80
 ```
 
 ### DHCP
@@ -161,7 +174,7 @@ echo "prepend domain-name-servers 127.0.0.1;" >> /etc/dhcp/dhclient.conf
 
 #### Debug tips
 
-If you get into a state where DNS won't resolve and you need to download something from the internet, you can tempoarily add in a DNS server into `/etc/resolv.conf`.
+If you get into a state where DNS won't resolve and you need to download something from the internet, you can temporarily add in a DNS server into `/etc/resolv.conf`.
 
 ```bash
 echo "nameserver 1.1.1.1" >> /etc/resolv.conf
@@ -169,11 +182,11 @@ echo "nameserver 1.1.1.1" >> /etc/resolv.conf
 
 ### Setting up the DNS to use Pi-Hole
 
-Now that Pi-hole is running and you're connected through the VPN, you just need to change your DNS settings inside the wireguard app to use the Pi-hole machine's IP.  On android this was as simple as selecting the pivpn connection and editing the DNS field to say 10.4.0.1.
+Now that Pi-hole is running and you're connected through the VPN, you just need to change your DNS settings inside the wireguard app to use the Pi-hole machine's IP.  On android this was as simple as selecting the pivpn connection and editing the DNS field to say 10.6.0.1.
 
 ### Conclusion
 
-You should now be able to access the pi-hole admin interface at `http://10.4.0.1/admin` (or whatever your local IP was) from within the VPN.
+You should now be able to access the pi-hole admin interface at `http://10.6.0.1/admin` (or whatever your local IP was) from within the VPN.
 
 To forward DNS traffic from other VPN clients through pi-hole, edit your client's wireguard config.
 
@@ -182,8 +195,8 @@ For example, this would be my iPhone's config.
 ```
 [Interface]
 PrivateKey = <KEY>
-Address = 10.4.0.3/24
-DNS = 10.4.0.1
+Address = 10.6.0.3/24
+DNS = 10.6.0.1
 
 [Peer]
 PublicKey = <KEY>
@@ -191,5 +204,19 @@ PresharedKey = <KEY>
 AllowedIPs = 0.0.0.0/0, ::/0
 Endpoint = <PUBLIC_IP>:4400
 ```
+ 
+The DNS endpoint can also be edited directly from the wireguard app.
+  
+![IMG_8564D7F3ACD5-1](https://user-images.githubusercontent.com/23246594/125625361-67b2a8d6-e5e1-4fcb-a75b-6b5eb216c624.jpeg)
+
+----
+<br>
 
 You should now see traffic in the pi-hole logs! You can also use my [pi-hole iOS app to observe the traffic](https://joshspicer.com/pihole) :)
+
+![IMG_F88731CDA6EF-1](https://user-images.githubusercontent.com/23246594/125625875-690cae2a-0a84-443e-85c4-3d030b820783.jpeg)
+
+
+
+
+

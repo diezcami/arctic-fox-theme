@@ -176,7 +176,7 @@ Since it seems i'll have some time until my appointment, I decided to explore th
 
 Reading some posts on the Dual citizenship Facebook group, I decided to try to get additional documentation from [NARA Boston](https://www.archives.gov/boston) on my great grandfather's naturalization. These docs are on top of the USCIS docs that I have (since it appears just having the USCIS for Boston is often not enough).   
 
-My great-grandfather naturalized in Suffolk county, so in my case NARA held the records federally. For other counties in MA your records may be held in county court records.  The NARA Boston office in Waltham is closed due to COVID, but a few people are still working to fulfill certificate requests via email.  I emailed the office, getting a cryptic "we're closed" email in response.  Rest assured a week later I got an email from an employee named Joe.  They had found my great-grandfather's NARA naturalization records, and could mail them to me for $10 (+ a $15 certification fee, which of course we want!).  I payed over the phone and the docs should be on their way now.
+My great-grandfather naturalized in Suffolk county, so in my case NARA held the records federally. For other counties in MA your records may be held in county court records.  The NARA Boston office in Waltham is closed due to COVID, but a few people are still working to fulfill certificate requests via email.  I emailed the office, getting a cryptic "we're closed" email in response.  Rest assured a week later I got an email from an employee named Joe.  They had found my great-grandfather's NARA naturalization records, and could mail them to me for $10 (+ a $15 certification fee, which of course we want!).  I paid over the phone and the docs should be on their way now.
 
 
 ## December 21 2020
@@ -186,6 +186,15 @@ I had three more documents (GF's BC, GP's MC, and GM's DC) that I needed to get 
 Nearly one year since I began this process and I **think** that I have all of the documents I need! 🎉
 
 My consulate appointment is still scheduled for September 2021.  I've been (constantly (obsessively)) checking Prenota to find an earlier appointment via a cancellation - hopefully I get one!  Regardless, very happy I have *something* scheduled. 
+
+
+## August 2021
+
+My consulate appointment is a month away!  For the past 8 months i've mostly just been waiting out the appointment, but I also:
+
+- Took my mom to our local bank to get Forms [3](https://consboston.esteri.it/consolato_boston/resource/doc/2020/11/form3nov2020.pdf) and [4](https://consboston.esteri.it/consolato_boston/resource/doc/2020/08/form4.pdf) notarized (she's planning on coming with me to the appointment, but _just in case_ something came up)
+- Heard back from USCIS Geneology regarding my great-grandmother's naturalization.  While not strictly needed, I wanted to have this document as a backup, and to provide additional information on my great-grandmother.  I sent in the request on Nov. 21, 2020, and got the "Index Search Completed" email on July 30, 2021.  They found the C-File for her naturalization as well as an "AR-2 Form". I paid $130 for those two documents the next day and am awaiting them to arrive in the mail. I don't expect them to arrive before my appointment, but having them on the way is reassuring nonetheless.
+- Organized my document binder many times!
 
 ### TBD
 
