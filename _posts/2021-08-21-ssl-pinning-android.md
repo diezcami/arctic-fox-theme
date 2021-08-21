@@ -10,12 +10,6 @@ permalink: ssl-pinning-android
 
 ----
 
-[Previous work](https://nolanbrown.medium.com/the-process-of-reverse-engineering-the-august-lock-api-9dbd12ab65cb)
-
-
-[Frida ssl guide](https://www.netspi.com/blog/technical/four-ways-bypass-android-ssl-verification-certificate-pinning/)
-[guide 2](https://httptoolkit.tech/blog/frida-certificate-pinning/)
-
 ### Prereqs
 - Root your Android phone ([rooting pixel 1](https://joshspicer.com/root-pixel-1)) - i'm now using a [Pixel 4a](...)
 - Install some proxy application on your computer (I'm using a Mac with Proxyman installed for this tutorial)
@@ -289,3 +283,50 @@ linkerconfig
 ...
 ...
  ```
+
+ Download or write your own ssl pinning script. A couple that i've found online are by [@pcipolloni](https://codeshare.frida.re/@pcipolloni/universal-android-ssl-pinning-bypass-with-frida/) and [httptoolkit](https://github.com/httptoolkit/frida-android-unpinning)
+
+ ```bash
+$ adb push ~/Documents/frida_scripts/frida_ssl_pinning /data/local/tmp
+
+/Users/joshspicer/Documents/frida_scripts/frida_ssl_pinni...1 file pushed, 0 skipped. 0.3 MB/s (2972 bytes in 0.011s)
+
+$ adb shell ls /data/local/tmp
+cert-der.crt
+frida_ssl_pinning
+re.frida.server
+ ```
+
+ Runing the script looks like so:
+
+ ```
+[~/Documents/frida_scripts/frida_ssl_pinning]$ frida -U -f com.august.luna -l script.js --no-pause
+     ____
+    / _  |   Frida 15.0.13 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+Spawned `com.august.luna`. Resuming main thread!
+[Pixel 4a::com.august.luna]->
+[.] Cert Pinning Bypass/Re-Pinning
+[+] Loading our CA...
+[o] Our CA Info: OU=https://proxyman.io, CN="Proxyman CA (7 Feb 2021, harper.local)", O=Proxyman Inc, L=Singapore, C=SG
+[+] Creating a KeyStore for our CA...
+[+] Creating a TrustManager that trusts the CA in our KeyStore...
+[+] Our TrustManager is ready...
+[+] Hijacking SSLContext methods now...
+[-] Waiting for the app to invoke SSLContext.init()...
+[o] App invoked javax.net.ssl.SSLContext.init...
+[+] SSLContext initialized with our custom TrustManager!
+[o] App invoked javax.net.ssl.SSLContext.init...
+[+] SSLContext initialized with our custom TrustManager!
+```
+
+## Previous work/references
+- [nolanbrown.medium.com/](https://nolanbrown.medium.com/the-process-of-reverse-engineering-the-august-lock-api-9dbd12ab65cb)
+- [netspi.com](https://www.netspi.com/blog/technical/four-ways-bypass-android-ssl-verification-certificate-pinning/)
+- [httptoolkit.tech](https://httptoolkit.tech/blog/frida-certificate-pinning/)
