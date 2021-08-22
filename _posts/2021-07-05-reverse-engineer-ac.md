@@ -6,25 +6,22 @@ permalink: aircon-homekit
 ---
 <!-- ![1.png]({{site.url}}/assets/resources-reverse-engineer-ac/1.png) -->
 
+> As a part of homekit-ifying my apartment, i've been wanting to make my window A/C unit a bit smarter. I have a [Keystone remote-controlled A/C](https://www.amazon.com/gp/product/B084KWVDLM) - below is the journey of understanding how the remote talks to the A/C unit, and how to use some little IR LEDS and an ESP 8266 to open the A/C up to Homekit.
+>
+> See my [previous HomeKit article for more info on initial setup]({{site.url}}/homekit-esp8266).
 
-[My A/C is an IR remote-controlled window unit from Keystone (model KSTAW05CE) ](https://www.amazon.com/gp/product/B084KWVDLM).
 
-[VS1838B receiver](https://www.amazon.com/gp/product/B06XYNDRGF)
+## Protocol
+
+First step was to see what messages were being sent out of the A/C's remote control.  To do so, I purchased a little 
+[IR receiver (VS1838B)](https://www.amazon.com/gp/product/B06XYNDRGF) and hooked it up to my breadboard and ESP module with the pin out seen here:
+
 ![1.png]({{site.url}}/assets/resources-reverse-engineer-ac/1.png)
 
-
-[ESP8266 Arduino Library](https://github.com/crankyoldgit/IRremoteESP8266)
-
-
-https://medium.com/finc-engineering/reverse-engineering-ir-airconditioning-codes-a1b43d075c1
+[I used IRremoteESP8266's IRrecvDumpV3](https://github.com/crankyoldgit/IRremoteESP8266/blob/master/examples/IRrecvDumpV3/IRrecvDumpV3.ino) to inspect the output.  This library contains a lot of pre-reversed-engineered protocols, and as it turned out the IRrecvDumpV3 correctly identified the protocol.
 
 
-
-https://github.com/crankyoldgit/IRremoteESP8266/blob/master/examples/IRrecvDumpV3/IRrecvDumpV3.ino
-
-
-[My Code](https://github.com/joshspicer/keystone-AC-homekit-esp8266)
-
+The result of the dump was really detail-rich:
 
 ```
 Timestamp : 000080.500
@@ -107,6 +104,17 @@ uint16_t rawData[199] = {4420, 4400,  560, 1592,  560, 516,  560, 1592,  558, 51
 uint64_t data = 0xA10267FFFFEA;
 ```
 
+As a proof of concept I wrote up a little arduino sketch and hooked up three IR LEDs in parallel:
+
+![2.png]({{site.url}}/assets/resources-reverse-engineer-ac/2.JPG)
+
+![3.png]({{site.url}}/assets/resources-reverse-engineer-ac/3.JPG)
+
+![4.png]({{site.url}}/assets/resources-reverse-engineer-ac/4.JPG)
+
+
+I then ran the following sketch, copying the raw bytes from a previous capture - turning the A/C on!
+
 
 ```arduino
 #include <Arduino.h>
@@ -136,6 +144,8 @@ void loop() {
 
 ```
 
+The previously mentioned ESP library has an `ir_Midea` class which implements the protocol.  Simply creating an instance of the [`IRMideaAc`](https://github.com/crankyoldgit/IRremoteESP8266/blob/master/src/ir_Midea.h) let me interface quickly with the A/C!
+
 ```arduino
 #include <Arduino.h>
 #include <IRremoteESP8266.h>
@@ -146,49 +156,111 @@ const uint16_t irLed = 4;
 IRMideaAC ac(irLed);
 
 void setup() {
-  // put your setup code here, to run once:
   ac.begin();
   Serial.begin(115200);
+
   delay(200);
   Serial.println("Setup Complete.");
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
   ac.on();
   ac.setFan(1);
+
   ac.setTemp(65,false);
   ac.send();
+
   Serial.println("waiting...");
   delay(5000);
+
   ac.off();
   ac.send();
   delay(5000);
 
 }
+```
+
+## + HomeKit
+
+Utilizing my previous [ESP HomeKit boilerplate]({{site.url}}/homekit-esp8266), and by referring to the [HomeKit specificaton](https://developer.apple.com/homekit/specification/) published by Apple, I implemented a `Heater Cooler` accessory with several services. 
+
+
+```C
+chomekit_accessory_t *accessories[] = {
+    HOMEKIT_ACCESSORY(.id=1, .category=homekit_accessory_category_air_conditioner, .services=(homekit_service_t*[]) {
+         HOMEKIT_SERVICE(ACCESSORY_INFORMATION, .characteristics=(homekit_characteristic_t*[]) {
+                HOMEKIT_CHARACTERISTIC(NAME, "Air Conditioner"),
+                HOMEKIT_CHARACTERISTIC(MANUFACTURER, "spicer.dev"),
+                HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "0000001"),
+                HOMEKIT_CHARACTERISTIC(MODEL, "ESP8266"),
+                HOMEKIT_CHARACTERISTIC(FIRMWARE_REVISION, "1.0"),
+                HOMEKIT_CHARACTERISTIC(IDENTIFY, my_accessory_identify),
+                NULL
+         }),
+       HOMEKIT_SERVICE(HEATER_COOLER, .primary=true, .characteristics=(homekit_characteristic_t*[]) {
+           &cooler_active,
+           &current_temp,
+           &current_state,
+           &target_state,
+           &rotation_speed,
+           &cooling_threshold,
+           NULL
+       }),
+        NULL
+    }),
+      NULL
+};
 
 ```
 
+Each service has a callback which queues the appropriate IR command, and on each loop, an IR payload is sent.
+
+```C
+void loop() {
+  my_homekit_loop();
+  delay(10);
+
+  if (queueCommand)
+  {
+    Serial.write("Sending AC Command....\n");
+    ac.send();
+    flipQueueCommand(false);
+  }
+
+}
+```
+<br>
+
+---
+<br>
+
+The entire Arduino sketch can be **[found on GitHub](https://github.com/joshspicer/keystone-AC-homekit-esp8266)**.  
+
+Changing the Wifi information will let the module connect to your LAN, which will then make the module discoverable in your phone's Home app.
 
 ```
 
 ...................................................................................................................................................................................................................................................................
-WiFi connected, IP: 10.44.3.140
+WiFi connected, IP:  10.77.6.140
 starting my_homekit_setup
 about to call arduino_homekit_setup
 >>> [  14008] HomeKit: Starting server
->>> [  14019] HomeKit: Using existing accessory ID: BF:A6:FD:8A:CC:9F
+>>> [  14019] HomeKit: Using existing accessory ID: BF:A6:FD:8B:AA:44
 >>> [  14025] HomeKit: Preiniting pairing context
->>> [  14030] HomeKit: Using user-specified password: 134-11-134
+>>> [  14030] HomeKit: Using user-specified password: 121-33-121
 >>> [  14050] HomeKit: Call s_mp_exptmod in integer.c, original winsize 6
 >>> [  20763] HomeKit: Call s_mp_exptmod in integer.c, original winsize 5
 >>> [  24193] HomeKit: Preinit pairing context success
 >>> [  24198] HomeKit: Configuring MDNS
->>> [  24203] HomeKit: MDNS begin: AirCon, IP: 10.44.3.140
+>>> [  24203] HomeKit: MDNS begin: AirCon, IP: 10.77.6.140
 >>> [  24209] HomeKit: Init server over
 exiting my_homekit_setup
 Free heap: 40568, HomeKit clients: 0
 Free heap: 41056, HomeKit clients: 0
 Free heap: 41104, HomeKit clients: 0
-
+...
 ```
+
+<br>
+
+![1.png]({{site.url}}/assets/resources-reverse-engineer-ac/5.jpeg)
