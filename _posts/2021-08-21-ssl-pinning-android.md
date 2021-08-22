@@ -11,7 +11,7 @@ permalink: ssl-pinning-android
 >
 > The goal of this article was to understand the August Lock private API. If that's what you're interesting in learning more about too, this is the guide to follow.
 
-----
+<br>
 
 ### Prereqs
 - A rooted Android phone (see my old guide on [rooting pixel 1](https://joshspicer.com/root-pixel-1)).  **Note for this article i'm using a rooted Pixel 4a.**
