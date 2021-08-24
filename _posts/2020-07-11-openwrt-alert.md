@@ -28,49 +28,44 @@ BotFather:
             Keep your token secure, it can be used to control your bot.
 ```
 
-Now create a group chat in the Telegram app and invited my new bot.  To retrieve that group chat's telegram "ID", you can invoke `getUpdates` to see all active chats your bot is in (which should just be the single one you added it to).  I use `jq` to parse out the appropriate value.
+Now create a group chat in the Telegram app and invited my new bot.  To retrieve that group chat's telegram "ID", you can invoke `getUpdates` to see all active chats your bot is in (which should just be the single one you added it to).  I use `jq` to parse the returned JSON.
 
 _NOTE: if this is a group chat you'll need to do some extra steps - see this [StackOverflow post](https://stackoverflow.com/questions/38565952/how-to-receive-messages-in-group-chats-using-telegram-bot-api)_
 
 Replace `$APIKEY` with your api key.
 
 ```bash
-curl https://api.telegram.org/bot$APIKEY/getUpdates \
-                        | jq '.result[0].my_chat_member.chat.id'
-
--4545454545
+curl https://api.telegram.org/bot$APIKEY/getUpdates| jq
 ```
 
-Without `jq` your response will look something like this:
+The response will look someting like this.
 
 ```json
 {
   "ok": true,
-  "result": [ {
-  "my_chat_member": {
-      "update_id": 75757575,
+  "result": [
+    {
+      "update_id": 999999999,
       "message": {
-        "message_id": 15,
+        "message_id": 1,
         "from": {
+          "id": XXXXXXXXXXX,
           "is_bot": false,
           "first_name": "Josh",
+          "language_code": "en"
         },
         "chat": {
-          "id": -4545454545,
-          "title": "My Cool Group",
-          "type": "group",
-          "all_members_are_administrators": true
-        },
-        "date": 1594511195,
-        "new_chat_title": "My Cool Group"
-      }
-    }
-  }
-  ]
-}
+          "id": XXXXXXXXXXX,
+          "first_name": "Josh",
+          "type": "private"
+          ...
+          ...
+          ...
 ```
 
-Grab the relevant chat's "id" value, which represents the `$CHATID` below, and you'll  have all the pieces you need to invoke the bot! We interact with a simple GET request formatted like below.  Note the word "bot" preceding your API key.
+You'll want to take note of the value you see in place of `XXXXXXXXXX`, which represents the `$CHATID` below.
+
+We then make a simple GET request formatted like below.  Note the word "bot" preceding your API key.
 
 Replace `$APIKEY`, `$CHATID`, and `$MSG` appropriately.
 
