@@ -12,7 +12,7 @@ tags: spotify azure music
 
 ## Goal
 
-To show a simple message on the front page of a website/blog/etc (or even on some embedded device like a smart mirror, etc.) with the current song you're listening to on Spotify.  If you aren't currently listening, the API will fetch you last listened to song, as reported by the Spotify API.
+To show a simple message on the front page of a website/blog/etc (or even on some embedded device like a smart mirror - anything that can send a GET and read some JSON!) with the current song you're listening to on Spotify.  If you aren't currently listening, the API will fetch your last listened to song, as reported by the Spotify API.
 
 The end result (on my blog) looks like this:
 
@@ -160,7 +160,7 @@ This project has a [devcontainer](https://github.com/joshspicer/spotify-now-play
 
 ### Custom Domains
 
-In the Azure portal I followed the "custom domain" prompts, `api.joshspicer.com`, as a CNAME for `spotify-now-playing.azurewebsites.net`. Following the guided setup in the portal will also generate you a free SSL certificate.
+In the Azure portal I followed the "custom domain" prompts, resulting in me setting `api.joshspicer.com`, as a CNAME for `spotify-now-playing.azurewebsites.net`. Following the guided setup in the portal will also generate you a free SSL certificate.
 
 ### Cors
 
