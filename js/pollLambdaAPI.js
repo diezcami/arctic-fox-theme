@@ -52,5 +52,5 @@ xhttp.onreadystatechange = function() {
       details;
   }
 };
-xhttp.open("GET", "https://api.joshspicer.com/spotify/current", true);
+xhttp.open("GET", "https://api.joshspicer.com/api/spotify", true);
 xhttp.send();
