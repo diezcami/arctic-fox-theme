@@ -7,6 +7,8 @@ favorite: "true"
 tags: spotify aws music
 ---
 
+> UPDATE: In August 2021 I released a [revised version]({{site.url}}/spotify-now-playing-azure) of this project that runs on Azure.
+
 I really love the social media aspect that Spotify brings to music. I discover so many great tracks by
 exploring what my friends listen to. I've been really curious about uses for AWS Lambda and what it can accomplish.
 Let's get started!
