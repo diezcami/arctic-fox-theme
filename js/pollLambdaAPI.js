@@ -31,10 +31,10 @@ xhttp.onreadystatechange = function() {
     artistName = res.artistName;
     filler2 = " on spotify.";
     spotifyStar = "<a class='spotifySong' href='" + writeup + "'>*</a>";
-    details =
-      "<br><a class='subtext'href='" +
-      writeup +
-      "'> Learn More</a>";
+    // details =
+    //   "<br><a class='subtext'href='" +
+    //   writeup +
+    //   "'> Learn More</a>";
 
     document.getElementById("spotify").innerHTML =
       songStatus +
@@ -46,8 +46,7 @@ xhttp.onreadystatechange = function() {
       artistName +
       "</span>" +
       filler2 +
-      spotifyStar +
-      details;
+      spotifyStar;
   }
 };
 xhttp.open("GET", "https://api.joshspicer.com/api/spotify", true);
