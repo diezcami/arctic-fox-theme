@@ -34,9 +34,7 @@ xhttp.onreadystatechange = function() {
     details =
       "<br><a class='subtext'href='" +
       writeup +
-      "'> Learn More • </a> <a class='subtext' href='" +
-      queue +
-      "'>Add to My Queue</a>";
+      "'> Learn More</a>";
 
     document.getElementById("spotify").innerHTML =
       songStatus +

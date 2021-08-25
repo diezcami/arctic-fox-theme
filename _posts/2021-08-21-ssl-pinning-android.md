@@ -10,7 +10,7 @@ permalink: ssl-pinning-android
 > This article is a braindump of how I was successful in bypassing SSL pinning on Android 11 in 2021.  Please see the acknowledgments at the end for the various guides that helped me get there!  
 >
 > The goal of this article was to understand the August Lock private API. If that's what you're interesting in learning more about too, this is the guide to follow.
-
+`
 <br>
 
 ### Prereqs
