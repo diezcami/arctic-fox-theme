@@ -196,6 +196,122 @@ My consulate appointment is a month away!  For the past 8 months i've mostly jus
 - Heard back from USCIS Geneology regarding my great-grandmother's naturalization.  While not strictly needed, I wanted to have this document as a backup, and to provide additional information on my great-grandmother.  I sent in the request on Nov. 21, 2020, and got the "Index Search Completed" email on July 30, 2021.  They found the C-File for her naturalization as well as an "AR-2 Form". I paid $130 for those two documents the next day and am awaiting them to arrive in the mail. I don't expect them to arrive before my appointment, but having them on the way is reassuring nonetheless.
 - Organized my document binder many times!
 
+## September 2021
+
+### Pre-appointment
+
+**This is the month!** A week prior to the appointment I receieved an email from Prenota to confirm - it was very nice to officially turn my appointment to booked!
+
+**Don't forget your money order!** It dawned on me the morning before my appointment to go out and get the money order - after two years you are suprised you _still_ have things to do before the appointment.  I went to my local post office and got a money order in the amount currently posted on the consulate website (~310 USD).  
+
+In the end, these are all the documents I brought in my binder, ordered by this list.  This list also served as a "table of contents" for the binder.
+
+#### Table of Contents
+```
+FORM 1
+FORM 2
+FORM 3 (Mother, Notarized) 
+FORM 4 (Grandfather, Notarized)
+FORM 4 (Great Grandfather)
+Driver’s License and Passport Photo 
+Utility Bill (Internet)
+
+== Great-Grandfather ==
+Italian Birth Certificate (p.1)
+Italian Birth Certificate (p.2)
+NARA Naturalization Certified Packet (Stapled)
+NARA Response Letter
+NARA Printout (Certificate of Arrival)
+NARA Printout (Petition for Citizenship)
+NARA Printout (Oath of Allegiance)
+Small Envelope from USCIS
+USCIS Response Letter
+USCIS Naturalization Packet (Stapled, see envelope in front pocket)
+Death Certificate (+ Apostille)
+Translation (+ Apostille)
+
+== Great-Grandmother ==
+Small Envelope from Comune Di Casalvecchio Di Puglia
+Italian Birth Certificate
+Copy of my letter to Comune (stamped and returned)
+USCIS Investigation Letter (USCIS Naturalization documents have been ordered)
+Death Certificate (+ Apostille)
+Translation (+ Apostille)
+
+== Great-Grandparents ==
+Marriage Certificate (+ Apostille)
+Translation (+ Apostille)
+
+== Grandfather ==
+Birth Certificate (+ Apostille)
+Translation
+** Original Copy of Birth Certificate Available Upon Request
+Death Certificate (+ Apostille)
+Translation (+ Apostille)
+
+== Grandmother ==
+Birth Certificate (+ Apostille)
+Translation (+ Apostille)
+Death Certificate (+ Apostille)
+Translation (+ Apostille)
+
+== Grandparents ==
+Marriage Certificate (+ Apostille)
+Translation (+ Apostille)
+
+== Mother ==
+Birth Certificate (+ Apostille)
+Translation (+ Apostille)
+
+== Father ==
+Birth Certificate (+ Apostille)
+Translation (+ Apostille)
+
+== Parents == 
+Marriage Certificate (+ Apostille)
+Translation (+ Apostille)
+
+== Myself ==
+Birth Certificate (+ Apostille)
+Translation (+ Apostille)
+
+== Appendix ==
+
+Massachusetts Vital Records Order Summary
+Commonwealth of Massachusetts Archives Letter
+Small Envelope: Registry of Vital Records
+Large Envelopes (USCIS, NARA, and MA Secretary of State) 
+```
+
+### Appointment!
+
+My appointment was at 11:15 AM.  I gave myself plenty of time, took the red line to South Station, and crossed the street toward the Federal Reserve building.  I waited outside until around 11am, went through security, and took the elevator up to the 17th floor.  After a few minutes of waiting I was greeted by Lucia, the employee that would be handling the case.  
+
+She asked me a few questions after introducing herself:
+
+1. Did you prepare this yourself? **Yes**
+2. Who is your Italian ancestor  **My Great-grandfather**
+3. Do you know of any discrepancies?  **Two American-ized named**
+
+She seems ok with my answers, and told me it would take about 45 minutes to go through all the information.  I ended up waiting almost 2 hours for Lucia to return, with news that my application was accepted (with a bit of homework)!
+
+Some remarks
+
+1. On my GGF's naturalization forms, the years for my GF's birth and for my GGP's marriage were off by one year.  Lucia asked me to try and get a NO RECORD of anyone being born on that date.  This seemed important to to do, and I'll start working on getting a NO RECORD asap.
+2. My GF's birth certificate doesn't have his parents' ages listed.  She told me she didn't think it would be possible to get a certified copy (since Boston didn't typically add that information to the BCs at the time).  I even had an original copy with me and showed her that there were no ages.  Nonetheless, i'll try to see if they can send me back something. This didn't seem as important, since we didn't think think this is something possible to get.
+
+There are name discrepencies (Italian->Americanized names) that were noticed, but no action is (currently) needed to change those.  I think this is because all of the name changes are pretty obviously the same person (`Louis->Luigi`, etc...).
+
+I was given a case number and my documents were kept (minus a few extras that were returned to me). I was told to submit documents to clarify the discrepencies in the noted remarks within 90 days.
+
+Overall Lucia told me my case is fairly straightforward.  Lucia also mentioned that my mother (not present at the appointment) could use my file if ever she wanted to apply herself.  
+
+Overall a seemingly successful appointment!
+
+#### Post-Appointment
+
+No time to waste! I emailed the Mass Archives explaining that I wanted to do a BC lookup that I expected would result in a NO RECORD.  I am waiting to hear back, and considering just going in person to hopefully clear this up ASAP.
+
 ### TBD
 
 That's all for now! I'll be updating this as more develops!
