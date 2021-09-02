@@ -291,14 +291,14 @@ She asked me a few questions after introducing herself:
 
 1. Did you prepare this yourself? **Yes**
 2. Who is your Italian ancestor  **My Great-grandfather**
-3. Do you know of any discrepancies?  **Two American-ized named**
+3. Do you know of any discrepancies?  **Yes, Two American-ized named**
 
 She seems ok with my answers, and told me it would take about 45 minutes to go through all the information.  I ended up waiting almost 2 hours for Lucia to return, with news that my application was accepted (with a bit of homework)!
 
 Some remarks
 
-1. On my GGF's naturalization forms, the years for my GF's birth and for my GGP's marriage were off by one year.  Lucia asked me to try and get a NO RECORD of anyone being born on that date, to clear up my GF's birth discrepancy.  This seemed important to to do, and I'll start working on getting a NO RECORD asap.
-2. My GF's birth certificate doesn't have his parents' ages listed.  She told me she didn't think it would be possible to get a certified copy (since Boston didn't typically add that information to the BCs at the time).  I even had an original copy with me and showed her that there were no ages.  Nonetheless, i'll try to see if they can send me back something. This didn't seem as important, since we didn't think think this is something possible to get.
+1. On my GGF's naturalization documents, the years for my GF's birth and for my GGP's marriage were off by exactly one year.  Lucia asked me to try and get a NO RECORD of anyone being born on that date, to clear up my GF's birth discrepancy.  This seemed important to to do, and I'll start working on getting a NO RECORD asap. It's important to note that it's not possible to amend naturalization documents that old, so that isn't a route I could take for this.
+2. My GF's birth certificate doesn't have his parents' ages listed.  Lucia told me she didn't think it would be possible to get a certified copy (since Boston didn't typically add that information to the BCs pre-1925).  I even had an original copy of the BC with me and showed her that there were no ages.  Nonetheless, i'll try to see if they can send me back something. This didn't seem as important, since we didn't think think this was something possible to get.
 
 There are name discrepancies (Italian->Americanized names) that were noticed, but no action is (currently) needed to change those.  I think this is because all of the name changes are pretty obviously the same person (`Louis->Luigi`, etc...).
 
@@ -310,7 +310,7 @@ Overall a seemingly successful appointment! 🎉
 
 #### Post-Appointment
 
-No time to waste! I emailed the Mass Archives explaining that I wanted to do a BC lookup that I expected would result in a NO RECORD.  I am waiting to hear back, and considering just going in person to hopefully clear this up ASAP.
+No time to waste! I emailed the Massachusetts Archives explaining that I wanted to do a BC lookup which I expected would result in a NO RECORD.  I am waiting to hear back, and considering just going in person to hopefully clear this up ASAP.
 
 ### TBD
 
