@@ -297,16 +297,16 @@ She seems ok with my answers, and told me it would take about 45 minutes to go t
 
 Some remarks
 
-1. On my GGF's naturalization forms, the years for my GF's birth and for my GGP's marriage were off by one year.  Lucia asked me to try and get a NO RECORD of anyone being born on that date.  This seemed important to to do, and I'll start working on getting a NO RECORD asap.
+1. On my GGF's naturalization forms, the years for my GF's birth and for my GGP's marriage were off by one year.  Lucia asked me to try and get a NO RECORD of anyone being born on that date, to clear up my GF's birth discrepancy.  This seemed important to to do, and I'll start working on getting a NO RECORD asap.
 2. My GF's birth certificate doesn't have his parents' ages listed.  She told me she didn't think it would be possible to get a certified copy (since Boston didn't typically add that information to the BCs at the time).  I even had an original copy with me and showed her that there were no ages.  Nonetheless, i'll try to see if they can send me back something. This didn't seem as important, since we didn't think think this is something possible to get.
 
-There are name discrepencies (Italian->Americanized names) that were noticed, but no action is (currently) needed to change those.  I think this is because all of the name changes are pretty obviously the same person (`Louis->Luigi`, etc...).
+There are name discrepancies (Italian->Americanized names) that were noticed, but no action is (currently) needed to change those.  I think this is because all of the name changes are pretty obviously the same person (`Louis->Luigi`, etc...).
 
-I was given a case number and my documents were kept (minus a few extras that were returned to me). I was told to submit documents to clarify the discrepencies in the noted remarks within 90 days.
+I was given a case number and my documents were kept (minus a few extras that were returned to me). I was told to submit documents to clarify the discrepancies in the noted remarks within 90 days.
 
 Overall Lucia told me my case is fairly straightforward.  Lucia also mentioned that my mother (not present at the appointment) could use my file if ever she wanted to apply herself.  
 
-Overall a seemingly successful appointment!
+Overall a seemingly successful appointment! 🎉
 
 #### Post-Appointment
 
