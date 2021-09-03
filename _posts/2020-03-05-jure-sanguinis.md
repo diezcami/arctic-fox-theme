@@ -308,9 +308,12 @@ Overall Lucia told me my case is fairly straightforward.  Lucia also mentioned t
 
 Overall a seemingly successful appointment! 🎉
 
-#### Post-Appointment
+#### Post-Appointment Homework
 
-No time to waste! I emailed the Massachusetts Archives explaining that I wanted to do a BC lookup which I expected would result in a NO RECORD.  I am waiting to hear back, and considering just going in person to hopefully clear this up ASAP.
+To resolve the "homework" I visited the Massachusetts Archives in-person (we're currently between COVID shutdowns, so I got to finally go inside!).  The archivists were super helpful.  I checked the birth and marriage indices showing NO RECORD of the discrepant birth/marriage.  The archivists wrote up a letter explaining this finding and printed it on their letterhead. The archivst also added a note to the letter to clarify remark 2 from above.  Lastly, I took photocopies of the relevant pages from the indices (i'll send that over too, just in case). 
+
+I emailed the consulate asking if this needed to be translated/apostilled, and Lucia told me nope - just mail it in (and so I did!).
+
 
 ### TBD
 
