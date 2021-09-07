@@ -3,6 +3,7 @@ layout: post
 title: "Reverse shell to your Azure VM without inbound access"
 date: 2021-02-23
 tags: azure linux
+favorite: "true"
 permalink: reverse-shell-azure
 ---
 
@@ -65,6 +66,18 @@ Two terminals will be spawned:
 ./reverse-shell-azure.sh <VM NAME> [RESOURCE_GROUP] [SUBSCRIPTION]
 ```
 
-Enjoy! - 
+----
 
-<script src="https://gist.github.com/joshspicer/b5c66ad239031e3138469c5948c78bae.js"></script>
+You can clone the entire [**reverse-shell-azure.sh**](https://gist.github.com/joshspicer/b5c66ad239031e3138469c5948c78bae#file-reverse-shell-azure-sh) from this gist.
+
+Make sure to place the following [revshell.ngrok.yml](https://gist.github.com/joshspicer/b5c66ad239031e3138469c5948c78bae#file-revshell-ngrok-yml) next to the script when executing
+
+```yaml
+tunnels:
+  reverseshell:
+    addr: 56760
+    proto: tcp
+```
+
+<!-- I'd embed this gist, but embedding gists on this blog doesn't look that pretty  -->
+<!-- <script src="https://gist.github.com/joshspicer/b5c66ad239031e3138469c5948c78bae.js"></script> -->
