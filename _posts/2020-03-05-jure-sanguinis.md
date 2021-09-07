@@ -3,6 +3,7 @@ layout: post
 title: "Italian Citizenship through Jure Sanguinis (as it happens!)"
 date: 2020-03-05
 permalink: jure-sanguinis
+favorite: "true"
 tags: travel
 ---
 
