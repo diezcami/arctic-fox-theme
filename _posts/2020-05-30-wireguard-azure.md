@@ -6,7 +6,7 @@ permalink: wireguard-azure
 tags: azure linux networking
 ---
 
-> ⚠️ **UPDATE: Sept 2021 - I've got reports that something has changed causing this guide to not work as intended. I'm currently investigating, but for now be warned some steps may need to be modified! (If you find a bug, please [contact me](/contact) or put up a [PR]**(https://github.com/joshspicer/joshspicer.github.io/edit/master/_posts/2020-05-30-wireguard-azure.md).
+> ⚠️ **UPDATE: Sept 2021 - I've got reports that something has changed causing this guide to not work as intended. I'm currently investigating, but for now be warned some steps may need to be modified! (If you find a bug, please [contact me](/contact) or put up a [PR](https://github.com/joshspicer/joshspicer.github.io/edit/master/_posts/2020-05-30-wireguard-azure.md).**
 
 ## Intro
 
