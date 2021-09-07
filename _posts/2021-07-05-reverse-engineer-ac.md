@@ -117,7 +117,7 @@ As a proof of concept I wrote up a little arduino sketch and hooked up three IR 
 I then ran the following sketch, copying the raw bytes from a previous capture - turning the A/C on!
 
 
-```arduino
+```c
 #include <Arduino.h>
 #include <IRremoteESP8266.h>
 #include <IRsend.h>
@@ -147,7 +147,7 @@ void loop() {
 
 The previously mentioned ESP library has an `ir_Midea` class which implements the protocol.  Simply creating an instance of the [`IRMideaAc`](https://github.com/crankyoldgit/IRremoteESP8266/blob/master/src/ir_Midea.h) let me interface quickly with the A/C!
 
-```arduino
+```c
 #include <Arduino.h>
 #include <IRremoteESP8266.h>
 #include <IRsend.h>
@@ -186,7 +186,7 @@ void loop() {
 Utilizing my previous [ESP HomeKit boilerplate]({{site.url}}/homekit-esp8266), and by referring to the [HomeKit specificaton](https://developer.apple.com/homekit/specification/) published by Apple, I implemented a `Heater Cooler` accessory with several services. 
 
 
-```C
+```c
 chomekit_accessory_t *accessories[] = {
     HOMEKIT_ACCESSORY(.id=1, .category=homekit_accessory_category_air_conditioner, .services=(homekit_service_t*[]) {
          HOMEKIT_SERVICE(ACCESSORY_INFORMATION, .characteristics=(homekit_characteristic_t*[]) {
@@ -216,7 +216,7 @@ chomekit_accessory_t *accessories[] = {
 
 Each service has a callback which queues the appropriate IR command, and on each loop, an IR payload is sent.
 
-```C
+```c
 void loop() {
   my_homekit_loop();
   delay(10);
