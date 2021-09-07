@@ -6,6 +6,9 @@ permalink: jure-sanguinis
 favorite: "true"
 redirect_from:
     - 🇮🇹
+    - italy
+    - italian
+    - IT
 tags: travel
 ---
 
