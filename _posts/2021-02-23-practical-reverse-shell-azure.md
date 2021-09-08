@@ -67,6 +67,7 @@ Two terminals will be spawned:
 ```
 
 ----
+<br>
 
 You can clone the entire [**reverse-shell-azure.sh**](https://gist.github.com/joshspicer/b5c66ad239031e3138469c5948c78bae#file-reverse-shell-azure-sh) from this gist.
 
