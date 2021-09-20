@@ -323,9 +323,9 @@ I emailed the consulate asking if this needed to be translated/apostilled, and L
 
 ## September 20, 2021
 
-It has now been 2.5 weeks since my appointment.  Based on other peoples' experiences, you really shouldn't expect any other communication from the consulate for 1yr+ at this point (unless something goes wrong!).  One signal you do have is whether or not the consulate has cashed your money order - supposed this isn't done until your "homework" is complete and pending application is a "good to go" state.
+It has now been 2.5 weeks since my appointment.  Based on other peoples' experiences, you really shouldn't expect any other communication from the consulate for 1yr+ at this point (unless something goes wrong!).  One signal you do have is whether or not the consulate has cashed your money order.  Supposedly, your check isn't cashed until your "homework" is complete and your pending application is a "good to go" state.
 
-You're able to check whether USPS money order have been cashed online (make sure to take note of the serial number _before_ handing it over).  To my excitement, USPS now lists the money order as cashed!
+You're able to check online whether USPS money orders have been cashed (make sure to take note of the serial number _before_ handing it over).  To my excitement, USPS now lists the money order as cashed! 💸
 
 ![money-order.png]({{site.url}}/assets/resources-jure-sanguinis/money-order.png)
 
