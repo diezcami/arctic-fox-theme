@@ -202,7 +202,7 @@ My consulate appointment is a month away!  For the past 8 months i've mostly jus
 - Heard back from USCIS Geneology regarding my great-grandmother's naturalization.  While not strictly needed, I wanted to have this document as a backup, and to provide additional information on my great-grandmother.  I sent in the request on Nov. 21, 2020, and got the "Index Search Completed" email on July 30, 2021.  They found the C-File for her naturalization as well as an "AR-2 Form". I paid $130 for those two documents the next day and am awaiting them to arrive in the mail. I don't expect them to arrive before my appointment, but having them on the way is reassuring nonetheless.
 - Organized my document binder many times!
 
-## September 2021
+## Early September 2021
 
 ### Pre-appointment
 
@@ -319,6 +319,15 @@ Overall a seemingly successful appointment! 🎉
 To resolve the "homework" I visited the Massachusetts Archives in-person (we're currently between COVID shutdowns, so I got to finally go inside!).  The archivists were super helpful.  I checked the birth and marriage indices showing NO RECORD of the discrepant birth/marriage.  The archivists wrote up a letter explaining this finding and printed it on their letterhead. The archivst also added a note to the letter to clarify remark 2 from above.  Lastly, I took photocopies of the relevant pages from the indices (i'll send that over too, just in case). 
 
 I emailed the consulate asking if this needed to be translated/apostilled, and Lucia told me nope - just mail it in (and so I did!).
+
+
+## September 20, 2021
+
+It has now been 2.5 weeks since my appointment.  Based on other peoples' experiences, you really shouldn't expect any other communication from the consulate for 1yr+ at this point (unless something goes wrong!).  One signal you do have is whether or not the consulate has cashed your money order - supposed this isn't done until your "homework" is complete and pending application is a "good to go" state.
+
+You're able to check whether USPS money order have been cashed online (make sure to take note of the serial number _before_ handing it over).  To my excitement, USPS now lists the money order as cashed!
+
+![money-order.png]({{site.url}}/assets/resources-jure-sanguinis/money-order.png)
 
 
 ### TBD
