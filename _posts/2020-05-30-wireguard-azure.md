@@ -6,7 +6,7 @@ permalink: wireguard-azure
 tags: azure linux networking
 ---
 
-> UPDATE: Sept 2021 - I've recently made some edits (thanks to helpful email and slack message) that should resolve a _pesky_ DNS issue.  Please [contact me](/contact) or put up a [PR](https://github.com/joshspicer/joshspicer.github.io/edit/master/_posts/2020-05-30-wireguard-azure.md) if you see anything funny!
+> UPDATE: Sept 2021 - I've recently made some edits (thanks to a helpful email and slack message) that should resolve a _pesky_ DNS issue.  Please [contact me](/contact) or put up a [PR](https://github.com/joshspicer/joshspicer.github.io/edit/master/_posts/2020-05-30-wireguard-azure.md) if you see anything funny!
 
 ## Intro
 
