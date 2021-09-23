@@ -5,6 +5,7 @@ date: 2020-04-19
 permalink: macos-tweaks
 redirect_from:
   - macos
+  - mac
 tags: macOS tips-tricks
 ---
 
@@ -138,6 +139,7 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - pcregrep (grep across lines)
 - [Rocket](https://matthewpalmer.net/rocket/)
 - Amphetamine
+- Texpad (LaTeX)
 
 ### Misc Tweaks
 -  [Copy Git Link (VSCode)](https://marketplace.visualstudio.com/items?itemName=reduckted.vscode-gitweblinks)[*](https://github.com/joshspicer/vscode-gitweblinks)
