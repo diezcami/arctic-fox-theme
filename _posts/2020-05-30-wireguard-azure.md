@@ -86,6 +86,24 @@ curl -L https://install.pivpn.io | bash
 
 Follow the PiVPN prompts, being sure to choose "wireguard" over "OpenVPN". Be sure to enter the same PORT you opened above (I chose 4400).
 
+### Tweak Ubuntu DNS
+
+> _Edit 9/23/21 - Thanks to Jon H. for emailing me with this fix!_
+
+One additional step you'll need to do is tweak the current DNS settings on the machine. 
+
+First, edit `/etc/systemd/resolved.conf` by uncommenting `#DNS` and `#Domains`, setting your preference of upstream DNS provider (Cloudflare's `1.1.1.1`, Quad9's `9.9.9.9`, etc...).
+
+Then, symlink the systemd resolve file to /etc/resolv.conf.
+
+```bash
+sudo ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
+sudo systemctl stop systemd-resolved
+sudo systemctl start systemd-resolved
+```
+
+### Configure Wireguard
+
 After install, you can configure new clients with the `pivpn` command.
 
 ```bash
