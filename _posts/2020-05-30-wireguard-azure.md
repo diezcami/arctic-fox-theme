@@ -21,21 +21,25 @@ The first step is to create your Azure instance in the cloud! You can certainly 
 You can use any name you'd like. For this guide i'm using `wgph` (wireguard pihole) to preface my resource's names.
 
 ```bash
+
+# Set this to whatever you'd like, (or keep it)
+NAME='wgph'
+
 # Creates resource group
-az group create --name wgphRG --location eastus
+az group create --name $RG --location eastus
 
 # Creates VM
 az vm create \
---resource-group wgphRG \
---name wgphVM \
---image UbuntuLTS \
+--resource-group ${NAME}-rg \
+--name ${NAME}-vm \
+--image UbuntuLTS \   # At time of writing Ubuntu 18.04.6 LTS
 --admin-username ubuntu \
---public-ip-address wgphIP \
+--public-ip-address ${NAME}-ip \
 --public-ip-address-allocation static \
 --generate-ssh-keys
 
 # Open Port (Pick something random >1024 that we'll use for wireguard later)
-az vm open-port --port 4400 --resource-group wgphRG --name wgphVM
+az vm open-port --port 4400 --resource-group ${NAME}-rg --name ${NAME}-vm
 
 ```
 
@@ -45,13 +49,29 @@ You can then look at the output above, or run the query below, to find your VM's
 
 # Check your IP
 az network public-ip show \
-  --resource-group wgphRG \
-  --name wgphIP \
+  --resource-group ${NAME}-rg \
+  --name ${NAME}-ip \
   --query '[ipAddress,publicIpAllocationMethod,sku]' \
   --output table
 ```
 
 If you have any issue with the above, be sure to reference the [Microsoft Azure VM docs](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/).
+
+At the time of writing, Ubuntu "Bionic Beaver" is the LTS version Azure gives us.  If your `/etc/os-release` looks different than mine, YMMV with this guide. 
+
+```
+ubuntu@wgph:~$ cat /etc/os-release | head -n 6
+NAME="Ubuntu"
+VERSION="18.04.6 LTS (Bionic Beaver)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 18.04.6 LTS"
+VERSION_ID="18.04"
+```
+
+_Please do leave a [PR](https://github.com/joshspicer/joshspicer.github.io/edit/master/_posts/2020-05-30-wireguard-azure.md) if you need to modify any steps in the future!_
+
+
 
 Note that I would (later) remove the Azure firewall rule allowing SSH, and only allow connections behind the VPN. We definitely do NOT want to expose your DNS service or pi-hole web console to the internet, so make sure to go back and check your firewall is correctly configured with the least amount of privilege needed (VPN access).
 
@@ -59,7 +79,7 @@ Note if you ever want to tear this all down, you can run:
 
 ```bash
 # Deletes your resource group and everything in it.
-az group delete --name wgphRG --yes
+az group delete --name ${NAME}-rg --yes
 ```
 
 ## Setup Wireguard
@@ -86,21 +106,46 @@ curl -L https://install.pivpn.io | bash
 
 Follow the PiVPN prompts, being sure to choose "wireguard" over "OpenVPN". Be sure to enter the same PORT you opened above (I chose 4400).
 
+I chose `public IP` for "How will people connect".  Additionally, I said `yes` to unattended upgrades.
+
+Ok - now Reboot!
+
 ### Tweak Ubuntu DNS
 
 > _Edit 9/23/21 - Thanks to Jon H. for emailing me with this fix!_
 
 One additional step you'll need to do is tweak the current DNS settings on the machine. 
 
-First, edit `/etc/systemd/resolved.conf` by uncommenting `#DNS` and `#Domains`, setting your preference of upstream DNS provider (Cloudflare's `1.1.1.1`, Quad9's `9.9.9.9`, etc...).
+First, edit `/etc/systemd/resolved.conf` by uncommenting `#DNS`, setting your preference of upstream DNS provider(s). The field is space-separated.
 
-Then, symlink the systemd resolve file to /etc/resolv.conf.
+```
+[Resolve]
+DNS=1.1.1.1 9.9.9.9
+#FallbackDNS=
+#Domains=
+#LLMNR=no
+#MulticastDNS=no
+#DNSSEC=no
+#Cache=yes
+#DNSStubListener=yes
+```
+
+Next, symlink the systemd resolve file to /etc/resolv.conf.
 
 ```bash
 sudo ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
 sudo systemctl stop systemd-resolved
 sudo systemctl start systemd-resolved
 ```
+
+Do a quick `dig` check, and see that now your DNS provider is set as the system default.
+
+```bash
+josh@wgph:~$ dig joshspicer.com | grep "SERVER"
+;; SERVER: 1.1.1.1#53(1.1.1.1)
+```
+
+Definitely make sure DNS is working _before_ continuing.
 
 ### Configure Wireguard
 
@@ -163,6 +208,8 @@ Then run `ip r | grep default` and note your default gateway. Mine was `10.0.0.1
 
 Be sure to select `wg0` as your interface when running through the pihole installer, and use the previous values for your IP and gateway.
 
+Again, **make sure to select `wg0` - the wireguard interface**
+
 ```bash
 # Pull and execute pi hole script
 sudo curl -sSL https://install.pi-hole.net | bash
@@ -173,8 +220,6 @@ _Note_: Use **SPACEBAR** to select an option, then **TAB, ENTER** to move and se
 <img width="537" alt="Screen Shot 2021-07-14 at 8 19 04 AM" src="https://user-images.githubusercontent.com/23246594/125621078-bb104b7c-91e1-46dc-a2b3-6fbcd03d5d21.png">
   
 <img width="537" alt="Screen Shot 2021-07-14 at 8 19 04 AM" src="https://user-images.githubusercontent.com/23246594/125624502-ebe73a5d-c3c7-4341-98be-83c8ade0c19b.png">
-  
-
 
 To set ourselves up for pi-hole, we are going to also allow ports inbound 80 and 53 from anyone within our VPN subnet. This will allow web traffic (for pi-hole console) and DNS traffic to pass through the server firewall from any client (your phone and laptop) on the VPN subnet.
 
@@ -186,15 +231,41 @@ sudo ufw allow from 10.6.0.0/24 to any port 80
 
 ### DHCP
 
+<details>
+  <summary><i>NOTE: I don't think this step is necessary anymore, but leaving here for posterity.</i></summary>
+  <br>
 Azure's DHCP servers will reset `/etc/resolv.conf` on each reboot. To keep our localhost in the list of resolvers, we need to add the following:
 
 ```bash
 echo "prepend domain-name-servers 127.0.0.1;" >> /etc/dhcp/dhclient.conf
 ```
+</details>  
+
 
 #### Debug tips
 
 If you get into a state where DNS won't resolve and you need to download something from the internet, you can temporarily add in a DNS server into `/etc/resolv.conf`.
+
+NOTE: Given the step we did above symlinking `/run/systemd/resolve/resolv.conf -> /etc/resolv.conf`, you should never _have_ to do this since systemd is setting our preferred DNS providers for us.
+
+```bash
+ubuntu@wgph:~$ ls -la /etc/resolv.conf
+lrwxrwxrwx 1 root root 32 Sep 23 22:50 /etc/resolv.conf -> /run/systemd/resolve/resolv.conf
+
+
+ubuntu@wgph:~$ cat /etc/resolv.conf
+# This file is managed by man:systemd-resolved(8). Do not edit.
+...
+...
+
+nameserver 1.1.1.1           # Our custom DNS nameserver 1
+nameserver 9.9.9.9           # Our custom DNS nameserver 2
+nameserver 168.63.129.16.    # Azure's default DNS nameserver
+search t0wcdadekjekljelmzg.ax.internal.cloudapp.net
+
+```
+
+Nonetheless, if you're stuck you can try something like this:
 
 ```bash
 echo "nameserver 1.1.1.1" >> /etc/resolv.conf
