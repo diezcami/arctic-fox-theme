@@ -26,7 +26,7 @@ You can use any name you'd like. For this guide i'm using `wgph` (wireguard piho
 NAME='wgph'
 
 # Creates resource group
-az group create --name $RG --location eastus
+az group create --name ${NAME}-rg --location eastus
 
 # Creates VM
 az vm create \
