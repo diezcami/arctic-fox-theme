@@ -139,7 +139,6 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - pcregrep (grep across lines)
 - [Rocket](https://matthewpalmer.net/rocket/)
 - Amphetamine
-- Texpad (LaTeX)
 
 ### Misc Tweaks
 -  [Copy Git Link (VSCode)](https://marketplace.visualstudio.com/items?itemName=reduckted.vscode-gitweblinks)[*](https://github.com/joshspicer/vscode-gitweblinks)
@@ -159,6 +158,7 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - Hex Fiend
 - MonoDraw
 - [Discovery: DNS-SD Browser](https://apps.apple.com/us/app/discovery-dns-sd-browser/id1381004916?mt=12)
+- Texpad (LaTeX)
 
 ## Dot Files
 
