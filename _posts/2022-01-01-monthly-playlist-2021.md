@@ -22,3 +22,6 @@ This is the fourth year i've of the playlist journal.  I made it extra difficult
 * [--- -.-. - (oct)](https://open.spotify.com/playlist/35JFn6Z2VxmJdlkbILYNxN?si=134800f01ca8405e)
 * [-. —- …- (nov)](https://open.spotify.com/playlist/2eEontDrcieWVtI3WKg8tk?si=c5f2d932559f480c)
 * [-.. . -.-. (dec)](https://open.spotify.com/playlist/6W7eUfPaClqFHnib1vouGc?si=ba92ca1f94b041d8)
+
+
+This year we keep it ridiciously with a pig latin theme - starting with [anuaryjay](https://open.spotify.com/playlist/1DITOyop8HZhAFVZ9oGKKZ?si=a193726ec76f48a9).
