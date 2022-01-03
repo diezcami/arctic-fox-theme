@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Monthly Playlists 2021 🚀"
-date: 2021-12-21
+date: 2022-01-01
 permalink: monthly-playlist-2021
 ---
 <!-- ![1.png]({{site.url}}/assets/resources-monthly-playlist-2021/1.png) -->
