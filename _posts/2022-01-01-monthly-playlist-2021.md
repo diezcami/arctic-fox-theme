@@ -25,4 +25,4 @@ August was such a good month, I didn't have time to make a playlist :)
 * [-.. . -.-. (dec)](https://open.spotify.com/playlist/6W7eUfPaClqFHnib1vouGc?si=ba92ca1f94b041d8)
 
 
-This year we keep it ridiciously with a pig latin theme - starting with [anuaryjay](https://open.spotify.com/playlist/1DITOyop8HZhAFVZ9oGKKZ?si=a193726ec76f48a9).
+This year we keep it equally ridiculous with a pig latin theme - starting with [anuaryjay](https://open.spotify.com/playlist/1DITOyop8HZhAFVZ9oGKKZ?si=a193726ec76f48a9).
