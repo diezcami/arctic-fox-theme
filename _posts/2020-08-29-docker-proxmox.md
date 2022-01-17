@@ -6,9 +6,11 @@ permalink: docker-proxmox
 tags: homelab
 ---
 
+> ⚠ RancherOS appears to be unmaintained at the moment, so I no longer recommend this as the best approach!
+
 ## Intro
 
-LXC containers are great, but even so I often find myself wanting to quickly spin up docker projects I find online. Below is my preferred method of hosting and managing docker containers on my proxmox homelab.
+While proxmox offers the quick management of LXC containers in the UI, I often find myself wanting to quickly spin up docker projects I find online. Below is my preferred method of hosting and managing docker containers on my proxmox homelab.
 
 ## RancherOS
 

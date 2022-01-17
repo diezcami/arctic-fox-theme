@@ -98,6 +98,8 @@ Frida is an instrumentation platform that allows us to dynamically no-op or reim
 
 A couple ssl-pinning scripts i've found online are by [@pcipolloni](https://codeshare.frida.re/@pcipolloni/universal-android-ssl-pinning-bypass-with-frida/) and [httptoolkit](https://github.com/httptoolkit/frida-android-unpinning).  Choose one of these scripts, or write your own, and push that script to your device.
 
+EDIT (Dec 12, 2021): I've have recent success with [this script](https://codeshare.frida.re/@akabe1/frida-multiple-unpinning/)
+
  ```bash
 $ adb push ~/frida_scripts/frida_ssl_pinning /data/local/tmp
 
