@@ -71,6 +71,27 @@ listen-address=127.0.0.1
 ![1.png]({{site.url}}/assets/resources-hack-air-purifier/1.png)
 
 
+
+-----
+
+## Man in the Middle with RaspAP
+
+- [RaspAP](https://docs.raspap.com/)
+- `ssh pi@raspberrypi.wo sudo tcpdump -i wlan1 -U -s0 -w - 'not port 22' | wireshark -k -i -`
+
+### Frida 
+
+[circumvent ssl pinning](https://joshspicer.com/ssl-pinning-android)
+
+#### mitmproxy
+
+https://www.dinofizzotti.com/blog/2019-01-09-running-a-man-in-the-middle-proxy-on-a-raspberry-pi-3/
+https://hackaday.io/project/10338/instructions
+
+
+
+-----
+
 ### Resources
 
 - [Some inspiration](https://xakcop.com/post/ctrl-air-purifier/)
