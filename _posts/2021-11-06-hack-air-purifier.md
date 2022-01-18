@@ -82,7 +82,22 @@ listen-address=127.0.0.1
 
 [circumvent ssl pinning](https://joshspicer.com/ssl-pinning-android)
 
+```
+[+] Bypassing TrustManagerImpl (Android > 7) checkTrustedRecursive check: graph.facebook.com
+[+] Bypassing TrustManagerImpl (Android > 7) checkTrustedRecursive check: graph.facebook.com
+[+] Bypassing TrustManagerImpl (Android > 7) checkTrustedRecursive check: iocareapp.coway.com
+[+] Bypassing TrustManagerImpl (Android > 7) checkTrustedRecursive check: iocareapp.coway.com
+[+] Bypassing TrustManagerImpl (Android > 7) checkTrustedRecursive check: firebase-settings.crashlytics.com
+[+] Bypassing TrustManagerImpl (Android > 7) checkTrustedRecursive check: iocareapp.coway.com
+[+] Bypassing TrustManagerImpl (Android > 7) checkTrustedRecursive check: iocareapp.coway.com
+[+] Bypassing TrustManagerImpl (Android > 7) checkTrustedRecursive check: maps.googleapis.com
+[+] Bypassing TrustManagerImpl (Android > 7) checkTrustedRecursive check: d5zuhet69bkhw.cloudfront.net
+[+] Bypassing TrustManagerImpl (Android > 7) checkTrustedRecursive check: maps.googleapis.com
+[+] Bypassing TrustManagerImpl (Android > 7) checkTrustedRecursive check: d5zuhet69bkhw.cloudfront.net
+```
+
 Get list of packages: `adb shell pm list packages -3 -f`
+
 
 #### mitmproxy
 
@@ -101,7 +116,65 @@ Then run mitmproxy transparently.
 
 `mitmproxy --mode transparent`
 
+#### Access Tokens
+
+First Arp
+
+![1.png]({{site.url}}/assets/resources-hack-air-purifier/arp.png)
+
+ Able to read app -> service tokens
+
+ ```
+ {
+  "body": {
+    "unreadYN": "N"
+  },
+  "header": {
+    "accessToken": "<...some jwt...>",
+    "error_code": "",
+    "error_text": "",
+    "info_text": "",
+    "login_session_id": "",
+    "message_version": "",
+    "refreshToken": "<...some jwt ...>",
+    "result": true,
+    "trcode": "CWIG1004"
+  }
+}
+ ```
+
+ There is some verification of some sort going on between app and sergvice`https://iocareapp.coway.com/bizmob.iocare/CWIZ0010.json`
+
+Req.
+```
+{"header":{"login_session_id":"","trcode":"CWIZ0010","message_version":"1.0.1","result":true,"error_code":"","error_text":"","info_text":"","is_cryption":false},"body":{"appbuildversion":62,"appminorversion":3,"appmajorversion":2,"verificationCode":"<..some code...>","appKey":"<... some key ...>","langCd":"en"}}
+```
+
+Res.
+```
+{
+  "body": {
+    "result": "<..some result..>"
+  },
+  "header": {
+    "accessToken": null,
+    "error_code": "",
+    "error_text": "",
+    "info_text": "",
+    "login_session_id": "",
+    "message_version": "1.0.1",
+    "refreshToken": null,
+    "result": true,
+    "trcode": "CWIZ0010"
+  }
+}
+
+```
+
+This stuff is cool, but it's already been reversed and utilized in the homebridge extension.  I'm more interested in cutting out the coway AWS service entirely and controlling the air purifier without relying on the provided service.
+
 #### Analyzing Wireshark + Spoofing DNS
+
 
 Immediately once the air purifier device is provided Wifi info, it does a DNS request to find the server it should make its handshake with.
 
@@ -115,6 +188,14 @@ Spoof Initial DNS: https://github.com/robert/how-to-build-a-tcp-proxy
 ```
 
 Unplug/Replug in causes DNS request and handshake to reset (see Bear screenshot). Using `fake_dns_server.py` I can trick the device into handshake with a service I control (Is that interesting though?).
+
+
+![dns-normal.png]({{site.url}}/assets/resources-hack-air-purifier/dns-normal.png)
+
+![dns-spoof-terminal.png]({{site.url}}/assets/resources-hack-air-purifier/dns-spoof-terminal.png)
+
+![dns-spoof.png]({{site.url}}/assets/resources-hack-air-purifier/dns-spoof.png)
+
 
 
 -----
