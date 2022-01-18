@@ -196,6 +196,35 @@ Unplug/Replug in causes DNS request and handshake to reset (see Bear screenshot)
 
 ![dns-spoof.png]({{site.url}}/assets/resources-hack-air-purifier/dns-spoof.png)
 
+#### Emulate real service
+
+The next step after DNS seems to be to attempt a TLS handshake with the service over TCP over port 9090.
+
+![syn9090.png]({{site.url}}/assets/resources-hack-air-purifier/syn9090.png)
+
+
+```
+nc -l localhost 12345
+```
+
+```
+./ghostunnel server \
+    --listen 0.0.0.0:9090 \
+    --target localhost:12345 \
+    --keystore test-keys/server-keystore.p12 \
+    --cacert test-keys/cacert.pem \
+    --allow-all
+```
+
+```
+[20027] 2022/01/17 21:55:03.899372 starting ghostunnel in server mode
+[20027] 2022/01/17 21:55:03.900047 using keystore file on disk as certificate source
+[20027] 2022/01/17 21:55:03.929614 using target address localhost:12345
+[20027] 2022/01/17 21:55:03.929871 listening for connections on 0.0.0.0:9090
+[20027] 2022/01/17 21:55:55.228107 error on TLS handshake from 10.77.0.219:58860: tls: client offered only unsupported versions: [301]
+```
+Maybe need to allow older TLS version on host's openSSL install: https://tk-sls.de/wp/5200 and https://github.com/SoftEtherVPN/SoftEtherVPN/issues/1358?
+
 
 
 -----
@@ -204,3 +233,5 @@ Unplug/Replug in causes DNS request and handshake to reset (see Bear screenshot)
 
 - [Some inspiration](https://xakcop.com/post/ctrl-air-purifier/)
 - [Simple walkthough for getting hostapd up 'n running](https://blog.yezz.me/blog/How-To-Start-a-Fake-Access-Point)
+
+- https://robertheaton.com/2019/11/21/how-to-man-in-the-middle-your-iot-devices/
