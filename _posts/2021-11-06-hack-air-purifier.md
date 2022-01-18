@@ -71,7 +71,6 @@ listen-address=127.0.0.1
 ![1.png]({{site.url}}/assets/resources-hack-air-purifier/1.png)
 
 
-
 -----
 
 ## Man in the Middle with RaspAP
@@ -83,11 +82,39 @@ listen-address=127.0.0.1
 
 [circumvent ssl pinning](https://joshspicer.com/ssl-pinning-android)
 
+Get list of packages: `adb shell pm list packages -3 -f`
+
 #### mitmproxy
 
 https://www.dinofizzotti.com/blog/2019-01-09-running-a-man-in-the-middle-proxy-on-a-raspberry-pi-3/
 https://hackaday.io/project/10338/instructions
 
+
+With RaspAP setup, all we need to get it to play nice with mitmproxy is adding two prerouting rules for HTTP and HTTPS traffic.
+
+```
+sudo iptables -t nat -A PREROUTING -i wlan1 -p tcp -m tcp --dport 80 -j REDIRECT --to-ports 8080
+sudo iptables -t nat -A PREROUTING -i wlan1 -p tcp -m tcp --dport 443 -j REDIRECT --to-ports 8080
+```
+
+Then run mitmproxy transparently.
+
+`mitmproxy --mode transparent`
+
+#### Analyzing Wireshark + Spoofing DNS
+
+Immediately once the air purifier device is provided Wifi info, it does a DNS request to find the server it should make its handshake with.
+
+Spoof Initial DNS: https://github.com/robert/how-to-build-a-tcp-proxy
+```
+7094	1093.268754	10.77.0.219	1.1.1.1	DNS	80	Standard query 0x0000 A airusf5o.coway.co.kr
+```
+
+```
+7095	1093.690873	1.1.1.1	10.77.0.219	DNS	184	Standard query response 0x0000 A airusf5o.coway.co.kr CNAME elb-plicegw-01-1801026241.ap-northeast-2.elb.amazonaws.com A 3.36.253.214 A 52.79.160.61
+```
+
+Unplug/Replug in causes DNS request and handshake to reset (see Bear screenshot). Using `fake_dns_server.py` I can trick the device into handshake with a service I control (Is that interesting though?).
 
 
 -----
