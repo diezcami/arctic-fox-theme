@@ -143,7 +143,7 @@ First Arp
 }
  ```
 
- There is some verification of some sort going on between app and sergvice`https://iocareapp.coway.com/bizmob.iocare/CWIZ0010.json`
+ There is some verification of some sort going on between app and service `https://iocareapp.coway.com/bizmob.iocare/CWIZ0010.json`
 
 Req.
 ```
@@ -223,8 +223,24 @@ nc -l localhost 12345
 [20027] 2022/01/17 21:55:03.929871 listening for connections on 0.0.0.0:9090
 [20027] 2022/01/17 21:55:55.228107 error on TLS handshake from 10.77.0.219:58860: tls: client offered only unsupported versions: [301]
 ```
-Maybe need to allow older TLS version on host's openSSL install: https://tk-sls.de/wp/5200 and https://github.com/SoftEtherVPN/SoftEtherVPN/issues/1358?
+Actually - needs to support legacy TLSv1.0 - so [Hitch](https://github.com/varnish/hitch) and allow older TLS version on host's openSSL install: https://tk-sls.de/wp/5200 and https://github.com/SoftEtherVPN/SoftEtherVPN/issues/1358 .
 
+
+```
+hitch --backend [127.0.0.1]:12345 --frontend [*]:9090 --ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-EC
+DSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:DHE-RSA
+-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDH
+E-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES256-SHA256:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-S
+HA:DES-CBC3-SHA --tls-protos TLSv1.2,TLSv1.0,TLSv1.1 example.pem
+```
+
+And the netcat response:
+```
+pi@raspberrypi:~/ghosttunnel $ nc -lp 12345
+010141102F5<.....>MV0.0.0.13AB
+```
+
+example.pem is a self-signed cert with the same common name as the canonical domain name (the elastic load balancer) - so no sophisticated SSL pinning on the device.
 
 
 -----
