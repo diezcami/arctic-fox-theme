@@ -7,7 +7,7 @@ tags: networking linux
 ---
 <!-- ![1.png]({{site.url}}/assets/resources-hack-air-purifier/1.png) -->
 
-## Man in the Middle
+<!-- ## Man in the Middle
 
 Proxying traffic from my android phone to my laptop, installing a CA cert to decrypt traffic.
 
@@ -68,7 +68,7 @@ log-dhcp
 listen-address=127.0.0.1
 ```
 
-![1.png]({{site.url}}/assets/resources-hack-air-purifier/1.png)
+![1.png]({{site.url}}/assets/resources-hack-air-purifier/1.png) -->
 
 
 -----
@@ -76,9 +76,40 @@ listen-address=127.0.0.1
 ## Man in the Middle with RaspAP
 
 - [RaspAP](https://docs.raspap.com/)
-- `ssh pi@raspberrypi.wo sudo tcpdump -i wlan1 -U -s0 -w - 'not port 22' | wireshark -k -i -`
 
-### Frida 
+Two interfaces:
+-  `wlan1` a Panda Wifi adapter
+- `eth0` which is connected is the upstream to internet
+
+Open SSID for `wlan1`.
+
+### Monitor with Wireshark
+
+`ssh pi@raspberrypi.wo sudo tcpdump -i wlan1 -U -s0 -w - 'not port 22' | wireshark -k -i -`
+
+
+#### mitmproxy
+
+Pipe all the web traffic we see on `wlan1` to a mitmproxy instance running on the pi.
+
+https://www.dinofizzotti.com/blog/2019-01-09-running-a-man-in-the-middle-proxy-on-a-raspberry-pi-3/
+https://hackaday.io/project/10338/instructions
+
+
+With RaspAP setup, all we need to get it to play nice with mitmproxy is adding two prerouting rules for HTTP and HTTPS traffic.
+
+```
+sudo iptables -t nat -A PREROUTING -i wlan1 -p tcp -m tcp --dport 80 -j REDIRECT --to-ports 8080
+sudo iptables -t nat -A PREROUTING -i wlan1 -p tcp -m tcp --dport 443 -j REDIRECT --to-ports 8080
+```
+
+Then run mitmproxy transparently.
+
+`mitmproxy --mode transparent`
+
+### Frida
+
+App pins SSL certificate and fails to open if being proxied.  
 
 [circumvent ssl pinning](https://joshspicer.com/ssl-pinning-android)
 
@@ -98,23 +129,6 @@ listen-address=127.0.0.1
 
 Get list of packages: `adb shell pm list packages -3 -f`
 
-
-#### mitmproxy
-
-https://www.dinofizzotti.com/blog/2019-01-09-running-a-man-in-the-middle-proxy-on-a-raspberry-pi-3/
-https://hackaday.io/project/10338/instructions
-
-
-With RaspAP setup, all we need to get it to play nice with mitmproxy is adding two prerouting rules for HTTP and HTTPS traffic.
-
-```
-sudo iptables -t nat -A PREROUTING -i wlan1 -p tcp -m tcp --dport 80 -j REDIRECT --to-ports 8080
-sudo iptables -t nat -A PREROUTING -i wlan1 -p tcp -m tcp --dport 443 -j REDIRECT --to-ports 8080
-```
-
-Then run mitmproxy transparently.
-
-`mitmproxy --mode transparent`
 
 #### Access Tokens
 
@@ -187,7 +201,7 @@ Spoof Initial DNS: https://github.com/robert/how-to-build-a-tcp-proxy
 7095	1093.690873	1.1.1.1	10.77.0.219	DNS	184	Standard query response 0x0000 A airusf5o.coway.co.kr CNAME elb-plicegw-01-1801026241.ap-northeast-2.elb.amazonaws.com A 3.36.253.214 A 52.79.160.61
 ```
 
-Unplug/Replug in causes DNS request and handshake to reset (see Bear screenshot). Using `fake_dns_server.py` I can trick the device into handshake with a service I control (Is that interesting though?).
+Unplug/Replug the device causes DNS request and handshake to reset. Using `fake_dns_server.py` I can trick the device into handshake with a service I control (Is that interesting though?).
 
 
 ![dns-normal.png]({{site.url}}/assets/resources-hack-air-purifier/dns-normal.png)
@@ -202,8 +216,7 @@ The next step after DNS seems to be to attempt a TLS handshake with the service 
 
 ![syn9090.png]({{site.url}}/assets/resources-hack-air-purifier/syn9090.png)
 
-
-```
+<!-- ```
 nc -l localhost 12345
 ```
 
@@ -221,7 +234,7 @@ nc -l localhost 12345
 [20027] 2022/01/17 21:55:03.900047 using keystore file on disk as certificate source
 [20027] 2022/01/17 21:55:03.929614 using target address localhost:12345
 [20027] 2022/01/17 21:55:03.929871 listening for connections on 0.0.0.0:9090
-[20027] 2022/01/17 21:55:55.228107 error on TLS handshake from 10.77.0.219:58860: tls: client offered only unsupported versions: [301]
+[20027] 2022/01/17 21:55:55.228107 error on TLS handshake from 10.77.0.219:58860: tls: client offered only unsupported versions: [301] -->
 ```
 Actually - needs to support legacy TLSv1.0 - so [Hitch](https://github.com/varnish/hitch) and allow older TLS version on host's openSSL install: https://tk-sls.de/wp/5200 and https://github.com/SoftEtherVPN/SoftEtherVPN/issues/1358 .
 
@@ -241,6 +254,15 @@ pi@raspberrypi:~/ghosttunnel $ nc -lp 12345
 ```
 
 example.pem is a self-signed cert with the same common name as the canonical domain name (the elastic load balancer) - so no sophisticated SSL pinning on the device.
+
+[Generate Cert Quick Guide](https://github.com/varnish/hitch/blob/master/docs/certificates.md)
+
+```
+openssl req -newkey rsa:2048 -sha256 -keyout example.com.key -nodes -x509 -days 365 -out example.crt
+
+cat example.com.key example.crt > example.pem
+```
+
 
 
 -----
