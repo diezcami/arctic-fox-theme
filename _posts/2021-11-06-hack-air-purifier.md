@@ -210,6 +210,71 @@ Unplug/Replug the device causes DNS request and handshake to reset. Using `fake_
 
 ![dns-spoof.png]({{site.url}}/assets/resources-hack-air-purifier/dns-spoof.png)
 
+
+#### Examining the service
+
+https://prefetch.net/articles/debuggingssl.html
+
+```
+josh@scarlett ~ % openssl s_client -connect elb-plicegw-01-1801026241.ap-northeast-2.elb.amazonaws.com:9090
+CONNECTED(00000006)
+depth=0 C = KR, ST = Seoul, L = Seoul, O = COWAY, OU = SW Dev Unit, CN = Coway_iTrust
+verify error:num=18:self signed certificate
+verify return:1
+depth=0 C = KR, ST = Seoul, L = Seoul, O = COWAY, OU = SW Dev Unit, CN = Coway_iTrust
+verify return:1
+---
+Certificate chain
+ 0 s:/C=KR/ST=Seoul/L=Seoul/O=COWAY/OU=SW Dev Unit/CN=Coway_iTrust
+   i:/C=KR/ST=Seoul/L=Seoul/O=COWAY/OU=SW Dev Unit/CN=Coway_iTrust
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDUDCCAjgCCQDmeYKQthhzNTANBgkqhkiG9w0BAQUFADBqMQswCQYDVQQGEwJL
+UjEOMAwGA1UECAwFU2VvdWwxDjAMBgNVBAcMBVNlb3VsMQ4wDAYDVQQKDAVDT1dB
+WTEUMBIGA1UECwwLU1cgRGV2IFVuaXQxFTATBgNVBAMMDENvd2F5X2lUcnVzdDAe
+Fw0xOTA4MDUwNzUyMzBaFw00OTA3MjgwNzUyMzBaMGoxCzAJBgNVBAYTAktSMQ4w
+DAYDVQQIDAVTZW91bDEOMAwGA1UEBwwFU2VvdWwxDjAMBgNVBAoMBUNPV0FZMRQw
+EgYDVQQLDAtTVyBEZXYgVW5pdDEVMBMGA1UEAwwMQ293YXlfaVRydXN0MIIBIjAN
+BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuun9gietTB7+9kK76Y8gRf4n+c6I
+s6gDyWMcWLXB7Ru3ExBzdVST8QFSI6g7gSA+GNVjsKko82qZFp63u5iFtWuqeXqw
+/sHGwxtvVmMu7Bjzxb6cf4xNTLL8U44TmAvSVj0d7GrtbZ9zOuNkJC8IePINn+Oa
+dDrVrTpKERnZSSYiO40ZZdX1Jgewvh8VDBI2rENvoNvuOxPKuXU3iXuYx8oqnTzX
+f+2ELI9Rs/ZF6io3pKTzoWG5vX5mcgnKfHqJSU5Vrdtj8V28R4h7sLLQVI4txLcy
++bEY2zrCQ6jeacJUZCKTePZ6QSYIHslwlD1hfYdJNywDhwqeN6eVSZWhdwIDAQAB
+MA0GCSqGSIb3DQEBBQUAA4IBAQB96CzdRx8IGgyfO2j4GAEpZEEjg7MGhCIn5ie/
+PME5Sw6C7e+u/L/yN92L1kofZovWAX/KvGcODdCUVrm6ten70OaAqaEQylcQWjru
+iUPjhIod2HCn9P7OALgyVR229YHN2PBnoqytiUtcbG5ka5fJYozjzRrv+bMQOHw+
+8rXNPgU7gX9fD1zBMOls7dI0fzMNb7Tdjc0ai3CgskXV2xt7MzRHEzSbJANdbPUP
+9mhQpqwmxc07ngXmObmoO+MDttKPZUZvEBrZuIqFQ3dln0zNwDOZrLqKNpTQM/I2
+fqzQfBJ+wKiZpklUiruqMczFAjxBaJxpFdWy9IkyYKepxU1d
+-----END CERTIFICATE-----
+subject=/C=KR/ST=Seoul/L=Seoul/O=COWAY/OU=SW Dev Unit/CN=Coway_iTrust
+issuer=/C=KR/ST=Seoul/L=Seoul/O=COWAY/OU=SW Dev Unit/CN=Coway_iTrust
+---
+No client certificate CA names sent
+Server Temp Key: ECDH, P-256, 256 bits
+---
+SSL handshake has read 1392 bytes and written 378 bytes
+---
+New, TLSv1/SSLv3, Cipher is ECDHE-RSA-AES256-SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES256-SHA384
+    Session-ID: 61ED89AA6B8CB51F579C352A74ED5CB179A471E4185F822A0E882EF2FABD919C
+    Session-ID-ctx:
+    Master-Key: 1A87189FD0368E48BFDE15F21F0BBBD4147CC7DADF296E5FB6A342B2A73412C980C673E3DE2DEBF7C6DBC4D142971AF8
+    Start Time: 1642957226
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self signed certificate)
+---
+```
+
 #### Emulate real service
 
 The next step after DNS seems to be to attempt a TLS handshake with the service over TCP over port 9090.
@@ -247,12 +312,6 @@ E-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES256-SHA
 HA:DES-CBC3-SHA --tls-protos TLSv1.2,TLSv1.0,TLSv1.1 example.pem
 ```
 
-And the netcat response:
-```
-pi@raspberrypi:~/ghosttunnel $ nc -lp 12345
-010141102F5<.....>MV0.0.0.13AB
-```
-
 example.pem is a self-signed cert with the same common name as the canonical domain name (the elastic load balancer) - so no sophisticated SSL pinning on the device.
 
 [Generate Cert Quick Guide](https://github.com/varnish/hitch/blob/master/docs/certificates.md)
@@ -264,6 +323,15 @@ cat example.com.key example.crt > example.pem
 ```
 
 
+And the netcat response:
+```
+pi@raspberrypi:~/ghosttunnel $ nc -lp 12345
+
+
+010141102<.....>MV0.0.0.13AB
+```
+
+Looking on a back of the unit, a large portion of this string matches the listed serial number 👌
 
 -----
 
