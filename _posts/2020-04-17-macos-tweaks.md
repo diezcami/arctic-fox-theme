@@ -101,9 +101,10 @@ defaults write -g NSWindowShouldDragOnGesture -bool true
 
 After rebooting, **hold down ctrl+cmd and click a window to drag**.  This pairs nicely with a window manager like Magnet.
 
-### Utility: Easy-move-resize
+### Utility: Hummingbird
 
-If you want a little more functionality there is a GitHub Projectby dmarcotte called [called easy-move-resize](https://github.com/dmarcotte/easy-move-resize).
+~~If you want a little more functionality there is a GitHub Projectby dmarcotte called [called easy-move-resize](https://github.com/dmarcotte/easy-move-resize).~~
+I have new favorite resize utility called [Hummingbird](https://github.com/finestructure/Hummingbird).
 
 ## VSCode Tweaks
 
@@ -139,6 +140,7 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - pcregrep (grep across lines)
 - [Rocket](https://matthewpalmer.net/rocket/)
 - Amphetamine
+- HomeControl (menu bar HomeKit controls)
 
 ### Misc Tweaks
 -  [Copy Git Link (VSCode)](https://marketplace.visualstudio.com/items?itemName=reduckted.vscode-gitweblinks)[*](https://github.com/joshspicer/vscode-gitweblinks)
