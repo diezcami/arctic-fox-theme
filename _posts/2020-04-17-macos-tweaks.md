@@ -161,6 +161,7 @@ Below is a list of the software (off the top of my head) that I immediately inst
 - MonoDraw
 - [Discovery: DNS-SD Browser](https://apps.apple.com/us/app/discovery-dns-sd-browser/id1381004916?mt=12)
 - Texpad (LaTeX)
+- [Downie](https://software.charliemonroe.net/downie/)
 
 ## Dot Files
 
