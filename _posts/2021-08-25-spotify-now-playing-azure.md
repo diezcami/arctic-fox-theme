@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spotify \"Now Playing\" v2"
+title: "Spotify \"Now Playing\" v2 (Exploring Azure Functions)"
 date: 2021-08-25
 permalink: spotify-now-playing-azure
 tags: spotify azure music
