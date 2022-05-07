@@ -390,7 +390,7 @@ openssl req -newkey rsa:2048 -sha256 -keyout example.com.key -nodes -x509 -days 
 cat example.com.key example.crt > example.pem
 ```
 
-Now, with the `hitch` backend process serving as our HTTPS frontend on the "external" port `9090` and forwarding the unencrypted traffic to port `12345`, we can test it out end to end and see if we can decrypt any traffic the air purifier is trying to send to it serve.
+Now, with the `hitch` backend process serving as our HTTPS frontend on the "external" port `9090` and forwarding the unencrypted traffic to port `12345`, we can test it out end to end and see if we can decrypt any traffic the air purifier is trying to send to its server.
 
 ```
 pi@raspberrypi:~/ghosttunnel $ nc -lp 12345
