@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hacking my Air Purifier"
+title: "Hacking my Air Purifier 🌪️"
 date: 2022-05-07
 permalink: hack-air-purifier
 tags: networking linux hacking
