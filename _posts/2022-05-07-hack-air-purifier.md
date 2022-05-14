@@ -401,7 +401,7 @@ pi@raspberrypi:~/ghosttunnel $ nc -lp 12345
 
 Looking on a back of the unit, a large portion of this string matches the listed serial number 👌.  
 
-We **are** successfully unencrypting traffic that the device is intending to send to its service (by tricking the device into thinking _we_ are that service during the DNS resolution and SSL handshake!).
+We **are** successfully decrypting and capturing traffic that the device is intending to send to its service (by tricking the device into thinking _we_ are that service during the DNS resolution and SSL handshake!).
 
 ## Next Steps
 
