@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Home Docker Config(s)"
+title: "Docker Config(s)"
 date: 2022-06-12
 permalink: docker-configs
 ---
