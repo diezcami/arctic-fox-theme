@@ -341,7 +341,7 @@ SSL-Session:
 
 #### Emulate real service
 
-I took at this guide in [Debugging SSL communications](https://prefetch.net/articles/debuggingssl.html) to figure out my next steps.
+I took a look at this guide in [Debugging SSL communications](https://prefetch.net/articles/debuggingssl.html) to figure out my next steps.
 
 It seemed that I needed to pretend to be some service that accepted a TLS connection over port 9090.
 
