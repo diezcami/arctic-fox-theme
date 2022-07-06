@@ -14,11 +14,11 @@ site-links:
     color: "#000"
 
 social-links:
-  - name: Instagram
-    url: http://instagram.com/joshspicer_
-    icon: fab fa-instagram
-    color: "#F7C277"
-    external: true
+#   - name: Instagram
+#     url: http://instagram.com/joshspicer_
+#     icon: fab fa-instagram
+#     color: "#F7C277"
+#     external: true
   - name: GitHub
     url: http://github.com/joshspicer
     icon: fab fa-github
@@ -29,11 +29,11 @@ social-links:
     icon: fab fa-linkedin
     color: "#6AABE9"
     external: true
-  - name: Facebook
-    url: https://facebook.com/spicer.josh
-    icon: fab fa-facebook
-    color: "#3B5998"
-    external: true
+#   - name: Facebook
+#     url: https://facebook.com/spicer.josh
+#     icon: fab fa-facebook
+#     color: "#3B5998"
+#     external: true
   - name: Spotify
     url: https://open.spotify.com/user/joshspicer37
     icon: fab fa-spotify
