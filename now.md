@@ -8,11 +8,11 @@ redirect_from:
 
 Hi - I'm **Josh**.
 
-📍 I live in Cambridge, MA and work at [Microsoft](https://microsoft.com/) on the [Github Codespaces](https://github.com/features/codespaces) team.
+📍 I live in Cambridge, MA and work at [Microsoft](https://microsoft.com/) on the [GitHub Codespaces](https://github.com/features/codespaces) team.
 
-🇮🇹 In my free time i'm (slowly) learning Italian while getting my [citizenship](/jure-sanguinis) recognized. 
+🎓 I am pursuing my master's degree in Cybersecurity part-time at [Johns Hopkins University](https://pages.jh.edu/jspice10/).
 
-🎓 I am soon starting my Master's degree part-time.  I'll be studying Cybersecurity at [Johns Hopkins University](https://pages.jh.edu/jspice10/).
+🇮🇹 In my free time i'm (slowly) learning Italian while getting my [citizenship](/jure-sanguinis) recognized.
 
 🕥 Check out what i've done in the [**past**](/past), including graduate from [Northeastern University](https://ccs.neu.edu/home/joshua) with a degree in computer science, and create [Parade](https://parade.events/).
 
