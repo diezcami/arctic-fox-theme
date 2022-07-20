@@ -93,3 +93,5 @@ https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver</string>
 	</dict>
 </plist>
 ```
+
+All these properties and more are explained in [Apple's documentation](https://developer.apple.com/documentation/devicemanagement/dnssettings).
