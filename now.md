@@ -6,9 +6,9 @@ redirect_from:
   - /about
 ---
 
-Hi - I'm **Josh**.
+Hi - I'm **Josh**.  I grew up and have lived most of my life in Boston, where I graduated from [Northeastern University](https://ccs.neu.edu/home/joshua) with a degree in computer science.
 
-📍 I live in Cambridge, MA and work at [Microsoft](https://microsoft.com/) on the [GitHub Codespaces](https://github.com/features/codespaces) team.
+📍 I live in Seattle, WA and work at [Microsoft](https://microsoft.com/) on the [GitHub Codespaces](https://github.com/features/codespaces) team.
 
 🎓 I am pursuing my master's degree in Cybersecurity part-time at [Johns Hopkins University](https://pages.jh.edu/jspice10/).
 
