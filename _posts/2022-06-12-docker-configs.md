@@ -139,3 +139,57 @@ volumes:
 networks:
   unifi:
 ```
+
+## Minecraft Bedrock
+
+Enough said ⚒️
+
+```yaml
+version: '3.4'
+
+services:
+  bds:
+    image: itzg/minecraft-bedrock-server
+    environment:
+      EULA: "TRUE"
+      GAMEMODE: survival
+      DIFFICULTY: normal
+      SERVER_NAME: SpiceCraft
+    ports:
+      - 19132:19132/udp
+    volumes:
+      - bds:/data
+    stdin_open: true
+    tty: true
+  backup:
+    image: kaiede/minecraft-bedrock-backup
+    container_name: minecraft_backup
+    restart: always
+    depends_on:
+      - "bds"
+    environment:
+      TZ: "America/Los_Angeles"
+    tty: true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /home/josh/backups/auto:/backups
+      - bds:/server
+
+volumes:
+  bds: {}
+```
+
+Add this shell script as a local cron job to backup to Azure Blob storage.
+
+```bash
+#!/bin/bash
+
+SAS="https://minecraftbackups.blob.core.windows.net/bedrock?<SAS_SIGNATURE>"
+
+CONTAINER_NAME="bedrock"
+
+SOURCE="/home/josh/backups/auto"
+
+/usr/bin/azcopy sync "$SOURCE" "$SAS" --recursive | tee /home/josh/backups/az_logs/$(date -u +'%Y-%m-%d_%H:%M')
+
+```
