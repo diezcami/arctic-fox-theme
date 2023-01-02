@@ -126,3 +126,24 @@ This script will run when a device associates (or dissociates) with the access p
 
 
 The script will now run each time a device starts talking with your AP.  While not resiliant to MAC spoofing, it is a quick and easy way to keep an eye on new devices joining your networks :) 
+
+----
+
+A simple, barebones template to script telegram message can be seen below. 
+
+```bash
+#!/bin/bash
+
+# Sends a telegram message to your bot!
+
+MESSAGE="$1"
+
+API_TOKEN=''
+CHAT_ID=''
+
+TELEGRAM="https://api.telegram.org/bot$API_TOKEN/sendMessage?chat_id=$CHAT_ID&text="         
+                                                                                                                                  
+/usr/bin/curl "$TELEGRAM$MESSAGE" 
+```
+
+Usage: `./telegram.sh "Hello World!"`
