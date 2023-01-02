@@ -32,6 +32,8 @@ Now create a group chat in the Telegram app and invited my new bot.  To retrieve
 
 _NOTE: if this is a group chat you'll need to do some extra steps - see this [StackOverflow post](https://stackoverflow.com/questions/38565952/how-to-receive-messages-in-group-chats-using-telegram-bot-api)_
 
+> [UPDATE] An even easier way to get the chat id is by signing into the web version of telegram and looking for the chat id query parameter!
+
 Replace `$APIKEY` with your api key.
 
 ```bash
