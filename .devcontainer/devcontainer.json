@@ -1,4 +1,3 @@
 {
-    "postCreateCommand": ".devcontainer/jekyll-dep.sh",
-    "forwardPorts": [4000],
+    "forwardPorts": [4000]
 }
