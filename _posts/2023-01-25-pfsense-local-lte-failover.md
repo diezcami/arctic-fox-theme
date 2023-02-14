@@ -9,7 +9,8 @@ permalink: lte-failover-pfsense
 
 ## Introduction
 
-The goal of LTE fallback is to provide a second WAN connection to your home network, in case your primary connection goes down or the latency is too high.  "Failing over" means that all the devices on your LAN will have their internet requests transparently routed across the internet over the secondary WAN connection. It's useful for many reasons, including keeping "critical" devices like security cameras up.  Software like Pfsense can offer a lot of flexibility in how to determine a "fallback" scenario, which I will go into more detail below.
+The goal of an LTE fallback/failover is to provide a second WAN connection to your home network in case your primary connection goes down or the latency is too high.  "Failing over" means that all the devices on your LAN will have their internet requests transparently routed across the internet over the secondary WAN connection. It's useful for many reasons, including keeping "critical" devices (i.e security cameras or smart locks) up.  Software like Pfsense can offer a lot of flexibility in how to determine a "failover" scenario, which I will go into more detail below.
+
 ## Requirements
 
 - Your home networking routing handled by [**Pfsense** VM](/homelab) or similar routing software that offers a "WAN failover" feature.
@@ -23,7 +24,7 @@ The goal of LTE fallback is to provide a second WAN connection to your home netw
 
 I've been bouncing between a few different carriers trying to find a good fit.  I started out with a cheap $5/mo plan from [Tello](https://tello.com), which worked really well. They piggyback off T-Mobile's network, which is decent for where i'm located.
 
-Lately i've been experimenting with companies offering IoT-oriented plans.  The SIMs from [Simbase](https://www.simbase.com/) are pretty complelling, as it's $0.01/day to keep the sim active, and $0.01/MB for data usage.  Since this is designed
+Lately i've been experimenting with companies offering IoT-oriented plans.  The SIMs from [Simbase](https://www.simbase.com/) are pretty compelling, as it's $0.01/day to keep the sim active, and $0.01/MB for data usage.  Since the goal of this project is to only have the failover "kick in" when my primary internet fails, having a low-commitment, low bandwidth plan is perfect.
 
 ## Modem Configuration
 
