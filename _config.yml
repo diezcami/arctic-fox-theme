@@ -1,7 +1,7 @@
 # Site settings
 title: Josh Spicer
 email: webmaster@joshspicer.com
-description: Cambridge based Software Engineer
+description: SOFTWARE ENGINEER
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://joshspicer.com # Site url. Place your path here, or leave blank to work local.
 twitter_username: joshspicer_
