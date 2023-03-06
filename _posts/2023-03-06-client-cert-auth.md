@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "No Hassle Apple Watch Auth (with CloudFlare Client Certificates)"
+title: "Transparent Apple Watch Auth (with CloudFlare Client Certificates)"
 date: 2023-03-06
 permalink: client-cert-auth
 ---
