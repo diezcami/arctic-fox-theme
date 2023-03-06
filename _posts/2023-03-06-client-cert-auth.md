@@ -1,19 +1,21 @@
 ---
 layout: post
-title: "Easy Auth with Client Certificates (Apple Watch App + Cloudflare WAF)"
+title: "No Hassle Apple Watch Auth (with CloudFlare Client Certificates)"
 date: 2023-03-06
 permalink: client-cert-auth
 ---
 
 ## Introduction
 
-I have an Apple watch app that I build myself and use to communicate with a service running at home.  I recently set up a [Cloudflare Tunnel](https://www.cloudflare.com/products/tunnel/) and wanted to find a way to protect that resource without needing to do complicated auth on the Apple watch (likely through some companion app which I don't have set up).  In talking with a friend, I discovered a very easy way to set up client certificates with Cloudflare as a means of authentication.  Furthermore, the certificate can be embedded directly in the watch app for maximum convenience. 
+I recently set up a [Cloudflare Tunnel](https://www.cloudflare.com/products/tunnel/) and wanted to find a way to protect that resource.  I primary use an [Apple Watch app](https://github.com/joshspicer/jarvis-apple-watch) to communicate with this service. 
+
+Some form of auth without needing to do some complicated or cumbersome process on the Apple watch was my primary goal.  In talking with a friend, I discovered a very easy way to set up client certificates with Cloudflare as the means of authentication.  Furthermore, the certificate can be embedded directly in the watch app for maximum convenience. 
 
 ## Cloudflare Setup
 
 As a prerequsite, ensure that your service's domain is being proxied through Cloudflare.
 
-Next, [generate a client certificate on the Cloudflare dashboard (`SSL > Client Certificates)](https://developers.cloudflare.com/ssl/client-certificates/). From here we can download the certificate and the secret.  Make sure to enable `mTLS`, as outlined in [these docs](https://developers.cloudflare.com/ssl/client-certificates/enable-mtls/).
+Next, [generate a client certificate on the Cloudflare dashboard (SSL > Client Certificates) ](https://developers.cloudflare.com/ssl/client-certificates/). From here, we can download the certificate and the secret.  Make sure to enable `mTLS` if needed, as outlined in [these docs](https://developers.cloudflare.com/ssl/client-certificates/enable-mtls/).
 
 After generating a certificate, navigate to the Web Application Firewall (WAF) portal under `Security > WAF`.  You'll want to add a new rule that blocks when not `cf.tls_client_auth.cert_verified` for your subdomain.  
 
@@ -23,7 +25,7 @@ After generating a certificate, navigate to the Web Application Firewall (WAF) p
 
 If all is setup correctly, navigating to your service will be blocked.  To access the service, you'll now need to offer the client certificate to Cloudflare.
 
-![1.png]({{site.url}}/assets/resources-client-cert-auth/2.png)
+![2.png]({{site.url}}/assets/resources-client-cert-auth/2.png)
 
 
 ## App/Device Setup
@@ -37,9 +39,9 @@ Using the downloaded certificate and key from Cloudflare, I generated a combined
 openssl pkcs12 -export -out cert.p12 -in cloudflare.pem -inkey cloudflare.key
 ```
 
-Then, taking inspiration from [Cloudflare's 'Client certificates Configure your Mobile app or IoT Device`](https://developers.cloudflare.com/ssl/client-certificates/configure-your-mobile-app-or-iot-device/) and a great [Swift example project by @MarcoEidinger](https://github.com/MarcoEidinger/ClientCertificateSwiftDemo) I embedded the certificate into [this apple watch app](https://github.com/joshspicer/jarvis-apple-watch).  The interesting bits are:
+Then, taking inspiration from [Cloudflare's 'Client certificates Configure your Mobile app or IoT Device'](https://developers.cloudflare.com/ssl/client-certificates/configure-your-mobile-app-or-iot-device/) and a great [Swift example project by @MarcoEidinger](https://github.com/MarcoEidinger/ClientCertificateSwiftDemo), I embedded the certificate into [this Apple Watch app](https://github.com/joshspicer/jarvis-apple-watch).  The interesting bits are:
 
-Reading in the certificate name (bundled into the application) and the password. These are exposded  as an extension to `Bundle` [**(src)**](https://github.com/joshspicer/jarvis-apple-watch/blob/main/Jarvis%20WatchKit%20Extension/UserCertificate.swift#L16-L35).
+Reading in the certificate name (bundled into the application) and the password. These are exposed as an extension to `Bundle` [**(src)**](https://github.com/joshspicer/jarvis-apple-watch/blob/main/Jarvis%20WatchKit%20Extension/UserCertificate.swift#L16-L35).
 
 ```swift
 extension Bundle {
@@ -97,6 +99,6 @@ When sending an HTTPS request, a client certificate delegate is conditionally ad
 
 ### Browser setup
 
-Manually installing the certiifcate is as easy as importing into an application's certificate store.  After importing in Firefox and navigating to a WAF-protected webpage, you'll be asked once if you'd like to identify yourself with that certificate. If you do so, the Cloudflare WAF will grant you access to the resource.
+Manually installing the certifcate is as easy as importing into an application's certificate store.  After importing in Firefox and navigating to a WAF-protected webpage, you'll be asked once if you'd like to identify yourself with that certificate. If you do so, the Cloudflare WAF will grant you access to the resource.
 
 ![1.png]({{site.url}}/assets/resources-client-cert-auth/1.png)
