@@ -3,7 +3,7 @@ title: Arctic Fox
 email: 
 description: > # this means to ignore newlines until "baseurl:"
   Jekyll Theme Demo
-baseurl: "/arctic-fox-theme" # the subpath of your site, e.g. /blog/
+baseurl: "http://abrahamnash.github.io" # the subpath of your site, e.g. /blog/
 url: "http://abrahamnash.github.io" # the base hostname & protocol for your site
 twitter_username: username
 github_username: username
