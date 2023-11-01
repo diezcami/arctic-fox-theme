@@ -1,12 +1,12 @@
 # Site settings
-title: Arctic Fox
-email: 
+title: Conscious Journeys: Explorations into Energy, Existence, and Enlightenment
+email: abrahamnash@protonmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Jekyll Theme Demo
+  Delve deep into the intricate dance between the internal landscapes of consciousness and the vast expanse of the universe outside. Explore how our perceptions, energies, and connections reverberate through the realms of the personal and the cosmic, bridging the gap between the seen and the unseen, the known and the profound unknown.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://abrahamnash.github.io" # the base hostname & protocol for your site
-twitter_username: username
-github_username: username
+twitter_username: http://peepeth.com/abraham
+github_username: abrahamnash
 
 # Build settings
 markdown: redcarpet
