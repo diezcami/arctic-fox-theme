@@ -1,11 +1,11 @@
 # Site settings
-title: Conscious Journeys - Explorations into Energy, Existence, and Enlightenment
-email: 
+title: "Conscious Journeys: Explorations into Energy, Existence, and Enlightenment"
+email: abrahamnash@protonmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Jekyll Theme Demo
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://abrahamnash.github.io/" # the base hostname & protocol for your site
-twitter_username: username
+twitter_username: http://peepeth.com/abraham
 github_username: abrahamnash
 
 # Build settings
