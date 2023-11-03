@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Hello, User!"
-date: 2015-05-25
+title: "Movies as Mirrors: Exploring Their Impact on Inner Well-Being"
+date: 2023-11-03
 categories:
 ---
 Hi, thanks for viewing my theme! Feel free to edit it in any way you want, just be cool and leave the necessary credits somewhere visible. If you could star the repository, that'd be pretty cool as well.
